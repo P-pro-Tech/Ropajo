@@ -13,7 +13,7 @@ const Rooms = () => {
                 <div className="inner">
                     <h2>Rooms &<br></br> Apartments</h2>
                     <h3>HIGH CLASS LUXURY</h3>
-                    <p>Right in the heart of the Food Basket of Nigeria<br></br>Ropajo Hotels perfectly unveil its touch of luxury<br></br> and
+                    <p>Right in the heart of the Food Basket of Nigeria Ropajo Hotels perfectly unveil its touch of luxury and
                         reativity in a space.
                     </p>
                     <div className='btn-div'>

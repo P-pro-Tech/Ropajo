@@ -7,7 +7,7 @@ import ropa_text from '../../assets/ropajo_text.svg'
 const NavBar = () => {
   return (
     <div className='navBar'>
-      <div className="navbar-col">
+      <nav className="navbar-col">
         <ul>
             <li>Apartment</li>
             <li>Room</li>
@@ -20,7 +20,7 @@ const NavBar = () => {
         <img src={ropa_text} alt="" className='logo-child two'/>
         <button className='logo-child'>Book Now</button>
         </div>
-      </div>
+      </nav>
       <div className='nav-img-container'>
       <img src={nav_img} alt="" className='img-gal'/>
       </div>
