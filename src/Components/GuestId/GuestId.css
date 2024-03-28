@@ -1,0 +1,62 @@
+.guest-id {
+    width: 100%;
+    height: 265px;
+    display: flex;    
+    justify-content: space-between;
+}
+.guest-img-holder {
+    width: 43.3%;
+    height: inherit;
+}
+.guest-img-holder img {
+    width: 100%;
+    height: inherit;
+    
+}
+.guest-des-holder {
+    width: 56.7%;
+    height: inherit;
+    background: #fdf0d5;
+}
+.guest-form {
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    height: inherit;
+    display: flex;
+    padding-left: 130px;
+}
+.guest-form button {
+    background: #1f1515;
+    color: #fdf0d5;
+    width: 192px;
+    height: 59px;
+    border-radius: 18px;
+    margin: 0 16px;
+    font-size: 24px;
+    font-family: Georgia;
+    border: none;
+}
+.guest-form legend {
+    color: #000;
+    opacity: 0.3;
+    font-family: Georgia;
+    font-size: 14px;
+}
+.guest-form fieldset {
+    border: none;
+}
+.guest-form input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: thin solid #1f1515;
+    color: #1f1515;
+    font-size: 36px;
+    width: 200px;
+    font-family: Georgia;
+}
+.guest-form input::placeholder {
+    color: #1f1515;
+    opacity: 1; 
+}
