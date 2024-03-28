@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <Rooms/>
-      <Title title='' subTitle='HIGH CLASS LUXURY'/>
+      {/* <Title title='' subTitle='HIGH CLASS LUXURY'/> */}
     </div>
   );
 }
