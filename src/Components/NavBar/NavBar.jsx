@@ -21,7 +21,9 @@ const NavBar = () => {
         <button className='logo-child'>Book Now</button>
         </div>
       </div>
+      <div className='nav-img-container'>
       <img src={nav_img} alt="" className='img-gal'/>
+      </div>
     </div>
   )
 }
