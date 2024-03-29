@@ -16,7 +16,7 @@
     font-family: Georgia;
     font-size: 7vw;
     font-weight: normal;
-    margin: 158px 5% 42px 25%;
+    margin: 158px 5% 12vh 25%;
 }
 .pool-content-left h3 {
     width: 30vw;
@@ -53,14 +53,18 @@
 }
 
 @media (max-width: 1000px) {
-    .room h1{
+    .pool-content-left h1{
         font-size: 7vw;
-        margin: 98px 5% 15px 15%;
+        margin: 98px 5% 15px 25%;
         /* width: 419px;
         height: 18; */
     }
     .pool-content-left p {
         font-size: 12px;
     }
+
+}
+
+@media (max-width: 1000px) {
 
 }
