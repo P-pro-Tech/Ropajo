@@ -1,4 +1,5 @@
 import './App.css';
+import Coffee from './Components/Coffee/Coffee';
 import GuestId from './Components/GuestId/GuestId';
 import NavBar from './Components/NavBar/NavBar';
 import Pool from './Components/Pool/Pool';
@@ -13,7 +14,8 @@ function App() {
       <Rooms/>
       <Pool/>
       {/* <Restaurant/> */}
-      {/* <Title title='' subTitle='HIGH CLASS LUXURY'/> */}
+
+      <Coffee/>
 
     </div>
   );
