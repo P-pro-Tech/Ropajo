@@ -28,9 +28,9 @@
     margin-bottom: 200px;
 }
 .navBar ul li {
-    padding: 25px 25px;
+    padding: 1.7vw 1.7vw;
     list-style: none;
-    font-size: 15px;
+    font-size: 1.3vw;
 }
 .logo-container {
     width: 80%;

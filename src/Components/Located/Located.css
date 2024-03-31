@@ -1,0 +1,47 @@
+.located {
+    width: 100%;
+    height: 982px;
+    background-color: #fdf0d5;
+    display: flex;
+    flex-direction: row;
+}
+.loc-text-sec {
+    width: 55.7%;
+    z-index: 10;
+}
+.loc-text-sec p, h2 {
+    color: #000;
+    font-family: Georgia;
+    text-align: right;
+    right: 0;
+    font-weight: normal;
+    word-wrap: break-word;
+}
+.loc-text-sec h2 {
+    width: 44.6vw;
+    height: 21.6vh;
+    font-size: 6.2vw;
+    margin: 270px 0 170px 15.5vw;
+}
+.loc-text-sec p {
+    width: 35.7vw;
+    height: 7.6vh;
+    font-size: 20px;
+    margin-left: 24.5vw;
+}
+.loc-img-sec {
+    width: 44.3%;
+}
+.loc-img-sec img {
+    width: 33.5vw;
+    height: 694px;
+    float: left;
+    margin-top: 150px;
+    
+}
+
+@media (max-width: 1000px) {
+    .loc-text-sec h2 {
+        margin-bottom: 100px;
+    }
+}

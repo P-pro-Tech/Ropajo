@@ -1,6 +1,7 @@
 import './App.css';
 import Coffee from './Components/Coffee/Coffee';
 import GuestId from './Components/GuestId/GuestId';
+import Located from './Components/Located/Located';
 import NavBar from './Components/NavBar/NavBar';
 import Pool from './Components/Pool/Pool';
 import Rooms from './Components/Rooms/Rooms';
@@ -16,6 +17,7 @@ function App() {
       {/* <Restaurant/> */}
 
       <Coffee/>
+      <Located/>  e
 
     </div>
   );
