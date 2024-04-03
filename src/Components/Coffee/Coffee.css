@@ -63,3 +63,35 @@ h3 {
     width: 27vw;
     margin-left: 0;
 }
+@media (max-width:650px) {
+    .coffee {
+        height: 70vh;
+    }
+    .img-pouring-coffee {
+        height: 39vh;
+        /* margin: 219px 0 0 12.23vw; */
+        margin: 95px 13px 80px 10.7vw;
+    }
+    .img-still-coffee {
+        height: 88px;
+        margin-left: 19.84vw;
+        margin-top: 170px;
+    }
+    .vector-area h3 {
+        font-size: 20px;
+        height: 48px;
+    }
+    .vector-area p {
+        font-size: 9px;
+        width: 33vw;
+    }
+    .vector-1 {
+        margin: 0 63px 0 27px;
+    }
+    .vector-2 {
+        
+    }
+    .vector-area {
+        
+    }
+}

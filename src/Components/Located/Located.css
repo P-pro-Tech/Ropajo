@@ -45,3 +45,20 @@
         margin-bottom: 100px;
     }
 }
+@media (max-width: 650px) {
+    .located {
+        height: 60vh;
+    }
+    .loc-img-sec img {
+        margin-top: 30px;
+        height: 347px;
+    }
+    .loc-text-sec h2{
+        height: 18.6vh;
+        font-size: 5.64vw;
+        margin: 107px 10px 0px 14.5vw;
+    }
+    .loc-text-sec p {
+        font-size: 10px;
+    }
+}
