@@ -1,5 +1,7 @@
 import './App.css';
+import Coffee from './Components/Coffee/Coffee';
 import GuestId from './Components/GuestId/GuestId';
+import Located from './Components/Located/Located';
 import NavBar from './Components/NavBar/NavBar';
 import Restaurant from './Components/Restaurant/Restaurant';
 import Pool from './Components/Pool/Pool';
@@ -13,11 +15,16 @@ function App() {
     <div className="App">
       <NavBar/>
       <GuestId/>
-      <Rooms/>
+      <Rooms/> 
       <Pool/>
+
       <Restaurant/>
       <Gallery/>
       <Contact/>
+      <Coffee/>
+      <Located/>  
+
+
     </div>
   );
 }

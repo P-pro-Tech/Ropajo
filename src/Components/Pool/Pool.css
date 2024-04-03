@@ -1,6 +1,6 @@
 .pool {
     width: 100%;
-    height: 982px;
+    height: 100vh;
     display: flex;
     background-color: #1f1515;
 }
@@ -16,7 +16,7 @@
     font-family: Georgia;
     font-size: 7vw;
     font-weight: normal;
-    margin: 158px 5% 42px 25%;
+    margin: 158px 5% 9vh 25%;
 }
 .pool-content-left h3 {
     width: 30vw;
@@ -24,6 +24,7 @@
     font-family: Georgia;
     font-size: 24px;
     margin:  0px 232px 22px 25%;
+    color: #fdf0d5;
 }
 .pool-content-left p {
     width: 25vw;
@@ -53,14 +54,62 @@
 }
 
 @media (max-width: 1000px) {
-    .room h1{
+    .pool-content-left h1{
         font-size: 7vw;
-        margin: 98px 5% 15px 15%;
+        margin: 150px 5% 12px 25%;
         /* width: 419px;
         height: 18; */
     }
     .pool-content-left p {
         font-size: 12px;
     }
+    .pool-content-left h3 {
+        margin-bottom: 70px;
+    }
 
+}
+
+@media (max-width: 650px) {
+    .pool {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .pool-content-left {
+        height: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .pool-content-left h1 {
+        padding: 0 0 0 0;
+        margin: auto;
+        width: 50%;
+        height: 75px;
+        font-size: 7.7vw;
+    }
+    .pool-content-left h3 {
+        padding: 0 0 0 0;
+        margin: auto;
+        width: 50%;
+        font-size: 19px;
+    }
+    .pool-content-left p {
+        padding: 0 0 0 0;
+        margin: auto;
+        width: 45%;
+        font-weight:2.3vw;
+        font-size: ;
+    }
+    .pool-content-left button {
+        padding: 0 0 0 0;
+        margin: auto;
+        width: 25%;
+        font-size: 3.5vw;
+    }
+    .pool-content-right {
+        width: 100%;
+        height: 50vh;
+    }
 }
