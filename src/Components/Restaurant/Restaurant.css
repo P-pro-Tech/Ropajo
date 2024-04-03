@@ -1,11 +1,12 @@
-.restaurant{
+ .restaurant{
     display: flex;
     width: 100%;
     height: 982px;
     background-image: url('../../assets/Ropa5.png');
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-position: center;
+    /* justify-content: space-between; */
 }
 .empty{
     background: transparent;
@@ -17,57 +18,59 @@
     width: 56.7%;
     height: inherit;
     background-color: rgba(31, 21, 21, 0.62);
-    align-items: center;
-    justify-content: center;
-    overflow-wrap: inherit;
 }
 .opacity h2{
-    width: 392px;
-    height: 91px;
+    width: 25.93vw;
+    height: 6.vw;
     font-family: Georgia;
-    font-size: 80px;
+    font-size: 5.29vw;
     font-weight: normal;
-    /* margin: 302px, 344px, 589px 129pxpx; */
+    margin: 19.97vw 11.8vw 2.7vw 9.3vw;
     color: #fdf0d5;
-    padding-top: 302px;
-    padding-left: 129px;
-
 }
 .opacity h3{
-    width: 250px;
-    height: 27px;
+    width: 16.5vw;
+    height: 1.8vw;
     font-family: Georgia;
-    font-size: 24px;
+    font-size: 1.5vw;
     font-weight: normal;
     color: #fdf0d5;
-    padding-left: 129px;
-
+    margin-left: 9.3vw;
 }
 .opacity p{
-    width: 341px;
-    height: 79px;
-    margin: 22px 51px 20px 0;
+    width: 22.5vw;
+    height: 5.2vw;
+    margin: 1.5vw 4.37vw 1.3vw 9.7vw;
     font-family: Georgia;
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: normal;
     text-align: left;
     color: #fdf0d5;
-    padding-left: 129px;
 }
 .opa-div{
     width: 50vw;
     height: 10vh;
-    padding-right: 0.5rem;
+    
+    
 }
 .opacity button{
-    /* width: 140px;
-    height: 45px; */
-    flex-grow: 0;
-    margin: 20px 258px 0 0;
-    padding: 9px 12px;
+    margin-left: -27vw;
+    padding: 0.7vw 0.8vw;
     border-radius: 6px;
     border: solid 1px #fdf0d5;
     background: transparent;
     font-family: Georgia;
-    font-size: 24px;
+    font-size: 1.9vw;
+    /* margin-left: -60px; */
+} 
+
+@media (max-width: 1000px){
+    .opacity h2{
+        /* margin: 12% 10% 10% 20%; */
+        /* font-size: 10vw; */
+    }
+    .opacity h3{
+        width: 125px;
+        font-size: 12px;
+    }
 }

@@ -4,6 +4,8 @@ import NavBar from './Components/NavBar/NavBar';
 import Restaurant from './Components/Restaurant/Restaurant';
 import Pool from './Components/Pool/Pool';
 import Rooms from './Components/Rooms/Rooms';
+import Gallery from './Components/Gallery/Gallery';
+import Contact from './Components/Contact/Contact';
 
 
 function App() {
@@ -14,7 +16,8 @@ function App() {
       <Rooms/>
       <Pool/>
       <Restaurant/>
-
+      <Gallery/>
+      <Contact/>
     </div>
   );
 }
