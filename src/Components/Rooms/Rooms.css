@@ -124,38 +124,51 @@
 
 @media (max-width: 650px) {
     .room{
-        flex-direction: column;
-        height: 120vh;
+        flex-direction: column-reverse;
+        height: 180vh;
     }
     .room-left {
         width: 100%;
-        height: 60vh;
+        height: 90vh;
     }
     .room-right {
         width: 100%;
-        height: 60vh;
+        height: 90vh;
+    }
+    .inner {
+        text-align: center;
     }
     .room h2{
-        font-size: 7vw;
-        margin: 98px 5% 15px 10%;
-        /* width: 419px;
-        height: 18; */
+        font-size: 9.5vw;
+        margin: auto;
+        text-align: center;
+        height: 19vh;
+        width: 57.4vw;
+        margin-top: 73px;
     }
     .room h3{
+        width: 49.49vw;
+        height: 5.13vh;
+        font-size: 4.1vw;
+        text-align: center;
         font-size: 22px;
-        margin-left: 10%;
+        margin: auto;
+        margin-top: 47px;
     }
     .room p {
         font-size: 2vw;
-        margin-left: 10%;
+        margin: auto;
         text-wrap: wrap;
-        height: 20px;
+        text-align: center;
+        height: 15vh;
+        width: 45vw;
+        line-height: 1.5;
     }
     .room-right button{
         align-items: center;
         color: #1f1515;
         font-family: Georgia;
-        font-size: 18px; 
+        font-size: 4.6vw; 
         position: absolute;
         top: 0;
         right: 0;
@@ -167,14 +180,19 @@
     .btn{
         border-radius: 50%;
         color: #1f1515;
-        width: 140px;
-        height: 140px;
+        width: 29.5vw;
+        height: 26.5vh;
         background-color: #d9d9d9;
         position: relative;
-        margin-top: 100px;
-        margin-left: 200px;
+        margin: auto;
     }
-   .line{
+    .line{
     display: none;
-   }
+    }
+    .room-con p {
+    display: none;
+    }
+    .room-con {
+        display: none;
+    }
 }

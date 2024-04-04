@@ -27,8 +27,11 @@ const NavBar = () => {
         </div>
       </nav>
       <div className='nav-img-container'>
-      <div  className='img-gal'>+234 803 320 2272
-ROPAJO@GMAIL.COM</div>
+      <div  className='img-gal'>
+        <p>+234 803 320 2272
+        ROPAJO@GMAIL.COM
+        </p>
+</div>
       </div>
     </div>
   )

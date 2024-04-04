@@ -64,7 +64,15 @@
     /* margin-left: -60px; */
 } 
 
-@media (max-width: 1000px){
+@media (max-width: 650px){
+    .restaurant{
+        height: 70vh;
+    }
+    .opacity{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
     .opacity h2{
         /* margin: 12% 10% 10% 20%; */
         /* font-size: 10vw; */
@@ -72,5 +80,8 @@
     .opacity h3{
         width: 125px;
         font-size: 12px;
+    }
+    .empty{
+        display: none;
     }
 }

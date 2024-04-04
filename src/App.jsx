@@ -19,10 +19,11 @@ function App() {
       <Pool/>
 
       <Restaurant/>
-      <Gallery/>
-      <Contact/>
       <Coffee/>
       <Located/>  
+      <Gallery/>
+      <Contact/>
+      
 
 
     </div>

@@ -12,24 +12,25 @@
     text-align: right;
 }
 .text h2{
-    width: 479px;
-    height: 225px;
+    width: 33vw;
+    height: 14vh;
     font-family: Georgia;
-    font-size: 66px;
+    font-size: 4vw;
     font-weight: normal;
-    margin: 22.8vw 0 0.6vw 10.3vw;
+    margin: 22.8vw 0 8.6vw 10.3vw;
     color: #fdf0d5;
     text-align: right;
 }
 .text p{
-    width: 525px;
-    height: 115px;
-    margin-left: 100px;
+    width: 34.7vw;
+    height: 7.6vh;
+    margin-left: 8vw;
     font-family: Georgia;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: normal;
     text-align: right;
     color: #fdf0d5;
+    /* line-height: 1.5; */
 }
 .grid-container{
     width: 53.1%;
@@ -53,7 +54,7 @@
 .small-box{
     display: flex;
     border: thin solid #000;
-    width: 243px;
+    width: 16vw;
     height: 213px;
 
 }
@@ -62,7 +63,7 @@
     height: inherit;
     transform: scaleX(-1);
 }
-.right-column{
+.right-column {
     width: 29.1vw;
     height: 676px;
 }
@@ -70,4 +71,56 @@
     width: inherit;
     height: inherit;
     transform: scaleX(-1);
+}
+
+@media (max-width: 650px) {
+    .main{
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .text h2{
+        font-size: 5.1vw;
+        width: 78.4vw;
+        height: 7vh;
+        margin: auto;
+        text-align: center;
+    }
+    .text{
+        width: 100%;
+        height: inherit;
+        text-align: right;
+        height: 20vh;
+    }
+    .text p{
+        width: 81vw;
+        height: 9.6vh;
+        margin: auto;
+        font-size: 2.6vw;
+        text-align: center;
+    }
+    .grid-container{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+    }
+    .inner-gird-container {
+        margin: auto;
+        width: 82.2vw;
+        height: 70vh;
+        /* background-color: blue; */
+        margin-top: 10vh;
+    }
+    .right-column {
+        width: 47.4vw;
+        height: 65vh;
+    }
+    .right-column img {
+        width: inherit;
+        height: inherit;
+    }
+    .small-box  {
+        width: 26.2vw;
+        height: 20vh;
+
+    }
 }

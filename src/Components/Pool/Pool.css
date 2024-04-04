@@ -72,10 +72,10 @@
 @media (max-width: 650px) {
     .pool {
         flex-direction: column;
-        height: 100vh;
+        height: 120vh;
     }
     .pool-content-left {
-        height: 550px;
+        height: 60vh;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -100,7 +100,6 @@
         margin: auto;
         width: 45%;
         font-weight:2.3vw;
-        font-size: ;
     }
     .pool-content-left button {
         padding: 0 0 0 0;
@@ -110,6 +109,6 @@
     }
     .pool-content-right {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
     }
 }

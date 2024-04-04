@@ -27,6 +27,9 @@
 .img-gal {
     color: #1f1515;
 } 
+.img-gal p {
+    
+}
 .navBar ul {
     max-width: 100%;
     display: flex;
