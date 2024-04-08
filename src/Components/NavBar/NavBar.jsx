@@ -5,6 +5,7 @@ import mob_logo from '../../assets/mob-logo.svg'
 import ropa_logo from '../../assets/ropajo _hat2.svg'
 import ropa_text from '../../assets/ropajo_text.svg' 
 import mob_menu from '../../assets/mob-menu.svg' 
+import { Link } from 'react-scroll';
 
 
 const NavBar = () => {
@@ -13,11 +14,11 @@ const NavBar = () => {
       <nav className="navbar-col">
         <img src={mob_logo} alt="" className='mob-logo' />
         <ul>
-            <li>Apartment</li>
-            <li>Room</li>
-            <li>Pool</li>
-            <li>Laundry</li>
-            <li>Gallery</li>
+            <li><Link  to="room" smooth={true} offset={0} duration={500} >Apartment</Link></li>
+            <li><Link  to="room" smooth={true} offset={0} duration={500} >Room</Link></li>
+            <li><Link  to="pool" smooth={true} offset={0} duration={500} >Pool</Link></li>
+            <li><Link  to="laundry" smooth={true} offset={-760} duration={500} >Laundry</Link></li>
+            <li><Link  to="gallery" smooth={true} offset={0} duration={500} >Gallery</Link></li>
         </ul>
         <img src={mob_menu} alt="" className='mob-menu' />
         <div className="logo-container">
@@ -27,11 +28,12 @@ const NavBar = () => {
         </div>
       </nav>
       <div className='nav-img-container'>
-      <div  className='img-gal'>
-        <p>+234 803 320 2272
-        ROPAJO@GMAIL.COM
-        </p>
-</div>
+      
+        <div className='nav-contact'>
+          <p>+234 803 320 2272</p>
+        <p>ROPAJO@GMAIL.COM</p>
+        </div>
+      
       </div>
     </div>
   )

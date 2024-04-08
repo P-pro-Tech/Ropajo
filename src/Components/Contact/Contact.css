@@ -1,7 +1,7 @@
 .contact {
     width: 100%;
     height: 45vh;
-    /* background-color: #000; */
+    
     display: flex;
     justify-content: space-around;
     color: #000;
@@ -9,7 +9,20 @@
     font-family: Georgia;
 }
 .logo {
+    display: flex;
+    flex-direction: column;
+    gap: -30px;
+    
+}
+.logo.logo-img {
+    width: 20vw;
+}
+.logo.logo-text {
 
+}
+.logo p {
+    color: #000; 
+    font-family: georgia;   
 }
 .list ul{
     list-style: none;
@@ -19,11 +32,14 @@
     color: #000;
     display: block;
     margin-bottom: 3vh;
+    font-family: georgia;
+    font-weight: bolder;
+    font-size: 1.3vw;
 }
 .address {
-display: flex;
-flex-direction: column;
-text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 .contact-details {
     display: block;
@@ -32,6 +48,8 @@ text-align: left;
 .contact-details h4 {
     color: #000;
     font-size: 1.3vw;
+    font-family: georgia;
+    font-weight: bolder;
 }
 .contact-details p {
     color: #000;
@@ -41,5 +59,19 @@ text-align: left;
 @media  (max-width: 650px) {
     .list{
         display: none;
+    }
+}
+@media  (max-width: 450px) {
+    .contact {
+        height: 30vh;
+    }
+    .address {
+        margin-top: 7vh;
+    }
+    .contact-details h4{
+        
+    }
+    .contact-details p {
+
     }
 }

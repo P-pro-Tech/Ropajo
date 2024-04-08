@@ -7,7 +7,7 @@ import Ropa11 from '../../assets/Ropa11.png'
 
 const Gallery = () => {
   return (
-    <div className='main'>
+    <div className='gallery'>
       <div className="text">
         <h2>Local and Intercontinental dishes</h2>
         <p>Right in the heart of the Food Basket of  Nigeria. Ropajo Hotels perfectly unveil its touch of luxury and creativity in a space.</p>

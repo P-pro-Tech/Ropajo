@@ -16,6 +16,7 @@
     background: url("../../assets/Ropa6.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .img-still-coffee {
@@ -46,7 +47,7 @@ h3 {
 .vector-area h3 {
     width: 40vw;
     height: 78px;
-    font-size: 48px;
+    font-size: 3.3vw;
     text-align: left;
 }
 .vector-area p {
@@ -71,6 +72,7 @@ h3 {
         height: 39vh;
         /* margin: 219px 0 0 12.23vw; */
         margin: 95px 13px 80px 10.7vw;
+        /* width: 30vw; */
     }
     .img-still-coffee {
         height: 88px;
@@ -78,20 +80,60 @@ h3 {
         margin-top: 170px;
     }
     .vector-area h3 {
-        font-size: 20px;
+        font-size: 4.7vw;
         height: 48px;
+        margin: auto;
     }
     .vector-area p {
         font-size: 9px;
         width: 33vw;
+        margin: auto;
     }
     .vector-1 {
-        margin: 0 63px 0 27px;
+        margin: auto;
     }
     .vector-2 {
-        
+        margin: auto;
     }
     .vector-area {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .coffee {
+        height: 50vh;
+    }
+    .img-pouring-coffee {
+        height: 29vh;
+        width: 34.93vw;
+        margin: 95px 13px 80px 10.7vw;
+        
+    }
+    .img-still-coffee {
+        height: 108px;
+        width: 20vw;
+        margin-left: 20.84vw;
+        margin-top: 80px;
+    }
+    .vector-area {
+        height: 30vh;
+        margin-top: 10vh;
+    }
+    .vector-area h3 {
+        /* font-size: 4.7vw; */
+        height: 38px;
+        
+    }
+    .vector-area p {
+        font-size: 9px;
+        width: 38vw;
+        line-height: 1.4;
+    }
+    .vector-1 {
+        font-weight: 900;
+    }
+    .vector-2 {
         
     }
 }

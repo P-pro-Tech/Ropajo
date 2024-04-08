@@ -17,7 +17,6 @@ function App() {
       <GuestId/>
       <Rooms/> 
       <Pool/>
-
       <Restaurant/>
       <Coffee/>
       <Located/>  

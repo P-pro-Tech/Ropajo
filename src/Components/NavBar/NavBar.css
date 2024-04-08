@@ -19,6 +19,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
+    position: relative;
 }
 .mob-logo, .mob-menu {
     display: none;
@@ -26,6 +28,7 @@
 
 .img-gal {
     color: #1f1515;
+    position: relative;
 } 
 .img-gal p {
     
@@ -42,6 +45,8 @@
     list-style: none;
     font-size: 1.3vw;
     font-family: Georgia;
+    cursor: pointer;
+
 }
 .logo-container {
     width: 80%;
@@ -67,24 +72,45 @@
     display: block;
     
 } 
+.nav-contact {
+    text-align: left;
+    height: 10vh;
+    width: 20vw;
+    
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 30px;
+}
+.nav-contact p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1f1515;
+    line-height: 1.6;
+    font-size: 1.3vw;
+    z-index: 100;
+}
 
 @media (max-width: 650px) {
     .navBar {
         flex-direction: column;
-        height: 100vh;
+        height: 95vh;
         
     }
     .navbar-col {
         width: 100%;
-        height: 20vh;
+        height: 15vh;
         display: flex;
         padding: 15px 0;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    .nav-img-container {
+
     }
     
-    .navBar ul{
-        
-    }
+    .nav-img-container {
+        width: 100%;
+        height: 80vh;
+        position: relative;
+    } 
     .logo-container {
         display: none;
     }
@@ -105,24 +131,54 @@
         font-size: 2vw;
         margin: 10px 15px;
         display: block;
+        cursor: pointer;
     }
     .logo-container button {
         display: none;
     }
-    .nav-img-container {
-        width: 100%;
-        height: 80vh;
-        
-    } 
+    
     .mob-logo, .mob-menu {
         display: block;
         align-items: center;
     }
     .mob-logo {
-        width: 50vw;
+        width: 40vw;
         height: fit-content;
+        margin-left: 6vw;
+        margin-top: 3.7vh;
     }
     .mob-menu {
-        float: right;
+        /* float: right; */
+        position: absolute;
+        top: 6.7vh; 
+        right: 10vw; 
+        width: 8.8vw;
+    }
+    .nav-contact {
+        text-align: right;
+        height: 10vh;
+        width: 30vw;
+        position: absolute;
+        bottom: 10px; /* Adjust as needed */
+        right: 20px;
+    }
+        .nav-contact p {
+        font-size: 2.3vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .navBar {
+        height: 70vh;
+
+    }
+    .navbar-col {
+        height: 7vh;
+    }
+    .nav-img-container {
+        height: 58vh;
+    }
+    .nav-contact p {
+        
     }
 }

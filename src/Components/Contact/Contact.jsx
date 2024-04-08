@@ -1,15 +1,15 @@
 import React from 'react'
 import './Contact.css'
-import ropa_logo from '../../assets/ropajo _hat2.svg'
-import ropa_text from '../../assets/ropajo_text.svg'
+import ropa_logo from '../../assets/Layer_1.svg'
+import ropa_text from '../../assets/Layer_2.svg'
 
 
 const Contact = () => {
   return (
     <div className='contact'>
       <div className="logo">
-      <img src={ropa_logo} alt="" className='logo-img logo-child'/>
-        <img src={ropa_text} alt="" className='logo-child logo-text'/>
+      <img src={ropa_logo} alt="" className='logo-img'/>
+        <img src={ropa_text} alt="" className='logo-text'/>
         <p>Hotels and Apartments</p>
       </div>
       <div className="list">
