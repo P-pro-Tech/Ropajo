@@ -8,7 +8,7 @@ import mob_menu from '../../assets/mob-menu.svg'
 import { Link } from 'react-scroll';
 
 
-const NavBar = () => {
+const NavBar = ({setViewMobileNav}) => {
   return (
     <div className='navBar'>
       <nav className="navbar-col">
@@ -20,7 +20,7 @@ const NavBar = () => {
             <li><Link  to="laundry" smooth={true} offset={-760} duration={500} >Laundry</Link></li>
             <li><Link  to="gallery" smooth={true} offset={0} duration={500} >Gallery</Link></li>
         </ul>
-        <img src={mob_menu} alt="" className='mob-menu' />
+        <img src={mob_menu} alt="" className='mob-menu' onClick={()=> {setViewMobileNav(true)}}/>
         <div className="logo-container">
         <img src={ropa_logo} alt="" className='logo logo-child'/>
         <img src={ropa_text} alt="" className='logo-child two'/>

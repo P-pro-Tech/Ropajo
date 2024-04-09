@@ -1,6 +1,7 @@
 import React from 'react'
 import './Rooms.css'
 import Ropa3 from '../../assets/Ropa3.jpeg'
+import { Link } from 'react-router-dom'
 
 const Rooms = () => {
     return (
@@ -20,10 +21,11 @@ const Rooms = () => {
                         reativity in a space.
                     </p>
                     <div className='btn-div'>
+                    <Link to="/Booking">
                         <div className="btn">
                             <button>BOOK<br></br>A ROOM</button>
                         </div>
-
+                    </Link>
                         <div className="line"></div>
                     </div>
                     <div className='room-con'>

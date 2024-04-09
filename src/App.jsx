@@ -8,24 +8,37 @@ import Pool from './Components/Pool/Pool';
 import Rooms from './Components/Rooms/Rooms';
 import Gallery from './Components/Gallery/Gallery';
 import Contact from './Components/Contact/Contact';
-
+import MobileNavBar from './Components/MobileNavBar/MobileNavBar';
+import { useState } from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
+import Booking from './Components/Booking/Booking';
 
 function App() {
+  const [viewMobileNav, setViewMobileNav] = useState(false);
+
   return (
-    <div className="App">
-      <NavBar/>
-      <GuestId/>
-      <Rooms/> 
-      <Pool/>
-      <Restaurant/>
-      <Coffee/>
-      <Located/>  
-      <Gallery/>
-      <Contact/>
-      
-
-
-    </div>
+    <Router> {/* Wrap your entire application inside Router */}
+      <div className="App">
+        <NavBar setViewMobileNav={setViewMobileNav}/>
+        <GuestId/>
+        <Rooms/> 
+        <Pool/>
+        <Restaurant/>
+        <Coffee/>
+        <Located/>  
+        <Gallery/>
+        <Contact/>
+        <div>
+          <MobileNavBar viewMobileNav={viewMobileNav} setViewMobileNav={setViewMobileNav}/>
+        </div>
+        <div>
+          <Routes>
+            <Route path="/Booking" element={<Booking/>}/> {/* Define your Booking route */}
+            
+          </Routes>
+        </div>
+      </div>
+    </Router> 
   );
 }
 
