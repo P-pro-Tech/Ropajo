@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className='contact'>
       <div className="logo">
-      <img src={ropa_logo} alt="" className='logo-img'/>
+        <img src={ropa_logo} alt="" className='logo-img'/>
         <img src={ropa_text} alt="" className='logo-text'/>
         <p>Hotels and Apartments</p>
       </div>

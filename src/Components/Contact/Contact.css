@@ -24,6 +24,9 @@
     color: #000; 
     font-family: georgia;   
 }
+.list{
+    margin-top: 3vw;
+}
 .list ul{
     list-style: none;
     text-align: left;
@@ -40,6 +43,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-top: 3vw;
 }
 .contact-details {
     display: block;
@@ -57,21 +61,49 @@
 }
 
 @media  (max-width: 650px) {
+    .logo{
+        width: 15vw;
+        margin-top: 5vw;
+    }
+    .logo p{
+        width: 37vw;
+        font-size: 2vw;
+        margin-left: -10vw;
+    }
+    .contact-details h4{
+        font-size: 2.5vw;
+    }
+    .contact-details p{
+        font-size: 2vw;
+    }
+    .list ul li{
+        font-size: 3vw;
+    }
     .list{
         display: none;
+        margin-top: 3vw;
+    }
+    .address{
+        margin-top: 9vw;
     }
 }
 @media  (max-width: 450px) {
+    .logo{
+        margin-top: 8vw;
+    }
     .contact {
         height: 30vh;
     }
+.list{
+    margin-top: 9vw;
+}
     .address {
         margin-top: 7vh;
     }
-    .contact-details h4{
+    /* .contact-details h4{
         
     }
     .contact-details p {
 
-    }
+    } */
 }

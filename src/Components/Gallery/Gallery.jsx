@@ -15,12 +15,11 @@ const Gallery = () => {
       <div className="grid-container">
         <div className='inner-gird-container'>
         <div className="left-column">
-            <div className="small-box"><img src={Ropa5} alt="" /></div>
-            <div className="small-box"><img src={Ropa9} alt="" /></div>
-            <div className="small-box"><img src={Ropa10} alt="" /></div>
+            <div className="small-box" id='one'></div>
+            <div className="small-box" id='two'></div>
+            <div className="small-box" id='three'></div>
         </div>
         <div className="right-column">
-            <img src={Ropa11} alt="" />
         </div>
         </div>
       </div>
