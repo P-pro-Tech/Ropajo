@@ -58,20 +58,42 @@
     height: 213px;
 
 }
-.small-box img {
+#one{
+    background-image: url('../../assets/Ropa5.png');
+    background-position: center;
+    background-size: cover;
+    transform: scaleX(-1);
+}
+#two{
+    background-image: url('../../assets/Ropa9.png');
+    background-position: center;
+    background-size: cover;
+    transform: scaleX(-1);
+}
+#three{
+    background-image: url('../../assets/Ropa10.png');
+    background-position: center;
+    background-size: cover;
+    transform: scaleX(-1);
+}
+/* .small-box img {
     width: inherit;
     height: inherit;
     transform: scaleX(-1);
-}
+} */
 .right-column {
     width: 29.1vw;
     height: 676px;
+    background-image: url('../../assets/Ropa11.png');
+    background-position: center;
+    background-size: cover;
+    transform: scaleX(-1);
 }
-.right-column img {
+/* .right-column img {
     width: inherit;
     height: inherit;
     transform: scaleX(-1);
-}
+} */
 
 @media (max-width: 650px) {
     .gallery{
