@@ -1,6 +1,8 @@
 .dashboard-room{
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .dbr-nav {
     width: inherit;
@@ -51,5 +53,8 @@
         height: 5vh;
         margin-top: 3vh;
         margin-right: 7vw;
+    }
+    .dbr-header h2{
+        color: #1f1515;
     }
 }

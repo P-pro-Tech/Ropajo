@@ -1,6 +1,7 @@
 import React from 'react'
 import './GuestId.css'
 import guest_img from '../../assets/Ropa2.jpeg'
+import { Link } from 'react-router-dom'
 
 const GuestId = () => {
   return (
@@ -14,7 +15,7 @@ const GuestId = () => {
                 <legend>Enter your unique Guest ID</legend>
                 <input type="text" name="" id="" placeholder='#R1410X'/>
             </fieldset>
-            <button type="submit">Enter Guest ID</button>
+            <Link to='/DashboardComponents'><button type="submit">Enter Guest ID</button></Link>
         </form>
       </div>
     </div>

@@ -26,12 +26,12 @@ const DashboardRoom = () => {
 
 
         <div className='dbr-header'>
-          <h3>Room/Apartment</h3>
+          <h2>Room/Apartment</h2>
         </div>
 
 
         <div className='dbr-table'>
-
+        
         </div>
 
 

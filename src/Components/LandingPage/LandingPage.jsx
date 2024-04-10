@@ -12,8 +12,7 @@ import MobileNavBar from '../MobileNavBar/MobileNavBar';
 import { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
 import Booking from '../Booking/Booking';
-import DashboardRoomProfile from '../DashboardRoomProfile/DashboardRoomProfile';
-import DashboardRoom from '../DashboardRoom/DashboardRoom';
+
 import GuestId from '../GuestId/GuestId';
 
 const LandingPage = () => {
@@ -29,8 +28,7 @@ const LandingPage = () => {
         <Located/>  
         <Gallery/>
         <Contact/>
-        <DashboardRoomProfile/>
-        <DashboardRoom/>
+        
         <div>
         <MobileNavBar viewMobileNav={viewMobileNav} setViewMobileNav={setViewMobileNav}/>
         </div>
