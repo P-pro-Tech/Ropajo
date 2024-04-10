@@ -15,10 +15,10 @@
         visibility: visible;
     }-------------------------------------------------------------------------------------
     
-    .cont-mob-navbar {
+    /* .cont-mob-navbar {
         display: flex;
         flex-direction: column;
-    }
+    } */
     .mnb-arrow-up {
         padding: 25px;
         position: relative;

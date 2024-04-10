@@ -1,0 +1,74 @@
+.dashboard-room-profile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(31, 21, 21, 0.9);
+    visibility: hidden;
+}
+
+
+@media (max-width: 650px) {
+    .dashboard-room-profile {
+        visibility: hidden;
+    }
+    .profile-cont {
+        width: 100%;
+        height: 30vh;
+        background-color:  #1F1515;
+        
+    }
+    .profile-cont img {
+        width: 12vw;
+        height: 10vh;
+        border-radius: 50%;
+        margin-top: 40px;
+    }
+    .profile-cont h4 {
+        font-weight: normal;
+        font-size: 25px;
+        padding: 10px;
+    }
+    .profile-cont p {
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .dbp-navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .dbp-arrow-up {
+        padding: 25px;
+        position: relative;
+    }
+    .dbp-arrow-up img {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .dbp-logo {
+        padding: 20px;
+        height: auto;
+    }
+    .dbp-logo img {
+        width: 40vw;
+        height: 7vh;
+    }
+    .dbp-nav-list {
+        height: 26.7vh;
+    }
+    .dbp-nav-list ul li {
+        /* padding: 15px 10px; */
+        font-size: 20px;
+        height: 5vh;
+        width: 100;
+        cursor: pointer;
+    }
+    .dbp-nav-list ul li:hover {
+        background-color: #1F1515;
+
+    }
+}
