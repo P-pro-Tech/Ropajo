@@ -11,14 +11,10 @@ function App() {
   return (
     <Router> {/* Wrap your entire application inside Router */}
       <div className="App">
-        
-        
-        
         <div>
           <Routes>
             <Route path="/" element={<LandingPage/>}/>
             <Route path="/Booking" element={<Booking/>}/> {/* Define your Booking route */}
-
           </Routes>
         </div>
       </div>
