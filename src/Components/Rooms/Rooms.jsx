@@ -3,6 +3,7 @@ import './Rooms.css'
 import Ropa3 from '../../assets/Ropa3.jpeg'
 import { Link } from 'react-router-dom'
 
+
 const Rooms = () => {
     return (
         <div className='room'>
