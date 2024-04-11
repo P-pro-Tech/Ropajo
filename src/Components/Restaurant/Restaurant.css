@@ -48,14 +48,14 @@
     color: #fdf0d5;
 }
 .opacity button {
-    margin-left: -27vw;
+    margin-left: 9.7vw;
     padding: 0.7vw 0.8vw;
     border-radius: 6px;
     border: solid 1px #fdf0d5;
     background: transparent;
     font-family: Georgia;
     font-size: 1.9vw;
-    /* margin-left: -60px; */
+    /* margin-x: -60px; */
 } 
 
 @media (max-width: 1000px) {
@@ -104,6 +104,7 @@
         width: 40%;
         height: 45px;
         font-size: 4vw;
+        
     }
 
     .empty{

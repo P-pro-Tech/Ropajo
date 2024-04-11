@@ -3,6 +3,7 @@ import './DashboardRoom.css'
 import{Link} from 'react-scroll'
 import book_logo from '../../assets/mob-logo.svg';
 import mob_menu from '../../assets/mob-menu.svg'
+import play_icon from '../../assets/play-icon.svg';
 
 const DashboardRoom = () => {
   return (
@@ -25,13 +26,100 @@ const DashboardRoom = () => {
         </div>
 
 
-        <div className='dbr-header'>
+        <div className='drp-header'>
           <h2>Room/Apartment</h2>
         </div>
 
 
-        <div className='dbr-table'>
-        
+        <div className='drp-table'>
+          <div className="drp">
+            <table>
+              <thead>
+                <tr>
+                  <th><img src={play_icon} alt="" />Room No:</th>
+                  <th>256</th>
+                </tr>
+                <tr>
+                  <td>Date:</td>
+                  <td>13.04.2024</td>
+                </tr>
+                <tr>
+                  <td>Check-in:</td>
+                  <td>06:47pm</td>
+                </tr>
+                <tr>
+                  <td>Check-out:</td>
+                  <td>
+                    <p>13.04.2024</p>
+                    <p>12:00pm</p>
+                  </td>
+                </tr>
+                <tr>
+                    <td>Amount:</td>
+                    <td>30,000.00</td>
+                  </tr>
+              </thead>
+            </table>
+          </div>
+          <div className="drp">
+          <table>
+              <thead>
+                <tr>
+                  <th><img src={play_icon} alt="" />Room No:</th>
+                  <th>256</th>
+                </tr>
+                <tr>
+                  <td>Date:</td>
+                  <td>13.04.2024</td>
+                </tr>
+                <tr>
+                  <td>Check-in:</td>
+                  <td>06:47pm</td>
+                </tr>
+                <tr>
+                  <td>Check-out:</td>
+                  <td>
+                    <p>13.04.2024</p>
+                    <p>12:00pm</p>
+                  </td>
+                </tr>
+                <tr>
+                    <td>Amount:</td>
+                    <td>30,000.00</td>
+                  </tr>
+              </thead>
+            </table>
+          </div>
+          <div className="drp">
+          <table>
+              <thead>
+                <tr>
+                  <th><img src={play_icon} alt="" />Room No:</th>
+                  <th>256</th>
+                </tr>
+                <tr>
+                  <td>Date:</td>
+                  <td>13.04.2024</td>
+                </tr>
+                <tr>
+                  <td>Check-in:</td>
+                  <td>06:47pm</td>
+                </tr>
+                <tr>
+                  <td>Check-out:</td>
+                  <td>
+                    <p>13.04.2024</p>
+                    <p>12:00pm</p>
+                  </td>
+                </tr>
+                <tr>
+                    <td>Amount:</td>
+                    <td>30,000.00</td>
+                  </tr>
+              </thead>
+            </table>
+          </div>
+
         </div>
 
 

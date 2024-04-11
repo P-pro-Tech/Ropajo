@@ -57,7 +57,7 @@
     font-size: 4vw;
     font-weight: normal;
 }
-.book-form input, button {
+.book-form input {
     display: block;
     margin: auto;
     width: 90%;
