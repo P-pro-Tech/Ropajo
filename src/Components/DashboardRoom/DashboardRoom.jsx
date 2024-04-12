@@ -5,15 +5,12 @@ import book_logo from '../../assets/mob-logo.svg';
 import mob_menu from '../../assets/mob-menu.svg'
 import play_icon from '../../assets/play-icon.svg';
 
-const DashboardRoom = () => {
+  
+const DashboardRoom = ({setProfileShow}) => {
   const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
 
-  // const toggleDropdown = (dropdownNumber, setActiveFunction) => {
-  //   setActiveFunction((prevState) => !prevState);
-  // };
-  
   return (
     <div className='dashboard-room'>
 
@@ -30,7 +27,7 @@ const DashboardRoom = () => {
               <li><Link  to="gallery" smooth={true} offset={0} duration={500} >Gallery</Link></li>
             </ul>
           </div>
-          <img src={mob_menu} alt="" className='dbr-mob-menu' />
+          <img src={mob_menu} alt="" className='dbr-mob-menu' onClick={()=> {setProfileShow(true)}}/>
         </div>
 
         <div className='dropdown-table'>

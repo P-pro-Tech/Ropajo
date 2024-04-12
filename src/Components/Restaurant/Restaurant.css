@@ -25,7 +25,7 @@
     font-family: Georgia;
     font-size: 5.29vw;
     font-weight: normal;
-    margin: 19.97vw 0 8.7vw 9.3vw;
+    margin: 19.97vw 0 8.7vw 5.3vw;
     color: #fdf0d5;
 }
 .opacity h3{
@@ -70,14 +70,17 @@
     }
     .opacity{
         align-items: center;
-        justify-content: center;
+
         margin: auto;
         width: 67%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
     .opacity h2{
         /* margin: 12% 10% 10% 20%; */
         /* font-size: 10vw; */
-        height: 60px;
+        height: 30px;
         width: 90%;
         text-align: center;
         margin: auto;
@@ -87,24 +90,26 @@
     .opacity h3{
         font-size: 3vw;
         margin: auto;
-        height: 50px;
+        height: 25px;
         width: 90%;
         text-align: center;
+
     }
     .opacity p {
         margin: auto;
         width: 80%;
-        height: 100px;
+        height: 70px;
         text-align: center;
         font-size: 2.4vw;
         line-height: 1.4;
+        margin: 1.5vw 4.37vw 1.3vw 9.7vw;
     }
     .opacity button {
         margin: auto;
-        width: 40%;
+        width: 100%;
         height: 45px;
         font-size: 4vw;
-        
+        justify-content: center;
     }
 
     .empty{

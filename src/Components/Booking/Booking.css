@@ -57,7 +57,7 @@
     font-size: 4vw;
     font-weight: normal;
 }
-.book-form input {
+.book-form input, .book-form button {
     display: block;
     margin: auto;
     width: 90%;
@@ -73,6 +73,7 @@
     color: #fdf0d5;
 
 }
+
 .book-submit {
     background-color: #fdf0d5 !important;
     color: #1f1515;
@@ -102,4 +103,26 @@
         margin-top: 3vh;
         margin-right: 7vw;
     }
+    .book-form button {
+        font-size: 3.5vw;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .book-form input::placeholder {
+        font-size: 4.3vw;
+    }
+    .book-submit {
+        font-size: 10.3vw;
+    }
+    .book-logo-holder img {
+        width: 25vw;
+    }
+    .book-form h1 {
+        font-size: 8vw;
+    }
+    /* .book-form button {
+        font-size: 4vw;
+    } */
 }

@@ -102,6 +102,7 @@
         word-wrap: normal;
         height: 55px;
         font-weight:2.3vw;
+        color: #fdf0d5;
     }
     .pool-content-left button {
         padding: 0 0 0 0;
@@ -135,6 +136,7 @@
         height: 65px;
         font-weight:2.3vw;
         line-height: 1.4;
+        color: #fdf0d5;
     }
 
 }

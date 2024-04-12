@@ -66,7 +66,8 @@
 .rotate-icon {
     transform: rotate(90deg);
     transition: transform 0.3s ease; /* Optional: Add a transition for a smoother rotation effect */
-  }
+}
+
 
 @media (max-width: 650px) {
     .dbr-nav {
@@ -94,6 +95,9 @@
         box-shadow: 1px 1px 3px 4px #1f1515;
         margin: 7vw 3vw 4vw 4vw;
         overflow-y: scroll;
+    .drp img{
+        width: 2vw;
+        height: 2vh;
     }
     .dropdown {
         height: auto;
@@ -129,5 +133,5 @@
     }
     
     
-
+    }
 }

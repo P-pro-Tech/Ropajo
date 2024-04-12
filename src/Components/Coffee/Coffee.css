@@ -97,7 +97,10 @@ h3 {
     }
     .vector-area {
         padding-left: 0;
+        height: 45vh;
+        margin-top: 10vh;
     }
+    
 }
 
 @media (max-width: 450px) {

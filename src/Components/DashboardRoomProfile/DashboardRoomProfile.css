@@ -6,12 +6,12 @@
     height: 100%;
     z-index: 100;
     background-color: rgba(31, 21, 21, 0.9);
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 
 @media (max-width: 650px) {
-    .dashboard-room-profile {
+    .dashboard-room-profile.hide {
         visibility: hidden;
     }
     .profile-cont {
@@ -19,6 +19,7 @@
         height: 30vh;
         background-color:  #1F1515;
         
+        text-align: center;
     }
     .profile-cont img {
         width: 12vw;
@@ -48,10 +49,12 @@
         position: absolute;
         top: 30px;
         right: 30px;
+        align-items: center;
     }
     .dbp-logo {
         padding: 20px;
         height: auto;
+        text-align: center;
     }
     .dbp-logo img {
         width: 40vw;
@@ -60,8 +63,11 @@
     .dbp-nav-list {
         height: 26.7vh;
     }
+    .dbp-nav-list ul {
+        text-align: center;
+    }
     .dbp-nav-list ul li {
-        /* padding: 15px 10px; */
+        
         font-size: 20px;
         height: 5vh;
         width: 100;
@@ -71,4 +77,5 @@
         background-color: #1F1515;
 
     }
+    
 }

@@ -30,11 +30,15 @@
     display: flex;
     padding-left: 30%;
 }
+.guest-form Link {
+    width: 15vw;
+    height: 7vh;
+}
 .guest-form  button {
     background: #1f1515;
     color: #fdf0d5;
     width: 15vw;
-    height: 59px;
+    height: 7vh;
     border-radius: 18px;
     margin: 0 16px;
     font-size: 20px;
@@ -66,9 +70,12 @@
 }
 
 @media (max-width: 1000px) {
+    .guest-form Link {
+        width: 20vw;
+    }
     .guest-form button{
         font-size: 14px;
-        width: 150px;
+        width: 20vw;
     }
     .guest-form input {
         font-size: 26px;
@@ -102,6 +109,7 @@
         padding: 0 0 0 0;
         gap: 20px;
         width: 100%;
+        text-align: center;
     }
     .guest-form legend {
         font-size: 3.2vw;
@@ -129,8 +137,11 @@
         border-radius: 0;
         background-color: #fdf0d5;;
         color: #000;
-        width: 45%;
+        width: 100%;
     }
+    .guest-form Link {
+        width: 45%;
+    } 
 }
 
 @media (max-width : 450px) {
