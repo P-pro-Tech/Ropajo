@@ -15,10 +15,10 @@
         visibility: visible;
     }-------------------------------------------------------------------------------------
     
-    /* .cont-mob-navbar {
+    .cont-mob-navbar {
         display: flex;
         flex-direction: column;
-    } */
+    }
     .mnb-arrow-up {
         padding: 25px;
         position: relative;
@@ -35,9 +35,16 @@
     .mnb-nav-list {
         height: 26.7vh;
     }
+    .mnb-nav-list ul {
+        /* display: flex;
+        flex-direction: column;
+        margin: auto; */
+        text-align: center;
+    }
     .mnb-nav-list ul li {
         padding: 15px 10px;
         cursor: pointer;
+        /* margin: auto; */
     }
     .mobile-nav-bar.hide {
         visibility: hidden;

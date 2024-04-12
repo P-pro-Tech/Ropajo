@@ -5,7 +5,7 @@ import book_logo from '../../assets/mob-logo.svg';
 import mob_menu from '../../assets/mob-menu.svg'
 import play_icon from '../../assets/play-icon.svg';
 
-const DashboardRoom = () => {
+const DashboardRoom = ({setProfileShow}) => {
   return (
     <div className='dashboard-room'>
 
@@ -22,7 +22,7 @@ const DashboardRoom = () => {
               <li><Link  to="gallery" smooth={true} offset={0} duration={500} >Gallery</Link></li>
             </ul>
           </div>
-          <img src={mob_menu} alt="" className='dbr-mob-menu' />
+          <img src={mob_menu} alt="" className='dbr-mob-menu' onClick={()=> {setProfileShow(true)}}/>
         </div>
 
 

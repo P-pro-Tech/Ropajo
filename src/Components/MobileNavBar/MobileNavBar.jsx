@@ -15,6 +15,10 @@ const MobileNavBar = ({viewMobileNav, setViewMobileNav}) => {
       }
   }
 
+  const handleNavClick = () => {
+    setViewMobileNav(false);
+  };
+
   return (
     <div className={`mobile-nav-bar ${viewMobileNav? "":"hide"}`}>
       <div className='cont-mob-navbar'>
@@ -27,11 +31,11 @@ const MobileNavBar = ({viewMobileNav, setViewMobileNav}) => {
         </div>
         <div className="mnb-nav-list">
           <ul>
-          <li><Link  to="room" smooth={true} offset={0} duration={500}  >Apartment</Link></li>
-            <li><Link  to="room" smooth={true} offset={0} duration={500} >Room</Link></li>
-            <li><Link  to="pool" smooth={true} offset={0} duration={500} >Pool</Link></li>
-            <li><Link  to="laundry" smooth={true} offset={-760} duration={500} >Laundry</Link></li>
-            <li><Link  to="gallery" smooth={true} offset={0} duration={500} >Gallery</Link></li>
+          <li><Link onClick={handleNavClick} to="room" smooth={true} offset={0} duration={500}  >Apartment</Link></li>
+            <li><Link onClick={handleNavClick} to="room" smooth={true} offset={0} duration={500} >Room</Link></li>
+            <li><Link onClick={handleNavClick} to="pool" smooth={true} offset={0} duration={500} >Pool</Link></li>
+            <li><Link onClick={handleNavClick} to="laundry" smooth={true} offset={-760} duration={500} >Laundry</Link></li>
+            <li><Link onClick={handleNavClick} to="gallery" smooth={true} offset={0} duration={500} >Gallery</Link></li>
           </ul>
         </div>
       </div>
