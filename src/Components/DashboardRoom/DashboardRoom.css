@@ -3,6 +3,8 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background: #FDF0D5;
+
 }
 .dbr-nav {
     width: inherit;
@@ -57,4 +59,24 @@
     .dbr-header h2{
         color: #1f1515;
     }
+    img{
+        width: 2vw;
+        height: 2vh;
+        /* background: blue; */
+    }
+    .drp-table{
+        background: #fff;
+        margin: auto;
+        width: 85vw;
+        height: 80vh;
+        box-shadow: 1px 1px 6px 2px #1F1515;
+        padding: 6vw;
+    }
+    table{
+        border: 1px solid #1F1515;
+    }
+    table tr td,p,th {
+        color: #1F1515;
+    }
+
 }
