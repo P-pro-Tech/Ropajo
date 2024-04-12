@@ -38,6 +38,35 @@
 .dbr-mob-menu {
     display: none;
 }
+.dropdown,.dropdown-btn, .dropdown-item-left,.dropdown-item-right{
+    color: #1F1515;
+    justify-content: center;
+    border-top: 0.1px solid #ece0e0;
+    
+}
+.dropdown-item-right p {
+    color: #1f1515;
+}
+.dropdown-item-left img{
+    width: 2.5vw;
+    margin-right: 2vw;
+    /* height: 2vw; */
+}
+.dropdown-item-left {
+    /* justify-content: center; */
+    align-items: center;
+}
+.dropdown-btn{
+    font-weight: bold;
+}
+.dropdown-content{
+    transform: 0.5s;
+}
+
+.rotate-icon {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease; /* Optional: Add a transition for a smoother rotation effect */
+  }
 
 @media (max-width: 650px) {
     .dbr-nav {
@@ -52,31 +81,53 @@
     .dbr-mob-menu {
         display: block;
         width: 7vw;
-        height: 5vh;
+        height: auto;
         margin-top: 3vh;
         margin-right: 7vw;
     }
     .dbr-header h2{
         color: #1f1515;
     }
-    img{
-        width: 2vw;
-        height: 2vh;
-        /* background: blue; */
+    .dropdown-table {
+        width: 90%;
+        height: 75vh;
+        box-shadow: 1px 1px 3px 4px #1f1515;
+        margin: 7vw 3vw 4vw 4vw;
+        overflow-y: scroll;
     }
-    .drp-table{
-        background: #fff;
-        margin: auto;
-        width: 85vw;
-        height: 80vh;
-        box-shadow: 1px 1px 6px 2px #1F1515;
-        padding: 6vw;
+    .dropdown {
+        height: auto;
     }
-    table{
-        border: 1px solid #1F1515;
+    .dropdown-btn {
+        background-color: #fffaee;
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 3px;
     }
-    table tr td,p,th {
-        color: #1F1515;
+    .dropdown-item {
+        background-color: #ececec;
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 3px;
     }
+    .dropdown-item-left {
+        
+        width: 50%;
+        height: auto;
+        display: flex;
+        padding: 3px;
+    }
+    .dropdown-item-right {
+        
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+    }
+    
+    
 
 }
