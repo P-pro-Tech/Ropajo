@@ -31,7 +31,6 @@ const DashboardRoom = () => {
 
 
         <div className='dbr-table'>
-        
         </div>
 
 
