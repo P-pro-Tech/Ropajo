@@ -14,6 +14,14 @@
     .mobile-nav-bar {
         visibility: visible;
     }-------------------------------------------------------------------------------------
+    .mnb-logo {
+        max-width: 100%;
+        height: 30vh;
+    }
+    .mnb-logo img {
+        width: 30%;
+        margin: auto;
+    }
     
     .cont-mob-navbar {
         display: flex;
@@ -30,7 +38,8 @@
     }
     .mnb-logo {
         padding: 30px;
-        
+        display: flex;
+        flex-direction: column;
     }
     .mnb-nav-list {
         height: 26.7vh;

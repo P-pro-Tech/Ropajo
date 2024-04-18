@@ -9,40 +9,64 @@
     height: inherit;
     align-items: center;
     text-align: left;
+    
+}
+.content-left-div {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    gap: 7vh;
+    margin-top: 20vh;
 }
 .pool-content-left h1 {
-    width: 30vw;
+    width: 20vw;
     height: 182px;
     font-family: Georgia;
-    font-size: 7vw;
+    font-size: 5vw;
     font-weight: normal;
-    margin: 158px 5% 9vh 25%;
+    /* margin: 158px 5% 9vh 25%; */
+    display: block;
+    margin: auto;
+}
+.pool-bold-text {
+    display: flex;
+    flex-direction: column;
+    /* gap: 7vh; */
+    justify-content: space-around;
+    /* display: block;
+    margin: auto; */
+    width: 100%;
+    height: 15vh;
 }
 .pool-content-left h3 {
     width: 30vw;
     height: 50px;
     font-family: Georgia;
-    font-size: 24px;
-    margin:  0px 232px 22px 25%;
+    font-size: 1.3vw;
+    margin-left: 11vw;
+    /* margin:  0px 232px 22px 25%; */
     color: #fdf0d5;
 }
 .pool-content-left p {
-    width: 25vw;
-    height: 79px;
+    width: 23vw;
+    height: 7vh;
     font-family: Georgia;
-    font-size: 14px;
-    margin: 0 141px 51px 25%;
-    word-wrap: break-word;
+    font-size: 1vw;
+    margin-left: 11vw;
+    /* margin: 0 141px 51px 25%; */
+    
+}
+.content-left-div a {
+    margin: auto;
+    margin-left: 11vw;  
 }
 .pool-content-left button {
     font-family: Georgia;
     border: thin solid #fdf0d5;
     background-color: #1f1515;
-    width: 134px;
-    height: 45px;
-    border-radius: 6px;
-    font-size: 24px;
-    margin: 0 343px 301px 25%;
+    padding: 1vh 1vw;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
 }
 .pool-content-right {
     width: 56.7%;
@@ -53,12 +77,11 @@
     height: inherit;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     .pool-content-left h1{
         font-size: 7vw;
         margin: 150px 5% 12px 25%;
-        /* width: 419px;
-        height: 18; */
+        
     }
     .pool-content-left p {
         font-size: 12px;
@@ -67,7 +90,7 @@
         margin-bottom: 70px;
     }
 
-}
+} */
 
 @media (max-width: 650px) {
     .pool {
@@ -116,7 +139,7 @@
         height: 60vh;
     }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .pool {
         height: 80vh;
     }

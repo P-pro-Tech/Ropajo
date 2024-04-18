@@ -14,13 +14,13 @@ const Gallery = () => {
       </div>
       <div className="grid-container">
         <div className='inner-gird-container'>
-        <div className="left-column">
-            <div className="small-box" id='one'></div>
-            <div className="small-box" id='two'></div>
-            <div className="small-box" id='three'></div>
-        </div>
-        <div className="right-column">
-        </div>
+          <div className="left-column">
+              <div className="small-box" id='one'></div>
+              <div className="small-box" id='two'></div>
+              <div className="small-box" id='three'></div>
+          </div>
+          <div className="right-column">
+          </div>
         </div>
       </div>
     </div>

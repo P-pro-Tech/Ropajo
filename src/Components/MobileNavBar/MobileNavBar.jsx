@@ -26,8 +26,8 @@ const MobileNavBar = ({viewMobileNav, setViewMobileNav}) => {
           <img src={top_icon} alt="" ref={mobviev} onClick={closeNamvBar}/>
         </div>
         <div className="mnb-logo">
-          <img src={ropa_logo} alt="" className='logo logo-child'/>
-          <img src={ropa_text} alt="" className='logo-child two'/>
+          <img src={ropa_logo} alt="" className='mob-nav-logo'/>
+          <img src={ropa_text} alt="" className='mob-nav-two'/>
         </div>
         <div className="mnb-nav-list">
           <ul>

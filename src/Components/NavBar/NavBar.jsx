@@ -22,9 +22,11 @@ const NavBar = ({setViewMobileNav}) => {
         </ul>
         <img src={mob_menu} alt="" className='mob-menu' onClick={()=> {setViewMobileNav(true)}}/>
         <div className="logo-container">
-        <img src={ropa_logo} alt="" className='logo logo-child'/>
-        <img src={ropa_text} alt="" className='logo-child two'/>
-        <button className='logo-child'>Book Now</button>
+          <div className='logo-arena'>
+            <img src={ropa_logo} alt="" className='logo '/>
+            <img src={ropa_text} alt="" className=' two'/>
+          </div>
+          <button className=''>Book Now</button>
         </div>
       </nav>
       <div className='nav-img-container'>

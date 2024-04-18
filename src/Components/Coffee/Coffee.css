@@ -1,68 +1,84 @@
 .coffee {
     width: 100%;
-    height: 982px;
+    height: 100vh;
     background-color: #fdf0d5;
     display: flex;
     flex-direction: row;
 }
 .img-area {
-    width: 47.4%;
+    width: 40%;
     align-items: center;
+    display: flex;
+    /* border: thin solid #000; */
 }
 .img-pouring-coffee {
     width: 24.93vw;
-    height: 79vh;
-    margin: 219px 0 0 12.23vw;
+    height: 58.2vh;
+    margin-left: 12.23vw;
     background: url("../../assets/Ropa6.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    /* background-position: center; */
 }
 
 .img-still-coffee {
-    width: 16vw;
-    height: 265px;
-    margin-left: 19.84vw;
-    margin-top: 280px;
+    width: 12vw;
+    height: 26.98vh;
+    margin-left: 14.84vw;
+    margin-top: 27vh;
 }
 
 .vector-area {
-    width: 52.6%;
+    width: 60%;
+    display: flex;
+    height: inherit;
+    padding-left: 2.2vw; 
+}
+.vector-area-inner {
+    height: 80vh;
+    /* border: thin solid #000; */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding-left: 30px;
+    justify-content: space-around;
+    margin: auto 0;
+    margin-left: 0;
+    /* gap: 5vh; */
 }
-.vector-area p,
-h3 {
+.vector-area-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 19vh;
+}
+.vector-area p,.vector-area h3 {
     color: #000;
-    font-family: Georgia;
     font-weight: 400;
-    word-wrap: break-word;
-    align-items: center;
+    /* font-family: Georgia;
+    
+    /* align-items: center; */
     display: block;
-    margin-left: 50px;
-    margin-top: -100px;
+    /* margin-left: 50px;
+    margin-top: -100px;  */
 }
 .vector-area h3 {
     width: 40vw;
-    height: 78px;
+    height: 2vw;
     font-size: 3.3vw;
     text-align: left;
 }
 .vector-area p {
-    font-size: 20px;
+    font-size: 1.3vw;
     width: 31vw;
     text-align: left;
 }
 .vector-1 {
-    width: 28.2vw;
-    margin-top: 13vh;
-    margin-left: 0;
+    width: 25.2vw;
+    /* margin-top: 13vh;
+    margin-left: 0; */
 }
 .vector-2 {
-    width: 27vw;
-    margin-left: 0;
+     width: 24vw;
+    /* margin-left: 0; */
 }
 @media (max-width:650px) {
     .coffee {

@@ -8,7 +8,7 @@
     padding: 6vw;
     font-family: Georgia;
 }
-.logo {
+.contact .logo {
     display: flex;
     flex-direction: column;
     gap: -30px;

@@ -9,9 +9,7 @@ const Rooms = () => {
         <div className='room'>
             <div className='room-left'>
                 <img src={Ropa3} alt="" />
-                {/* <p>+234 803 320 2272<br></br>
-                            ROPAJO@GMAIL.COM
-                        </p> */}
+                
             </div>
 
             <div className="room-right">
