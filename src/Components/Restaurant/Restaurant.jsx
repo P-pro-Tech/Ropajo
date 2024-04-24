@@ -9,9 +9,9 @@ return (
         <div className="empty">
         </div>
         <div className="opacity">
-            <div className=''>
-                <h2>Restaurant</h2>
-                <div className=''>
+            <div className='opacity-content'>
+                <h1>Restaurant</h1>
+                <div className='opacity-text'>
                     <h3>HIGH CLASS LUXURY</h3>
                     <p>Right in the heart of the Food Basket of Nigeria
                         Ropajo Hotels perfectly unveil its touch of luxury

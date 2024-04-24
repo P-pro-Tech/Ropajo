@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
 }
-.loc-text-sec p, h2 {
+.loc-text-sec p, .loc-text-sec h2 {
     color: #000;
     font-family: Georgia;
     text-align: right;
@@ -73,7 +73,12 @@
     .loc-text-holder {
         height: 27vh; 
     }
-    
+    .loc-text-sec p {
+        width: 40.7vw;
+        height: 7.6vh;
+        font-size: 1.9vw;
+        margin-left: 3vw;
+    }
 }
 
 @media (max-width: 450px) {

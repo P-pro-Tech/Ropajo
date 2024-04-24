@@ -20,31 +20,26 @@
 }
 .pool-content-left h1 {
     width: 20vw;
-    height: 182px;
+    height: 24vh;
     font-family: Georgia;
     font-size: 5vw;
     font-weight: normal;
-    /* margin: 158px 5% 9vh 25%; */
     display: block;
     margin: auto;
 }
 .pool-bold-text {
     display: flex;
     flex-direction: column;
-    /* gap: 7vh; */
     justify-content: space-around;
-    /* display: block;
-    margin: auto; */
     width: 100%;
     height: 15vh;
 }
 .pool-content-left h3 {
     width: 30vw;
-    height: 50px;
+    height: 6vh;
     font-family: Georgia;
     font-size: 1.3vw;
     margin-left: 11vw;
-    /* margin:  0px 232px 22px 25%; */
     color: #fdf0d5;
 }
 .pool-content-left p {
@@ -53,8 +48,6 @@
     font-family: Georgia;
     font-size: 1vw;
     margin-left: 11vw;
-    /* margin: 0 141px 51px 25%; */
-    
 }
 .content-left-div a {
     margin: auto;
@@ -76,22 +69,28 @@
     width: 100%;
     height: inherit;
 }
-
-/* @media (max-width: 1000px) {
-    .pool-content-left h1{
-        font-size: 7vw;
-        margin: 150px 5% 12px 25%;
-        
+@media (max-width: 1000px) {
+    .pool {
+        height: 80vh;
     }
-    .pool-content-left p {
-        font-size: 12px;
+    .content-left-div {
+        height: 48vh;
+        margin-top: 16vh;
+        gap: 3vh;
+    }
+    .pool-content-left h1 {
+        height: 15vh;
     }
     .pool-content-left h3 {
-        margin-bottom: 70px;
+        height: 4vh;
     }
-
-} */
-
+    .pool-content-left p {
+        line-height: 1.4;
+    }
+    .pool-bold-text {
+    
+    }
+}
 @media (max-width: 650px) {
     .pool {
         flex-direction: column;
@@ -113,7 +112,7 @@
         padding: 0 0 0 0;
         margin: auto;
         width: 50%;
-        height: 67px;
+        height: 10vh;
         font-size: 8.7vw;
     }
     .pool-content-left h3 {
@@ -157,13 +156,13 @@
         height: 40vh;
     }
     .pool-content-left h3 { 
-        height: 30px;
+        height: 4vh;
         width: 50%;
         font-size: 3vw;
     }
     .pool-content-left p {
         width: 65%;
-        height: 65px;
+        height: 9vh;
         font-weight:2.3vw;
         line-height: 1.4;
         color: #fdf0d5;
