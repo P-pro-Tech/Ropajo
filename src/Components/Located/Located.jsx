@@ -12,7 +12,7 @@ const Located = () => {
         </div>
       </div>
       <div className="loc-img-sec">
-        <div src={locate_img}  className='loc-img' ></div>
+        <div   className='loc-img' ></div>
       </div>
     </div>
   )

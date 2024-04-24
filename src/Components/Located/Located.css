@@ -4,6 +4,7 @@
     background-color: #fdf0d5;
     display: flex;
     flex-direction: row;
+
 }
 .loc-text-sec {
     width: 55.7%;
@@ -13,12 +14,11 @@
 }
 .loc-text-holder {
     margin: auto 0;
-    height: 50vh;
+    height: 47vh;
     width: 42vw;
     margin-left: 18vw;
     display: flex;
     flex-direction: column;
-    gap: 20vh;
 }
 .loc-text-sec p, h2 {
     color: #000;
@@ -30,9 +30,7 @@
 }
 .loc-text-sec h2 {
     width: 44vw;
-    height: 21.6vh;
     font-size: 5.8vw;
-    /* margin: 270px 0 170px 15.5vw; */
 }
 .loc-text-sec p {
     width: 35.7vw;
@@ -44,11 +42,10 @@
     width: 44.3%;
     display: flex;
 }
-.loc-img-sec .loc-img {
+.loc-img {
     width: 33.5vw;
     height: 70vh;
     float: left;
-    /* margin-top: 150px; */
     margin: auto 0;
     background: url(../../assets/Ropa8.jpeg);
     background-repeat: no-repeat;
@@ -56,45 +53,37 @@
 }
 
 @media (max-width: 1000px) {
-    .loc-text-sec h2 {
-        margin-bottom: 100px;
+    .located {
+        height: 80vh;
+    }
+    .loc-img {
+        height: 56vh;
+    }
+    .loc-text-holder {
+        height: 37vh;
     }
 }
 @media (max-width: 650px) {
     .located {
         height: 60vh;
     }
-    .loc-img-sec img {
-        margin-top: 30px;
-        height: 347px;
+    .loc-img {
+        height: 42vh;
     }
-    .loc-text-sec h2{
-        height: 18.6vh;
-        font-size: 5.64vw;
-        margin: 107px 10px 0px 14.5vw;
+    .loc-text-holder {
+        height: 27vh; 
     }
-    .loc-text-sec p {
-        font-size: 10px;
-    }
+    
 }
 
 @media (max-width: 450px) {
     .located {
         height: 50vh;
     }
-    .loc-img-sec img {
-        margin-top: 30px;
-        height: 247px;
+    .loc-img {
+        height: 35vh;
     }
-    .loc-text-sec h2{
-        /* height: 18.6vh; */
-        font-size: 5.64vw;
-        margin: 107px 10px 0px 14.5vw;
-        height: 13vh;
+    .loc-text-holder {
+        height: 23vh;
     }
-    .loc-text-sec p {
-        font-size: 10px;
-        width: 50vw;
-        margin-left: 12.5vw;
-    }
-}
+} 
