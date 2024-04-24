@@ -69,7 +69,7 @@
 }
 .guest-form input::placeholder {
     color: #1f1515;
-    opacity: 1; 
+    opacity: 0.6; 
 } 
 
 @media (max-width: 1000px) {
