@@ -106,6 +106,7 @@
     }
     .content-left-div {
         margin: 0 auto;
+        justify-content: space-around;
 
     }
     .pool-content-left h1 {
@@ -125,17 +126,18 @@
     .pool-content-left p {
         
         margin: auto;
-        width: 45%;
+        width: 55%;
         font-size: 2.3vw;
         color: #fdf0d5;
     }
     .content-left-div a {
-        background-color: white;
+        /* background-color: white; */
         margin: auto auto;
     }
     .pool-content-left button {
-        padding: 1vh 1vw;
+        padding: 2vh 4vw;
         /* margin: 0 auto; */
+        border-radius: 1.6vw;
         
         
         font-size: 3.5vw;
@@ -145,6 +147,11 @@
         height: 60vh;
     }
 }
+
+@media (max-width: 550px) {
+
+}
+
 @media (max-width: 450px) {
     .pool {
         height: 80vh;
@@ -155,13 +162,16 @@
     .pool-content-left {
         height: 40vh;
     }
+    .pool-content-left h1 {
+        width: 60%;
+    }
     .pool-content-left h3 { 
         height: 4vh;
         width: 50%;
         font-size: 3vw;
     }
     .pool-content-left p {
-        width: 65%;
+        width: 53%;
         height: 9vh;
         font-weight:2.3vw;
         line-height: 1.4;
@@ -171,5 +181,38 @@
         height: 37vh;
         gap: 2vh;
     }
+    .content-left-div a {
 
+    }
+    .content-left-div button {
+        padding: 2vh 4vw;
+        border-radius: 3vw;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .pool {
+        height: 60vh;
+    }
+    .pool-content-right {
+        height: 30vh;
+    }
+    .pool-content-left {
+        height: 30vh;
+    }
+    .content-left-div {
+        height: 20vh;
+        gap: 1vh;
+    }
+    .pool-bold-text {
+        height: 10vh;
+    }
+    .pool-bold-text p {
+        line-height: 1.7;
+    }
+    .content-left-div button {
+        padding: 1.5vh 4.2vw;
+        border-radius: 2vw;
+    }
 }
