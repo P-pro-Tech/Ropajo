@@ -159,16 +159,22 @@
         font-size: 9vw;
     }
     .opacity-text {
-        height: 27vh;
+        height: 24vh;
     }
     .opacity h3 {
-        font-size: 3.3vw;
-        height: 40px;
+        font-size: 3.5vw;
+        height: 4vh;
+        font-weight: normal;
     }
-    /* .opacity p {
+    .opacity p {
         width: 87%;
-        height: 100px;
+        height: 9vh;
         font-size: 2.4vw;
-        line-height: 1.9;
-    } */
+        line-height: 1.8;
+    }
+    .opacity-content button {
+        padding: 1.7vh 5vw;
+        border-radius: 2vw;
+        font-size: 4vw;
+    }
 }
