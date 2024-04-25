@@ -9,7 +9,7 @@
 
 .navbar-col {
     background: #1f1515;
-    max-width:  43.3%;
+    width:  43.3%;
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -185,16 +185,16 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .navBar {
-        height: 70vh;
-
+        height: 55vh;
     }
     .navbar-col {
-        height: 7vh;
+        height: 15vh;
+        
     }
     .nav-img-container {
-        height: 58vh;
+        height: 48vh;
     }
     .nav-contact p {
         
