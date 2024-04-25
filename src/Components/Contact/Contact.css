@@ -22,7 +22,8 @@
 }
 .logo p {
     color: #000; 
-    font-family: georgia;   
+    font-family: georgia;  
+    text-align: center; 
 }
 .list{
     margin-top: 3vw;

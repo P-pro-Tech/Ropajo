@@ -142,9 +142,11 @@
         background-color: #fdf0d5;;
         color: #000;
         width: 100%;
+        margin: auto;
     }
-    .guest-form Link {
+    .guest-form a {
         width: 45%;
+        
     } 
 }
 

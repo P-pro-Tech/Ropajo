@@ -130,7 +130,7 @@
         display: none;
     }
     .navBar ul {
-        position: fixed;
+        /* position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
@@ -141,7 +141,7 @@
         height: 100vh;
         padding-top: 70px;
         transition: .05s;
-        flex-direction: column;
+        flex-direction: column; */
         display: none;
     }
     .navBar ul li {
@@ -177,8 +177,8 @@
         height: 10vh;
         width: 30vw;
         position: absolute;
-        bottom: 10px; /* Adjust as needed */
-        right: 20px;
+        /* bottom: 10px; */
+        left: 65vw;
     }
         .nav-contact p {
         font-size: 2.3vw;
@@ -187,16 +187,28 @@
 
 @media (max-width: 450px) {
     .navBar {
-        height: 55vh;
+        height: 62vh;
     }
     .navbar-col {
-        height: 15vh;
-        
+        height: 12vh;
+        padding: 0px;
+    }
+    .mob-menu {
+        top: 5vh;
     }
     .nav-img-container {
-        height: 48vh;
+        height: 50vh;
     }
-    .nav-contact p {
-        
+    .nav-contact {
+        text-align: right;
+        height: 4vh;
+        width: 30vw;
+        position: absolute;
+        /* bottom: 10px; */
+        left: 62vw;
+    }
+        .nav-contact p {
+        font-size: 2.3vw;
+        /* font-weight: bold; */
     }
 }
