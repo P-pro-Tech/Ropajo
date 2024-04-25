@@ -74,7 +74,7 @@
         background-color: #1F1515;
     }
     .dbr-logo-holder img {
-        width: 20vw;
+        width: 40vw;
     }
     .dbr-nav-list ul {
         display: none;
@@ -83,7 +83,7 @@
         display: block;
         width: 7vw;
         height: auto;
-        margin-top: 3vh;
+        margin-top: 1.7vh;
         margin-right: 7vw;
     }
     .dbr-header h2{
@@ -92,7 +92,7 @@
     .dropdown-table {
         width: 90%;
         height: 75vh;
-        box-shadow: 1px 1px 3px 4px #1f1515;
+        box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
         margin: 7vw 3vw 4vw 4vw;
         overflow-y: scroll;
     .drp img{

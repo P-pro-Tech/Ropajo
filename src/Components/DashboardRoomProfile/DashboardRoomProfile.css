@@ -5,7 +5,8 @@
     width: 100%;
     height: 100%;
     z-index: 100;
-    background-color: rgba(31, 21, 21, 0.9);
+    background-color: #1F1515FA;
+    ;
     /* visibility: hidden; */
 }
 
@@ -18,12 +19,11 @@
         width: 100%;
         height: 30vh;
         background-color:  #1F1515;
-        
         text-align: center;
     }
     .profile-cont img {
-        width: 12vw;
-        height: 10vh;
+        width: 15vw;
+        height:15vw;
         border-radius: 50%;
         margin-top: 40px;
     }
@@ -74,7 +74,8 @@
         cursor: pointer;
     }
     .dbp-nav-list ul li:hover {
-        background-color: #1F1515;
+        background-color: #402F2F;
+        ;
 
     }
     

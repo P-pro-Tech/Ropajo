@@ -83,12 +83,16 @@
 
 @media (max-width: 450px) {
     .located {
-        height: 50vh;
+        height: 40vh;
     }
     .loc-img {
         height: 35vh;
     }
     .loc-text-holder {
         height: 23vh;
+    }
+    .loc-text-sec, .loc-img-sec {
+        height: 30vh;
+        margin-top: 7vh;
     }
 } 

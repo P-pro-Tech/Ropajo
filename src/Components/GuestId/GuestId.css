@@ -161,4 +161,7 @@
     .guest-form {
         margin: 5px 0 0 0px;
     }
+    .guest-form a {
+        width: 50%;
+    } 
 }
