@@ -52,7 +52,7 @@
     background-size: contain;
 }
 
-@media (max-width: 1000px) {
+@media screen and (min-width: 1000px) or (not (orientation: landscape)) {
     .located {
         height: 80vh;
     }
