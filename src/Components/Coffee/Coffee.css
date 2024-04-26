@@ -149,3 +149,19 @@
         height: 6vh;
     }
 }
+
+
+@media screen and (min-width : 450px) and (orientation : landscape) {
+    .vector-area-inner {
+        height: 70vh;
+    }
+    .vector-area h3 {
+        color: purple;
+    }
+}
+
+/* @media (max-width: 350px) {
+    .vector-area-inner {
+        height: 70vh;
+    }
+} */

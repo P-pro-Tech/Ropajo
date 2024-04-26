@@ -109,7 +109,7 @@
     }
     .guest-form {
         flex-direction: column;
-        margin: 10px 0 0 0px;
+        
         padding: 0 0 0 0;
         gap: 20px;
         width: 100%;
@@ -152,10 +152,10 @@
 
 @media (max-width : 450px) {
     .guest-id {
-        height: 53vh;
+        height: 43vh;
     }
     .guest-img-holder {
-        height: 30vh;
+        height: 20vh;
     }
     .guest-des-holder {
         height: 23vh;
@@ -167,3 +167,7 @@
         width: 50%;
     } 
 }
+
+/* @media (max-width : 450px) and (orientation : landscape) {
+
+} */
