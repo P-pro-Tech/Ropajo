@@ -69,7 +69,7 @@
     width: 100%;
     height: inherit;
 }
-@media (max-width: 1000px) {
+@media screen and (min-width: 1000px) or (not (orientation: landscape)) {
     .pool {
         height: 80vh;
     }

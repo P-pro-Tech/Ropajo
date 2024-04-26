@@ -120,7 +120,7 @@
     margin-left: 11vw;
 }
 
-@media (max-width: 1000px) {
+@media screen and (min-width: 1000px) or (not (orientation: landscape)) {
     .room{
         height: 80vh;
     }
