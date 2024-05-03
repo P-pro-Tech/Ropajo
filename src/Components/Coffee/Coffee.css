@@ -6,7 +6,8 @@
     flex-direction: row;
 }
 .img-area {
-    width: 40%;
+    margin-left: 20.5vh;
+    width: 50%;
     align-items: center;
     display: flex;
     /* border: thin solid #000; */
@@ -72,11 +73,13 @@
     text-align: left;
 }
 .vector-1 {
+    margin-left: -7vh;
     width: 25.2vw;
     /* margin-top: 13vh;
     margin-left: 0; */
 }
 .vector-2 {
+    margin-left: -4vh;
      width: 24vw;
     /* margin-left: 0; */
 }
