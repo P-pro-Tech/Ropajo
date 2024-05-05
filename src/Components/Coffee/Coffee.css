@@ -8,7 +8,7 @@
     /* margin-left: 100vh; */
 }
 .img-area {
-    /* margin-left: 2vh; */
+    margin-left: 19.5vh;
     width: 50%;
     align-items: center;
     display: flex;
@@ -68,11 +68,16 @@
 }
 .vector-1 {
     width: 27.2vw;
-    /* margin-left: -9vh; */
+    margin-left: -9vh;
 }
-
 .vector-2 {
-    /* margin-left: -4vh; */
+    width: 26vw;
+    width: 25.2vw;
+    /* margin-top: 13vh;
+    margin-left: 0; */
+}
+.vector-2 {
+    margin-left: -4vh;
     width: 24vw;
     /* margin-left: 0; */
 }
