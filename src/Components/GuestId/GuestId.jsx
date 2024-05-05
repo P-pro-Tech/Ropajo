@@ -15,7 +15,7 @@ const GuestId = () => {
                 <legend>Enter your unique Guest ID</legend>
                 <input type="text" name="" id="" placeholder='#R1410X'/>
             </fieldset>
-            <Link to='/DashboardComponents'><button type="submit">Enter Guest ID</button></Link>
+            <Link to='/DashboardRoom'><button type="submit">Enter Guest ID</button></Link>
         </form>
       </div>
     </div>

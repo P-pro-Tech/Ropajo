@@ -89,7 +89,7 @@
         font-size: 2.3vw;
     }
     .book-form {
-        width: 8    0%;
+        width: 80%;
     }
     .book-submit {
         font-size: 2.3vw;
@@ -112,6 +112,7 @@
     }
     .book-form h1 {
         text-align: center;
+        font-size: 9vw;
     }
 }
 

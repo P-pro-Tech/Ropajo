@@ -1,35 +1,23 @@
 import React, { useState } from 'react'
 import './DashboardRoom.css'
-import{Link} from 'react-scroll'
-import book_logo from '../../assets/mob-logo.svg';
-import mob_menu from '../../assets/mob-menu.svg'
+import DashboardRoomProfile from '../DashboardRoomProfile/DashboardRoomProfile';
 import play_icon from '../../assets/play-icon.svg';
+import DashBoardHeader from '../DashBoardHeader/DashBoardHeader';
 
   
-const DashboardRoom = ({setProfileShow}) => {
-  const [isActive1, setIsActive1] = useState(false);
-  const [isActive2, setIsActive2] = useState(false);
-  const [isActive3, setIsActive3] = useState(false);
+const DashboardRoom = () => {
+        const [isActive1, setIsActive1] = useState(false);
+        const [isActive2, setIsActive2] = useState(false);
+        const [isActive3, setIsActive3] = useState(false);
+
+        const [profileShow, setProfileShow] = useState(false);
 
   return (
     <div className='dashboard-room'>
-
-      <div className="dbr-nav">
-          <div className="dbr-logo-holder">
-            <img src={book_logo} alt="" />
-          </div>
-          <div className="dbr-nav-list">
-            <ul>
-              <li><Link  to="room" smooth={true} offset={0} duration={500}  >Apartment</Link></li>
-              <li><Link  to="room" smooth={true} offset={0} duration={500} >Room</Link></li>
-              <li><Link  to="pool" smooth={true} offset={0} duration={500} >Pool</Link></li>
-              <li><Link  to="laundry" smooth={true} offset={-760} duration={500} >Laundry</Link></li>
-              <li><Link  to="gallery" smooth={true} offset={0} duration={500} >Gallery</Link></li>
-            </ul>
-          </div>
-          <img src={mob_menu} alt="" className='dbr-mob-menu' onClick={()=> {setProfileShow(true)}}/>
-        </div>
-
+      <div>
+            <DashboardRoomProfile profileShow={profileShow} setProfileShow={setProfileShow}/>
+            <DashBoardHeader setProfileShow={setProfileShow}/>
+      </div>     
         <div className='dropdown-table'>
           <div className='dropdown'>
           <div className="dropdown-btn">
