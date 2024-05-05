@@ -6,8 +6,7 @@
     flex-direction: row;
 }
 .img-area {
-    margin-left: 20.5vh;
-    width: 50%;
+    width: 40%;
     align-items: center;
     display: flex;
 }
@@ -69,15 +68,6 @@
 }
 .vector-2 {
     width: 26vw;
-    margin-left: -7vh;
-    width: 25.2vw;
-    /* margin-top: 13vh;
-    margin-left: 0; */
-}
-.vector-2 {
-    margin-left: -4vh;
-    width: 24vw;
-    /* margin-left: 0; */
 }
 
 @media screen and (min-width: 1000px) or (not (orientation: landscape)) {
