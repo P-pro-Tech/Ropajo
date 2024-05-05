@@ -4,8 +4,6 @@
     background-color: #fdf0d5;
     display: flex;
     flex-direction: row;
-    
-    /* margin-left: 100vh; */
 }
 .img-area {
     margin-left: 20.5vh;
