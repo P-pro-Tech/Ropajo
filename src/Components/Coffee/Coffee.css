@@ -108,7 +108,7 @@
     }
 }
 
-@media (max-width:650px) {
+@media (max-width: 650px) {
     .coffee {
         height: 70vh;
     }
