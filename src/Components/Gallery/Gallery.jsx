@@ -11,7 +11,9 @@ const Gallery = () => {
       <div className="text">
         <div className='gallery-text-board'>
         <h2>Local and Intercontinental dishes</h2>
-        <p>Right in the heart of the Food Basket of  Nigeria. Ropajo Hotels perfectly unveil its touch of luxury and creativity in a space.</p>
+        <p>Right in the heart of the Food Basket of  Nigeria. Ropajo Hotels 
+            perfectly unveil its touch of
+            luxury and creativity in a space.</p>
         </div>
       </div>
       <div className="grid-container">

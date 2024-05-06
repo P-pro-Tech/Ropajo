@@ -180,8 +180,21 @@
         height: 70vh;
     }
     .text {
-        height: 15vh;
+        height: 13vh;
     }
+    .gallery-text-board {
+        height: 11vh;
+        
+    }
+    .gallery-text-board h2 {
+        height: 4vh;
+        /* background-color: green; */
+    }
+    .gallery-text-board p {
+        height: 7vh;
+        /* background-color: blue; */
+    }
+
     .grid-container{
         height: 55vh;
     }
