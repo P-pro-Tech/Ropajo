@@ -7,7 +7,7 @@
 
 }
 .loc-text-sec {
-    width: 55.7%;
+    width: 50.7%;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
     margin: auto 0;
     height: 47vh;
     width: 42vw;
-    margin-left: 18vw;
+    margin-left: 13vw;
     display: flex;
     flex-direction: column;
 }
@@ -39,7 +39,7 @@
     margin-left: 8.5vw;
 }
 .loc-img-sec {
-    width: 44.3%;
+    width: 49.3%;
     display: flex;
 }
 .loc-img {
