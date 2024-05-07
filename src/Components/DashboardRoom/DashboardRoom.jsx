@@ -3,6 +3,7 @@ import './DashboardRoom.css'
 import DashboardRoomProfile from '../DashboardRoomProfile/DashboardRoomProfile';
 import play_icon from '../../assets/play-icon.svg';
 import DashBoardHeader from '../DashBoardHeader/DashBoardHeader';
+import GuestDashBoard from '../GuestDashBoard/GuestDashBoard';
 
   
 const DashboardRoom = () => {
@@ -14,11 +15,60 @@ const DashboardRoom = () => {
 
   return (
     <div className='dashboard-room'>
-      <div>
+      <div className='dashboard-room-mobile-header'>
             <DashboardRoomProfile profileShow={profileShow} setProfileShow={setProfileShow}/>
             <DashBoardHeader setProfileShow={setProfileShow}/>
-      </div>     
-        <div className='dropdown-table'>
+      </div> 
+      <div className='dashboard-room-web'>
+        <div className='dbrw-guest-section'>
+          <GuestDashBoard/>
+        </div>
+        <div className='dbrw-content-section'>
+            <div className='dbrw-content-head'>
+              <p>Back to Homepage</p>
+            </div>
+            <div className='dbrw-content-body'>
+              <p>Rooms/Apartment</p>
+              <div>
+                <div className='dbrw-content-table-section'>
+                  <div className='dbrw-web-table-holder'>
+                    <table className='dbrw-web-table'>
+                      <tr>
+                        <th>Room No.</th>
+                        <th>Date</th>
+                        <th>Check in</th>
+                        <th>Check Out</th>
+                        <th>Amount</th>
+                      </tr>
+                      <tr>
+                        <td>256</td>
+                        <td>13.02.2023</td>
+                        <td>06:47pm</td>
+                        <td>
+                          <i>14:02:2023</i>
+                          <i>12:00pm</i>
+                        </td>
+                        <td>30,000.00</td>
+                      </tr>
+                      <tr>
+                        <td>112</td>
+                        <td>27.10.2023</td>
+                        <td>02:47pm</td>
+                        <td>
+                          <i>14:02:2023</i>
+                          <i>12:00pm</i>
+                        </td>
+                        <td>80,000.00</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+          
+        <div className='dropdown-mobile-table'>
           <div className='dropdown'>
           <div className="dropdown-btn">
           <div className="dropdown-item-left">
