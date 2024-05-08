@@ -17,10 +17,10 @@ return (
             <div className='register-body'>
                 <form  className="register-form">
                     <h1>Register</h1>
-                    <input type="text" name="" id=""  placeholder='Full Names'/>
+                    <input type="text" name="" id=""  placeholder='Staff Names'/>
                     <input type="email" name="" id="" placeholder='Email'/>
                     <input type="number" name="" id="" placeholder='Phone Number'/>
-                    <input type="number" name="" id="" placeholder=' Identity No.'/>
+                    <input type="number" name="" id="" placeholder=' D.O.B'/>
                     <input type="file" name=" " id="" placeholder='Upload ID:' hidden/>
                     <button type="submit" className='register-submit'>Submit</button>
                 </form>
