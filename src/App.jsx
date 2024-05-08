@@ -6,6 +6,9 @@ import LandingPage from './Components/LandingPage/LandingPage';
 import DashboardComponents from './Components/DashboardComponents/DashboardComponents';
 import DashboardRoom from './Components/DashboardRoom/DashboardRoom';
 import Register from './Components/Register/Register';
+import DashboardLaundry from './Components/DashboardLaundry/DashboardLaundry';
+import DashboardAccount from './Components/DashboardAccount/DashboardAccount';
+import SignIn from './Components/SignIn/SignIn';
 
 function App() {
   
@@ -20,6 +23,9 @@ function App() {
             <Route path='/DashboardComponents' element={<DashboardComponents/>}/>
             <Route path='/DashboardRoom' element={<DashboardRoom/>}/>
             <Route path='/Register' element={<Register/>}/>
+            <Route path='/DashboardLaundry' element={<DashboardLaundry/>}/>
+            <Route path='/DashboardAccount' element={<DashboardAccount/>}/>
+            <Route path='/SignIn' element={<SignIn/>}/>
           </Routes>
         </div>
       </div>

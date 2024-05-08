@@ -4,6 +4,7 @@ import ropa_logo from '../../assets/mob-logo.svg'
 import profile_pic from '../../assets/profile_pic.png'
 import { Link } from 'react-router-dom'
 
+
 const GuestDashBoard = () => {
 return (
     <div className='guestDashBoard'>
@@ -20,11 +21,11 @@ return (
         </div>
         <div className='guestDashBoard-lower-sec'>
                 <ul>
-                    <Link><li>Rooms/Apartment</li></Link>
-                    <Link><li>Laundry</li></Link>
+                    <Link to='/DashboardRoom'><li>Rooms/Apartment</li></Link>
+                    <Link to='/DashboardLaundry'><li>Laundry</li></Link>
                     <Link><li>Pool</li></Link>
                     <Link><li>Restaurant</li></Link>
-                    <Link><li>Account</li></Link>
+                    <Link to='/DashboardAccount'><li>Account</li></Link>
                     <Link><li>Signout</li></Link>
                 </ul>
         </div>

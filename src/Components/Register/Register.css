@@ -1,5 +1,6 @@
 .register {
     background: url(../../assets/register-img.jpg);
+    background-repeat: no-repeat;
     background-color: red;
     width: 100%;
     height: 100vh;
@@ -13,7 +14,7 @@
 
 .register-body {
     width: inherit;
-    height: 90vh;
+    height: 80vh;
 }
 .register-form {
     margin: auto;
