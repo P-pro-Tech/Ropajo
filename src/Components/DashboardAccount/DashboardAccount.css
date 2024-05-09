@@ -17,7 +17,7 @@
 .dashAccount-content-head {
     width: 100%;
     height: 10vh;
-    border-bottom: thin solid #1F1515;
+    border-bottom: 0.2vh solid #1F1515;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -25,6 +25,7 @@
 .dashAccount-content-head a {
     color: rgba(31, 21, 21, 1);
     margin-right: 7vh;
+    font-size: 1.05vw;
 }
 .dashAccount-content-body {
     width: 100%;
@@ -59,18 +60,19 @@
     /* border: thin solid #000; */
 }
 .dashAccount-web-table tr {
-    border: thin solid #000;
+    border-bottom: thin solid #000 !important; 
     height: 7vh;
-
 }
 .dashAccount-web-table thead tr th{
     color: #1F1515;
-    border-bottom: thin solid #000;
+    border-bottom: 0.2vh solid #000;
+    font-size: 1.05vw;
 }
 .dashAccount-web-table tbody tr td  {
     color: #1F1515;
     text-align: center;
-    border-bottom: thin solid #000;
+    border-bottom: 0.2vh solid #000;
+    font-size: 1.05vw;
 }
 .dashAccount-web-table tr td div {
     color: #1F1515;
@@ -79,7 +81,9 @@
 .dashAccount-total {
     color: #000;
     float: right;
+    font-size: 1.2vw;
 }
 .dashAccount-total-amount {
     color: #000;
+    font-size: 1.05vw;
 }

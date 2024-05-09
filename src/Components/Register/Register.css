@@ -32,7 +32,7 @@
     font-weight: normal;
     text-align: center;
 }
-.register-form input, .register-form button {
+.register-form input, .register-form button, .register-form div {
     display: block;
     margin: auto;
     width: 90%;
@@ -46,7 +46,25 @@
 }
 .register-form input::placeholder {
     color: #fdf0d5;
+}
 
+input[type='file'] {
+    display: none;
+}
+
+.register-file-label {
+    border: thin solid rgba(253, 240, 213, 1);
+    padding: 1vh 2vw;
+    cursor: pointer;
+    float: right;
+}
+.register-form div span {
+    font-size: 1.3vw;
+}
+.register-form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .register-submit {

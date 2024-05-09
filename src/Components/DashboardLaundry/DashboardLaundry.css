@@ -17,7 +17,7 @@
 .dashLaundry-content-head {
     width: 100%;
     height: 10vh;
-    border-bottom: thin solid #1F1515;
+    border-bottom: 0.2vh solid #1F1515;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -25,6 +25,7 @@
 .dashLaundry-content-head a {
     color: rgba(31, 21, 21, 1);
     margin-right: 7vh;
+    font-size: 1.05vw;
 }
 .dashLaundry-content-body {
     width: 100%;
@@ -65,12 +66,15 @@
 }
 .dashLaundry-web-table thead tr th{
     color: #1F1515;
-    border-bottom: thin solid #000;
+    border-bottom: 0.2vh solid #000;
+    font-size: 1.05vw;
 }
 .dashLaundry-web-table tbody tr td  {
     color: #1F1515;
     text-align: center;
-    border-bottom: thin solid #000;
+    border-bottom: 0.2vh solid #000;
+    font-size: 1.05vw;
+    
 }
 .dashLaundry-web-table tr td div {
     color: #1F1515;

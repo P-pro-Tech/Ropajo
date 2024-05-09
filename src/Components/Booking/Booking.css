@@ -60,7 +60,7 @@
     font-weight: normal;
     text-align: center;
 }
-.book-form input, .book-form button {
+.book-form input, .book-form button, .book-form div {
     display: block;
     margin: auto;
     width: 90%;
@@ -74,7 +74,21 @@
 }
 .book-form input::placeholder {
     color: #fdf0d5;
+}
 
+.book-file-label {
+    border: thin solid rgba(253, 240, 213, 1);
+    padding: 1vh 2vw;
+    cursor: pointer;
+    float: right;
+}
+.book-form div span {
+    font-size: 1.3vw;
+}
+.book-form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .book-submit {

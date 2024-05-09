@@ -22,7 +22,11 @@ const Booking = () => {
             <input type="email" name="" id="" placeholder='Email'/>
             <input type="number" name="" id="" placeholder='Phone Number'/>
             <input type="number" name="" id="" placeholder=' Identity No.'/>
-            <input type="file" name=" " id="" placeholder='Upload ID:' hidden/>
+            <div>
+              <span>Upload ID:</span>
+              <input type="file" name="" id="file" placeholder='Upload ID:' hidden />
+              <label htmlFor="file" className='book-file-label'>upload</label>
+            </div>
             <button type="submit" className='book-submit'>Submit</button>
           </form>
         </div>

@@ -21,7 +21,11 @@ return (
                     <input type="email" name="" id="" placeholder='Email'/>
                     <input type="number" name="" id="" placeholder='Phone Number'/>
                     <input type="number" name="" id="" placeholder=' D.O.B'/>
-                    <input type="file" name=" " id="" placeholder='Upload ID:' hidden/>
+                    <div>
+                        <span>Upload ID:</span>
+                        <input type="file" name="" id="file" placeholder='Upload ID:' hidden />
+                        <label htmlFor="file" className='register-file-label'>upload</label>
+                    </div>
                     <button type="submit" className='register-submit'>Submit</button>
                 </form>
             </div>
