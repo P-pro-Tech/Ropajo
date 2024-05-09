@@ -1,10 +1,13 @@
 .register {
-    background: url(../../assets/register-img.jpg);
-    background-repeat: no-repeat;
-    background-color: red;
-    width: 100%;
-    height: 100vh;
+  background: url(../../assets/register-img.jpg); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* Optional: Center the image */
+  width: 100%;
+  height: 100vh;
 }
+
+
 .register-hue {
     background-color: rgba(31, 21, 21, 0.9);
     width: inherit;
@@ -24,7 +27,7 @@
 .register-form h1 {
     display: block;
     margin: auto;
-    margin: 30px 10px;
+    margin: 4vh 1vw;
     font-size: 4vw;
     font-weight: normal;
     text-align: center;
@@ -33,12 +36,12 @@
     display: block;
     margin: auto;
     width: 90%;
-    height: 50px;
+    height: 6.7vh;
     background-color: transparent;
     outline: none;
     border: none;
     border-bottom: thin solid #fdf0d5;
-    margin: 30px 10px;
+    margin: 4vh 2vw;
     font-size: 1.3vw;
 }
 .register-form input::placeholder {
@@ -49,7 +52,7 @@
 .register-submit {
     background-color: #fdf0d5 !important;
     color: #1f1515;
-    border-radius: 10px;
+    border-radius: 1vw;
 }
 
 @media (max-width: 650px) {

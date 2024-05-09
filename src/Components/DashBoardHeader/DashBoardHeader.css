@@ -24,7 +24,7 @@
 .dbr-nav-list ul {
     display: flex;
     list-style: none;
-    margin-left: 50px;
+    margin-left: 2vw
 }
 .dbr-nav-list ul li {
     display: inline-block;
