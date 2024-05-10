@@ -54,12 +54,19 @@ input[type='file'] {
 
 .register-file-label {
     border: thin solid rgba(253, 240, 213, 1);
-    padding: 1vh 2vw;
+    /* padding: 1vh 2vw; */
+    width: 9vw;
+    height: 5vh;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     float: right;
 }
 .register-form div span {
     font-size: 1.3vw;
+
 }
 .register-form div {
     display: flex;
@@ -91,7 +98,19 @@ input[type='file'] {
         text-align: center;
         font-size: 9vw;
     }
+    .register-form div span {
+        font-size: 2.3vw;
+    
+    }
+    .register-file-label {
+        width: 20vw;
+        /* height: 4vh; */
+        font-size: 2.3vw;
+    }
 }
+
+
+
 
 @media (max-width: 450px) {
 
@@ -111,5 +130,14 @@ input[type='file'] {
     }
     .register-form h1 {
         font-size: 8vw;
+    }
+    .register-form div span {
+        font-size: 4.3vw;
+    
+    }
+    .register-file-label {
+        width: 30vw;
+        
+        font-size: 4.3vw;
     }
 }
