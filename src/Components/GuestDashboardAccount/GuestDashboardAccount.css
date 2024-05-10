@@ -1,0 +1,65 @@
+.guestDashboardAccount {
+    background: url(../../assets/register-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.gda-header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: thin solid rgba(31, 21, 21, 0.8);
+
+}
+
+.gda-header-hue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(31, 21, 21, 0.8);
+    width: 48vw;
+    height: inherit;
+}
+.gda-header-hue img {
+    width: 15vw;
+}
+.gda-body {
+    background: rgba(31, 21, 21, 0.8);
+    width: 48vw;
+    height: 75vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.gda-body-upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+}
+.gda-body-lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+.gda-body-lower-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+}
+.gda-body-lower span a {
+    color: rgb(23, 13, 13);
+
+}

@@ -9,6 +9,7 @@ import Register from './Components/Register/Register';
 import DashboardLaundry from './Components/DashboardLaundry/DashboardLaundry';
 import DashboardAccount from './Components/DashboardAccount/DashboardAccount';
 import SignIn from './Components/SignIn/SignIn';
+import GuestDashboardAccount from './Components/GuestDashboardAccount/GuestDashboardAccount';
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
             <Route path='/DashboardLaundry' element={<DashboardLaundry/>}/>
             <Route path='/DashboardAccount' element={<DashboardAccount/>}/>
             <Route path='/SignIn' element={<SignIn/>}/>
+            <Route path='/GuestDashboardAccount' element={<GuestDashboardAccount/>}/>
           </Routes>
         </div>
       </div>
