@@ -10,6 +10,7 @@ import DashboardLaundry from './Components/DashboardLaundry/DashboardLaundry';
 import DashboardAccount from './Components/DashboardAccount/DashboardAccount';
 import SignIn from './Components/SignIn/SignIn';
 import GuestDashboardAccount from './Components/GuestDashboardAccount/GuestDashboardAccount';
+import AssignRoom from './Components/AssignRoom/AssignRoom';
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
             <Route path='/DashboardAccount' element={<DashboardAccount/>}/>
             <Route path='/SignIn' element={<SignIn/>}/>
             <Route path='/GuestDashboardAccount' element={<GuestDashboardAccount/>}/>
+            <Route path='/AssignRoom' element={<AssignRoom/>}/>
           </Routes>
         </div>
       </div>

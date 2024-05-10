@@ -1,0 +1,52 @@
+.assignRoom {
+    width: 100%;
+    height: 100vh;
+    background: url(../../assets/assign-room.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.assignRoom-hue {
+    width: 100%;
+    height: 100vh;
+    background: rgba(31, 21, 21, 0.9);
+}
+.head {
+    height: 10vh;
+    width: 100%;
+    border-bottom: thin solid ;
+}
+.assignRoom-body {
+    width: 50%;
+    margin: auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.assignRoom-body-top {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.assignRoom-body-middle {
+    height: 20vh;
+}
+.assignRoom-body-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+}
+.assignRoom-body-bottom button{
+    width: 80%;
+    height: 6vh;
+    color: rgba(31, 21, 21, 1);
+    border: none;
+    border-radius: 0.8vw;
+
+}
