@@ -11,6 +11,8 @@ import DashboardAccount from './Components/DashboardAccount/DashboardAccount';
 import SignIn from './Components/SignIn/SignIn';
 import GuestDashboardAccount from './Components/GuestDashboardAccount/GuestDashboardAccount';
 import AssignRoom from './Components/AssignRoom/AssignRoom';
+import RegisterGuests from './Components/RegisterGuests/RegisterGuests';
+import Reservations from './Components/Reservations/Reservations';
 
 function App() {
   
@@ -30,6 +32,8 @@ function App() {
             <Route path='/SignIn' element={<SignIn/>}/>
             <Route path='/GuestDashboardAccount' element={<GuestDashboardAccount/>}/>
             <Route path='/AssignRoom' element={<AssignRoom/>}/>
+            <Route path='/RegisterGuests' element={<RegisterGuests/>}/>
+            <Route path='/Reservations' element={<Reservations/>}/>
           </Routes>
         </div>
       </div>

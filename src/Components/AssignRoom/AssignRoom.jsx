@@ -1,5 +1,6 @@
 import React from 'react'
 import './AssignRoom.css'
+import GuestReservationHeader from '../GuestReservationHeader/GuestReservationHeader'
 
 
 const AssignRoom = () => {
@@ -7,7 +8,7 @@ return (
     <div className='assignRoom'>
         <div className='assignRoom-hue'>
         <div className='head'>
-            head
+            <GuestReservationHeader/>
         </div>
         <div className='assignRoom-body'>
             <div className='assignRoom-body-top'>

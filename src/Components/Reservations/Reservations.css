@@ -1,0 +1,127 @@
+.reservations {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/booking_bg.jpg);
+}
+.reservations-hue {
+    width: 100%;
+    height: 100vh;
+    background: rgba(31, 21, 21, 0.9);
+}
+.reservations-body {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reservations-body-content-holder {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+}
+.reservations-body-content-holder h1 {
+    font-weight: normal;
+    font-size: 3vw;
+    margin-top: 3vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reservations-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.reservations-type-input {
+    width: 100%;
+    height: 5.7vh;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: thin solid #fdf0d5;
+    margin: 2vh 1vw;
+    font-size: 1.3vw;
+}
+.reservations-type-input::placeholder {
+    color: #fdf0d5;
+}
+
+.reservations-type-input label {
+    border: thin solid rgba(253, 240, 213, 1);
+    /* padding: 1vh 2vw; */
+    width: 9vw;
+    height: 5vh;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    float: right;
+}
+.reservations-type-input span {
+    font-size: 1.3vw;
+}
+.reservations-type-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/**/
+.reservations-form25p {
+    width: 23%;
+    height: 6vh; 
+    background: rgba(253, 240, 213, 1);
+    outline: none;
+    border: none;
+    color: rgba(31, 21, 21, 1);
+    border-radius: 0.5vw;
+    font-size: 1vw;
+}
+.reservations-form-100p[type="submit"] {
+    background: rgba(253, 240, 213, 1);
+    color: rgba(31, 21, 21, 1);
+    font-size: 1.2vw;
+}
+
+.reservations-form-holder {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.reservations-form-100p {
+    width: 100%;
+    height: 6vh;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1vw;
+}
+/**/
+
+@media (max-width: 650px) {
+    .reservations-type-input span {
+        font-size: 2.3vw;
+    
+    }
+    .reservations-type-input label {
+        width: 20vw;
+        font-size: 2.3vw;
+    }
+}
+
+@media (max-width: 450) {
+    .reservations-type-input span {
+        font-size: 4.3vw;
+    }
+    .reservations-type-input label {
+        width: 30vw;
+        font-size: 4.3vw;
+    }
+}
