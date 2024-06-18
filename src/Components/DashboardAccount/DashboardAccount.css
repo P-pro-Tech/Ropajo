@@ -1,6 +1,13 @@
 .dashboardAccount {
     width: 100%;
     height: 100vh;
+    
+    background-color: rgba(253, 240, 213, 1);
+}
+
+.dashboardAccount-web {
+    width: 100%;
+    height: 100vh;
     display: flex;
     background-color: rgba(253, 240, 213, 1);
 }
@@ -57,26 +64,47 @@
     width: 95%;
     height: auto;
     margin: auto;
-    /* border: thin solid #000; */
+    
 }
-.dashAccount-web-table tr {
+.dashAccount-web-table div {
     border-bottom: thin solid #000 !important; 
     height: 7vh;
 }
-.dashAccount-web-table thead tr th{
+.dashAccount-web-table thead div  {
     color: #1F1515;
-    border-bottom: 0.2vh solid #000;
+    
     font-size: 1.05vw;
+    display: flex;
+    justify-content: space-around;
 }
-.dashAccount-web-table tbody tr td  {
+.dashAccount-web-table thead div span  {
     color: #1F1515;
     text-align: center;
-    border-bottom: 0.2vh solid #000;
+    font-weight: 600;
     font-size: 1.05vw;
+    width: 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-bottom: 1vh;
+}
+.dashAccount-web-table tbody div {
+    display: flex;
+    justify-content: space-around;
+}
+.dashAccount-web-table tbody div span  {
+    color: #1F1515;
+    text-align: center;
+    
+    font-size: 1.05vw;
+    width: 17%;
+    display: flex;
+    align-items: end;
+    margin-bottom: 1vh;
 }
 .dashAccount-web-table tr td div {
     color: #1F1515;
-    /* text-align: center; */
+    
 }
 .dashAccount-total {
     color: #000;
@@ -86,4 +114,76 @@
 .dashAccount-total-amount {
     color: #000;
     font-size: 1.05vw;
+    font-weight: 600;
+}
+.mobile-dasboardAccount {
+    display: none;
+}
+.bill-red {
+    color: rgba(224, 0, 40, 1) !important; 
+}
+.paid-green {
+    color: rgba(0, 144, 32, 1) !important;
+    
+}
+
+@media (max-width:650px) {
+    .dashboardAccount-web {
+        display: none;
+    }
+    /* .dashAccount-guest-section {
+        display: none;
+    }
+    .dashAccount-content-section {
+        display: none;
+    } */
+    .mobile-dasboardAccount {
+        display: block;
+    }
+    .mobile-dasboardAccount-body {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-dasboardAccount-display-amount {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mobile-dasboardAccount-display-amount span {
+        color: rgba(31, 21, 21, 1);
+        
+    }
+    .mobile-dasboardAccount-display-amount span h3 {
+        color: rgba(31, 21, 21, 1);
+        
+    }
+    .mobile-dasboardAccount-table-container {
+        background: rgba(236, 236, 236, 1);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25) ;
+        width: 90%;
+    }
+    .mobile-dasboardAccount-dropdown-btn-sec {
+        width: 100%;
+        background: rgba(255, 250, 238, 1);
+
+    }
+    .mobile-dasboardAccount-dropdown-btn-sec td {
+        color: #000;
+    }
+    .mobile-dasboardAccount-dropdown-content {
+        width: 100%;
+        background: rgba(236, 236, 236, 1);
+
+    }
+    .mobile-dasboardAccount-dropdown-content div {
+        border: thin solid red !important;
+    }
+    .mobile-dasboardAccount-dropdown-content td {
+        color: rgba(31, 21, 21, 0.6);
+    }
 }
