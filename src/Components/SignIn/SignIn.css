@@ -56,3 +56,65 @@
     color: #1f1515;
     border-radius: 1vw;
 }
+
+@media (max-width: 650px) {
+    .signIn-form input::placeholder {
+        font-size: 2.3vw;
+    }
+    .signIn-form {
+        width: 80%;
+    }
+    .signIn-submit {
+        font-size: 2.3vw;
+    }
+    /* */
+    .signIn-form button {
+        font-size: 3.5vw;
+    }
+    .signIn-form h1 {
+        text-align: center;
+        font-size: 9vw;
+    }
+    .signIn-form div span {
+        font-size: 2.3vw;
+    
+    }
+    .signIn-file-label {
+        width: 20vw;
+        /* height: 4vh; */
+        font-size: 2.3vw;
+    }
+}
+
+
+
+
+@media (max-width: 450px) {
+
+    .signIn-form {
+        
+        width: 90%;
+        
+    }
+    .signIn-form input::placeholder {
+        font-size: 4.3vw;
+    }
+    .signIn-submit {
+        font-size: 10.3vw;
+    }
+    .signIn-logo-holder img {
+        width: 25vw;
+    }
+    .signIn-form h1 {
+        font-size: 8vw;
+    }
+    .signIn-form div span {
+        font-size: 4.3vw;
+    
+    }
+    .signIn-file-label {
+        width: 30vw;
+        
+        font-size: 4.3vw;
+    }
+}

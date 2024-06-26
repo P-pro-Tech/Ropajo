@@ -1,8 +1,8 @@
 import React from 'react'
 import './GuestDashBoard.css'
 import ropa_logo from '../../assets/mob-logo.svg'
-import profile_pic from '../../assets/profile_pic.png'
-import { Link } from 'react-router-dom'
+import receptionist_pic from '../../assets/rec_1.png'
+import { Link, NavLink } from 'react-router-dom'
 
 
 const GuestDashBoard = () => {
@@ -13,20 +13,21 @@ return (
                 <img src={ropa_logo} alt="" />
             </div>
             <div className='guestDashBoard-profile'>
-                <div className='gdb-profile'><img src={profile_pic} alt="" /></div>
-                <h2>Prince Ayo</h2>
-                <p>Welcome Chief</p>
+                <div className='gdb-profile'><img src={receptionist_pic} alt="" /></div>
+                <h2>Receptionist I</h2>
+                <p>Check in: 08:34am</p>
 
             </div>
         </div>
         <div className='guestDashBoard-lower-sec'>
-                <ul>
-                    <Link to='/DashboardRoom'><li>Rooms/Apartment</li></Link>
-                    <Link to='/DashboardLaundry'><li>Laundry</li></Link>
-                    <Link><li>Pool</li></Link>
-                    <Link><li>Restaurant</li></Link>
-                    <Link to='/DashboardAccount'><li>Account</li></Link>
-                    <Link><li>Signout</li></Link>
+                <ul> {/*DashboardRoom*/}
+                    <NavLink to="/GuestRoom" className={({isActive}) => {
+                        return isActive ? 'hover-gdb-btn': '';
+                    }}><li>Guest</li></NavLink>
+                    <NavLink to='/DashboardAccount' className={({isActive}) => {
+                        return isActive ? 'hover-gdb-btn': '';
+                    }}><li>Account</li></NavLink>
+                    <NavLink><li>Signout</li></NavLink>
                 </ul>
         </div>
     </div>

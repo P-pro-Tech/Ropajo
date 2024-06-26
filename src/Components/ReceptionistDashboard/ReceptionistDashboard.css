@@ -55,10 +55,6 @@
     height: 6vh;
     list-style: none;
 }
-.hover-gdb-btn {
-    background: rgba(64, 47, 47, 1) !important;
-
-}
 .guestDashBoard-lower-sec ul a li {
     margin-left: 5vw;
     font-size: 1.4vw;
@@ -73,13 +69,11 @@
 
 .gdb-profile {
     width: 7vw;
-    height: auto;
-    
+    height: 7vw;
+    border-radius: 50%;
 }
 .gdb-profile img {
-    width: inherit;
-    height: auto;
+    width: 7vw;
+    height: 7vw;
     border-radius: 50%;
-    
-    align-items: center;
 }

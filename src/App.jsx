@@ -13,6 +13,7 @@ import GuestDashboardAccount from './Components/GuestDashboardAccount/GuestDashb
 import AssignRoom from './Components/AssignRoom/AssignRoom';
 import RegisterGuests from './Components/RegisterGuests/RegisterGuests';
 import Reservations from './Components/Reservations/Reservations';
+import GuestRoom from './Components/GuestRoom/GuestRoom';
 
 function App() {
   
@@ -34,6 +35,7 @@ function App() {
             <Route path='/AssignRoom' element={<AssignRoom/>}/>
             <Route path='/RegisterGuests' element={<RegisterGuests/>}/>
             <Route path='/Reservations' element={<Reservations/>}/>
+            <Route path='GuestRoom' element={<GuestRoom/>}/>
           </Routes>
         </div>
       </div>

@@ -54,7 +54,7 @@
     justify-content: center;
     
 }
-.dashAccount-web-table-holder {
+/* .dashAccount-web-table-holder {
     width: 90%;
     height: 70vh;
     background-color: rgba(255, 250, 238, 1);
@@ -125,7 +125,7 @@
 .paid-green {
     color: rgba(0, 144, 32, 1) !important;
     
-}
+} */
 
 @media (max-width:650px) {
     .dashboardAccount-web {
