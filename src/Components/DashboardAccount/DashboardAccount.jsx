@@ -35,7 +35,9 @@ return (
     <div className='mobile-dasboardAccount'>
         <div className='mobile-dasboardAccount-head'>
             <DashBoardHeader/>
+            
         </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et eligendi ullam modi quos ea quia blanditiis est, molestiae officiis eius porro corporis consequatur quae veniam molestias repellat possimus. Porro, nesciunt?</p>
         
     </div>
 </div>    

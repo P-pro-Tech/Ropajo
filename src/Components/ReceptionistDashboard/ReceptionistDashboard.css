@@ -63,7 +63,10 @@
     background-color: rgba(64, 47, 47, 1);
 }
 
+.hover-gdb-btn {
+    background: rgba(64, 47, 47, 1) !important;
 
+}
 
 
 

@@ -17,7 +17,7 @@ const Coffee = () => {
       </div>
 
       <div className="vector-area">
-        <div className='vector-area-inner'>
+        <div className='vector-area-inner hidden'>
           <img src={upper_vector} alt="" className="vector-1" />
           <div className='vector-area-text'>
             <h3>Coffee in a space</h3>

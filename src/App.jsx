@@ -14,6 +14,11 @@ import AssignRoom from './Components/AssignRoom/AssignRoom';
 import RegisterGuests from './Components/RegisterGuests/RegisterGuests';
 import Reservations from './Components/Reservations/Reservations';
 import GuestRoom from './Components/GuestRoom/GuestRoom';
+import GuestDashBoardRoom from './Components/GuestDashBoardRoom/GuestDashBoardRoom';
+import GeneralAccount from './Components/GeneralAccount/GeneralAccount';
+import StaffDashboard from './Components/StaffDashboard/StaffDashboard';
+import GuestAccessPage from './Components/GuestAccessPage/GuestAccessPage';
+import ReceptionistGuestPayment from './Components/ReceptionistGuestPayment/ReceptionistGuestPayment';
 
 function App() {
   
@@ -35,7 +40,12 @@ function App() {
             <Route path='/AssignRoom' element={<AssignRoom/>}/>
             <Route path='/RegisterGuests' element={<RegisterGuests/>}/>
             <Route path='/Reservations' element={<Reservations/>}/>
-            <Route path='GuestRoom' element={<GuestRoom/>}/>
+            <Route path='/GuestRoom' element={<GuestRoom/>}/>
+            <Route path='/GuestDashBoardRoom' element={<GuestDashBoardRoom/>}/>
+            <Route path='/GeneralAccount' element={<GeneralAccount/>}/>
+            <Route path='/StaffDashboard' element={<StaffDashboard/>}/>
+            <Route path='/GuestAccessPage' element={<GuestAccessPage/>}/> {/* Define your GuestAccessPage route */}
+            <Route path='/ReceptionistGuestPayment' element={<ReceptionistGuestPayment/>}/>
           </Routes>
         </div>
       </div>

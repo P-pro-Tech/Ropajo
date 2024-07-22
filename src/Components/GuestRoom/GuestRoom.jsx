@@ -2,13 +2,51 @@ import React from 'react'
 import './GuestRoom.css'
 import GuestDashBoard from '../GuestDashBoard/GuestDashBoard'
 import { Link } from 'react-router-dom'
+import GuestInfoTableRow from '../GuestInfoTableRow/GuestInfoTableRow'
+import ReceptioistManageProfile from '../ReceptioistManageProfile/ReceptioistManageProfile'
+
+const GuestRoomDetails = [
+  {
+  name: 'Peter Patrick F.',
+  uniqueNo: 'R1410x',
+},
+  {
+  name: 'Agbo James',
+  uniqueNo: 'R0013v',
+},
+{
+  name: 'Fanen Torkura JP',
+  uniqueNo: 'R5545c',
+},
+  {
+  name: 'Hamsizan Katrinna',
+  uniqueNo: 'P3300j',
+},
+{
+  name: 'Fanen Torkura JP',
+  uniqueNo: 'R5545c',
+},
+  {
+  name: 'Hamsizan Katrinna',
+  uniqueNo: 'P3300j',
+},
+{
+  name: 'Fanen Torkura JP',
+  uniqueNo: 'R5545c',
+},
+  {
+  name: 'Hamsizan Katrinna Malvin',
+  uniqueNo: 'P3300j',
+},
+ 
+]
 
 const GuestRoom = () => {
   return (
-    <div>
+    <div className='guestRoom'>
         <div className='dashboard-room-web'>
         <div className='dbrw-guest-section'>
-          <GuestDashBoard/>
+          <ReceptioistManageProfile/>
         </div>
         <div className='dbrw-content-section'>
             <div className='dbrw-content-head'>
@@ -26,46 +64,11 @@ const GuestRoom = () => {
                         <p> &nbsp;</p>
                       </div>
                       <div className='tbody'>
-                        <div>
-                          <p>Peter Patrick F.</p>
-                          <p>R1410x</p>
-                          <span><button>Checkout</button></span>
-                        </div>
-                        <div>
-                          <p>Agbo James</p>
-                          <p>R0013v</p>
-                          <span><button>Checkout</button></span>
-                        </div>
-                        <div>
-                          <p>Fanen Torkura JP</p>
-                          <p>R5545c</p>
-                          <span><button>Checkout</button></span>
-                        </div>
-                        <div>
-                          <p>Hamsizan Katrinna</p>
-                          <p>P3300j</p>
-                          <span><button>Checkout</button></span>
-                        </div>
-                        <div>
-                          <p>Fanen Torkura JP</p>
-                          <p>R5545c</p>
-                          <span><button>Checkout</button></span>
-                        </div>
-                        <div>
-                          <p>Hamsizan Katrinna</p>
-                          <p>P3300j</p>
-                          <span><button>Checkout</button></span>
-                        </div>
-                        <div>
-                          <p>Fanen Torkura JP</p>
-                          <p>R5545c</p>
-                          <span><button>Checkout</button></span>
-                        </div>
-                        <div>
-                          <p>Hamsizan Katrinna Malvin</p>
-                          <p>P3300j</p>
-                          <span><button>Checkout</button></span>
-                        </div>
+                        {GuestRoomDetails.map((details, index)=> (
+                          <GuestInfoTableRow names= {details.name} uniqueNo={details.uniqueNo} index={index} />
+                        ))}
+                        
+                        
                         
                       </div>
                     </table>
@@ -75,6 +78,9 @@ const GuestRoom = () => {
             </div>
         </div>
       </div>
+
+
+      
     </div>
   )
 }

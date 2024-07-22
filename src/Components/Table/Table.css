@@ -60,9 +60,7 @@
     font-size: 1.05vw;
     font-weight: 600;
 }
-.mobile-dasboardAccount {
-    display: none;
-}
+
 .bill-red {
     color: rgba(224, 0, 40, 1) !important; 
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import './GuestDashBoard.css'
 import ropa_logo from '../../assets/mob-logo.svg'
-import receptionist_pic from '../../assets/rec_1.png'
+import profile_pic from '../../assets/profile_pic.png'
 import { Link, NavLink } from 'react-router-dom'
 
 
@@ -13,15 +13,15 @@ return (
                 <img src={ropa_logo} alt="" />
             </div>
             <div className='guestDashBoard-profile'>
-                <div className='gdb-profile'><img src={receptionist_pic} alt="" /></div>
-                <h2>Receptionist I</h2>
-                <p>Check in: 08:34am</p>
+                <div className='gdb-profile'><img src={profile_pic} alt="" /></div>
+                <h2>Prince Ayo</h2>
+                <p>Good afternoon</p>
 
             </div>
         </div>
         <div className='guestDashBoard-lower-sec'>
                 <ul> {/*DashboardRoom*/}
-                    <NavLink to="/GuestRoom" className={({isActive}) => {
+                    <NavLink to="/GuestAccessPage" className={({isActive}) => {
                         return isActive ? 'hover-gdb-btn': '';
                     }}><li>Guest</li></NavLink>
                     <NavLink to='/DashboardAccount' className={({isActive}) => {
