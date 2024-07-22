@@ -1,6 +1,5 @@
 import React from 'react'
 import './Located.css'
-import locate_img from '../../assets/Ropa8.jpeg'
 
 const Located = () => {
   return (
