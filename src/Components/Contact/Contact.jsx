@@ -5,8 +5,10 @@ import ropa_text from '../../assets/Layer_2.svg'
 
 
 const Contact = () => {
+
+  
   return (
-    <div className='main-contact'>
+    <div className='main-contact hidden-down'>
       <div className='contact'>
         <div className="logo">
           <div className='cont-logo-insider'>

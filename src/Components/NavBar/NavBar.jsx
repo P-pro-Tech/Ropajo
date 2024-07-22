@@ -1,16 +1,36 @@
 import React from 'react'
 import './NavBar.css'
+import '../../index.css'
 // import nav_img from '../../assets/Ropa1.jpeg'
 import mob_logo from '../../assets/mob-logo.svg'
 import ropa_logo from '../../assets/ropajo _hat2.svg'
 import ropa_text from '../../assets/ropajo_text.svg' 
 import mob_menu from '../../assets/mob-menu.svg' 
 import { Link } from 'react-scroll';
+import '../../Slide.jsx'
 
 
 const NavBar = ({setViewMobileNav}) => {
+
+  // const observer = new IntersectionObserver((entries)=> {
+  //   entries.forEach((entry)=>{
+  //     console.log(entry);
+  //     if (entry.isIntersecting) {
+  //       entry.target.classList.add('show');
+  //     }else {
+  //       entry.target.classList.remove('show');
+  //     }
+  //   });
+  // });
+
+  // const navElement = document.querySelectorAll('.hidden');
+  // navElement.forEach((el) => {
+  //   observer.observe(el);
+  // });
+
+
   return (
-    <div className='navBar'>
+    <div className='navBar hidden-up'>
       <nav className="navbar-col">
         <img src={mob_logo} alt="" className='mob-logo' />
         <ul>
@@ -31,11 +51,11 @@ const NavBar = ({setViewMobileNav}) => {
       </nav>
       <div className='nav-img-container'>
       
-        <div className='nav-contact'>
+        {/* <div className='nav-contact'>
           <p>+234 803 320 2272</p>
         <p>ROPAJO@GMAIL.COM</p>
         </div>
-      
+       */}
       </div>
     </div>
   )
