@@ -1,9 +1,11 @@
 .booking {
+    background: url(../../assets/register-img.jpg); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Optional: Center the image */
     width: 100%;
     height: 100vh;
-    background: url(../../assets/booking_bg.jpg);
-
-}
+}  
 .book-hue {
     background-color: rgba(31, 21, 21, 0.9);
     width: inherit;
@@ -43,7 +45,7 @@
 
 .book-body {
     width: inherit;
-    height: 90vh;
+    height: 80vh;
 }
 .book-form {
     margin: auto;
@@ -53,25 +55,46 @@
 .book-form h1 {
     display: block;
     margin: auto;
-    margin: 30px 10px;
+    margin: 4vh 1vw;
     font-size: 4vw;
     font-weight: normal;
+    text-align: center;
 }
-.book-form input, .book-form button {
+.book-form input, .book-form button, .book-form div {
     display: block;
     margin: auto;
     width: 90%;
-    height: 50px;
+    height: 6.7vh;
     background-color: transparent;
     outline: none;
     border: none;
     border-bottom: thin solid #fdf0d5;
-    margin: 30px 10px;
+    margin: 4vh 2vw;
     font-size: 1.3vw;
 }
 .book-form input::placeholder {
     color: #fdf0d5;
+}
 
+.book-file-label {
+    border: thin solid rgba(253, 240, 213, 1);
+    /* padding: 1vh 2vw; */
+    width: 9vw;
+    height: 5vh;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    float: right;
+}
+.book-form div span {
+    font-size: 1.3vw;
+}
+.book-form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .book-submit {
@@ -84,12 +107,13 @@
 }
 
 
+
 @media (max-width: 650px) {
     .book-form input::placeholder {
         font-size: 2.3vw;
     }
     .book-form {
-        width: 8    0%;
+        width: 80%;
     }
     .book-submit {
         font-size: 2.3vw;
@@ -112,6 +136,16 @@
     }
     .book-form h1 {
         text-align: center;
+        font-size: 9vw;
+    }
+    .book-form div span {
+        font-size: 2.3vw;
+    
+    }
+    .book-file-label {
+        width: 20vw;
+        /* height: 4vh; */
+        font-size: 2.3vw;
     }
 }
 
@@ -138,4 +172,13 @@
     /* .book-form button {
         font-size: 4vw;
     } */
+    .book-form div span {
+        font-size: 4.3vw;
+    
+    }
+    .book-file-label {
+        width: 30vw;
+        
+        font-size: 4.3vw;
+    }
 }

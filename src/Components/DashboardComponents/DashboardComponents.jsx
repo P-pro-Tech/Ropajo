@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import DashboardRoomProfile from '../DashboardRoomProfile/DashboardRoomProfile';
 import DashboardRoom from '../DashboardRoom/DashboardRoom';
+import DashBoardHeader from '../DashBoardHeader/DashBoardHeader';
 
 const DashboardComponents = () => {
 
@@ -9,7 +10,8 @@ const DashboardComponents = () => {
   return (
     <div className='dashboard-components'>
       <DashboardRoomProfile profileShow={profileShow} setProfileShow={setProfileShow}/>
-        <DashboardRoom setProfileShow={setProfileShow}/>
+        <DashboardRoom />
+        {/* <DashBoardHeader setProfileShow={setProfileShow}/> */}
     </div>
   )
 }

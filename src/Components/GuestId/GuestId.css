@@ -72,6 +72,13 @@
     opacity: 0.6; 
 } 
 
+.guest-form button:hover {
+    background-color: #fdf0d5;
+    border: thin solid #1f1515;
+    color: #1f1515;
+    transition: all 0.5s;
+} 
+
 @media (max-width: 1000px) {
     .guest-form Link {
         width: 15vw;
@@ -145,8 +152,7 @@
         margin: auto;
     }
     .guest-form a {
-        width: 45%;
-        
+        width: 45%; 
     } 
 }
 

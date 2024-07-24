@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import './DashboardRoomProfile.css'
 import { Link } from 'react-scroll'
+import { NavLink } from 'react-router-dom'
 import top_icon from '../../assets/top_arrow.svg'
 import ropa_logo from '../../assets/mob-logo.svg'
 import profile_pic from '../../assets/profile_pic.png';
@@ -34,8 +35,8 @@ const DashboardRoomProfile = ({setProfileShow, profileShow}) => {
           <div>
             <img src={profile_pic} alt="" />
           </div>
-          <h4>Prince Ayo</h4>
-          <p>Welcome Chief</p>
+          <h4>PRINCE Ayo</h4>
+          <p>Check in: 08:34am</p>
         </div>
         <div className="dbp-nav-list">
           <ul>

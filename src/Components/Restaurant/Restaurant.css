@@ -73,6 +73,11 @@
     font-size: 1.5vw;
     
 } 
+.opacity button:hover {
+    transition: all 0.5s;
+    background-color: #fdf0d5;
+    color: #1f1515;
+}
 
 @media (max-width: 1000px) {
     .restaurant {

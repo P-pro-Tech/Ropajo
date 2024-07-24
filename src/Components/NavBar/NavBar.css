@@ -6,6 +6,17 @@
     justify-content: space-between;
     flex-direction: row;
 }
+    /* hidden */
+    /* opacity: 0;
+    filter: blur(1em);
+    transform: translateX(-100%);
+    transition: all 1s;
+} */
+/* .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+} */
 
 .navbar-col {
     background: #1f1515;
@@ -67,6 +78,12 @@
     margin: auto;
     display: block;
     align-items: center;
+    animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-0.625rem); }
+    100% { transform: translateY(0); }
 }
 .logo-container .two {
     padding-bottom: 50px;
@@ -85,6 +102,11 @@
     border-radius: 5px;
     border: thin solid #fdf0d5;
     display: block;
+}
+.logo-container button:hover {
+    background-color: #fdf0d5;
+    color: #1f1515;
+    transition: all 0.5s;
 }
 
 .nav-contact {

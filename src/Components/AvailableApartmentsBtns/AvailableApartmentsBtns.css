@@ -1,0 +1,19 @@
+.reserved-dashboard-button {
+    border: none;
+    padding: 0.2rem 0.8rem;
+    background-color: rgba(64, 47, 47, 1);
+    color: rgba(253, 240, 213, 1);
+    border-radius: 0.4rem;
+    font-size: 1.5vw;
+    
+    margin: 1rem 1rem;
+}
+.reserved-dashboard-button div {
+    font-size: 1rem;
+    margin: 0 1rem;
+    float: left;
+}
+.reserved-dashboard-button span {
+    font-size: 0.6rem;
+    margin: 0 1rem;
+}

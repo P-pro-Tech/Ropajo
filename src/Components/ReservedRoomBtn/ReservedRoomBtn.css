@@ -1,0 +1,10 @@
+
+.ReservedRoomBtn {
+    padding: 0.5rem 1.5rem;
+    background-color: #402F2F;
+    color: #FDF0D5;
+    border: none;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+}

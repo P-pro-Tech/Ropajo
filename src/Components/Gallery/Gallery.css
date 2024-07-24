@@ -182,6 +182,19 @@
     .text {
         height: 15vh;
     }
+    .gallery-text-board {
+        height: 15vh;
+        justify-content: space-around;
+    }
+    .gallery-text-board h2 {
+        height: 4vh;
+        /* background-color: green; */
+    }
+    .gallery-text-board p {
+        height: 11vh;
+        /* background-color: blue; */
+    }
+
     .grid-container{
         height: 55vh;
     }
