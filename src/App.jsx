@@ -19,6 +19,7 @@ import GeneralAccount from './Components/GeneralAccount/GeneralAccount';
 import StaffDashboard from './Components/Staff-Receptionist/StaffDashboard/StaffDashboard';
 import GuestAccessPage from './Components/GuestAccessPage/GuestAccessPage';
 import ReceptionistGuestPayment from './Components/ReceptionistGuestPayment/ReceptionistGuestPayment';
+import UpdateGuestPayment from './Components/Staff-Receptionist/UpdateGuestPayment/UpdateGuestPayment';
 
 function App() {
   
@@ -46,6 +47,7 @@ function App() {
             <Route path='/StaffDashboard' element={<StaffDashboard/>}/>
             <Route path='/GuestAccessPage' element={<GuestAccessPage/>}/> {/* Define your GuestAccessPage route */}
             <Route path='/ReceptionistGuestPayment' element={<ReceptionistGuestPayment/>}/>
+            <Route path='/UpdateGuestPayment' element={<UpdateGuestPayment/>}/>
           </Routes>
         </div>
       </div>
