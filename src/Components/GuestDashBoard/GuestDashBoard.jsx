@@ -24,7 +24,7 @@ return (
                     <NavLink to="/GuestAccessPage" className={({isActive}) => {
                         return isActive ? 'hover-gdb-btn': '';
                     }}><li>Guest</li></NavLink>
-                    <NavLink to='/DashboardAccount' className={({isActive}) => {
+                    <NavLink to='/GuestAccount' className={({isActive}) => {
                         return isActive ? 'hover-gdb-btn': '';
                     }}><li>Account</li></NavLink>
                     <NavLink><li>Signout</li></NavLink>

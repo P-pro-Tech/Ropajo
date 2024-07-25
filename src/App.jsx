@@ -7,7 +7,7 @@ import DashboardComponents from './Components/DashboardComponents/DashboardCompo
 import DashboardRoom from './Components/DashboardRoom/DashboardRoom';
 import Register from './Components/Register/Register';
 import DashboardLaundry from './Components/DashboardLaundry/DashboardLaundry';
-import DashboardAccount from './Components/DashboardAccount/DashboardAccount';
+import GuestAccount from './Components/GuestAccount/GuestAccount';
 import SignIn from './Components/Staff-Receptionist/SignIn/SignIn';
 import GuestDashboardAccount from './Components/GuestDashboardAccount/GuestDashboardAccount';
 import AssignRoom from './Components/Staff-Receptionist/AssignRoom/AssignRoom';
@@ -34,7 +34,7 @@ function App() {
             <Route path='/DashboardRoom' element={<DashboardRoom/>}/>
             <Route path='/Register' element={<Register/>}/>
             <Route path='/DashboardLaundry' element={<DashboardLaundry/>}/>
-            <Route path='/DashboardAccount' element={<DashboardAccount/>}/>
+            <Route path='/GuestAccount' element={<GuestAccount/>}/>
             <Route path='/SignIn' element={<SignIn/>}/>
             <Route path='/GuestDashboardAccount' element={<GuestDashboardAccount/>}/>
             <Route path='/AssignRoom' element={<AssignRoom/>}/>

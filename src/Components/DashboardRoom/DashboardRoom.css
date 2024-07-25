@@ -137,22 +137,7 @@
     .dashboard-room-web {
         display: none;
     }
-    /* .dbr-nav {
-        background-color: #1F1515;
-    }
-    .dbr-logo-holder img {
-        width: 40vw;
-    }
-    .dbr-nav-list ul {
-        display: none;
-    }
-    .dbr-mob-menu {
-        display: block;
-        width: 7vw;
-        height: auto;
-        margin-top: 1.7vh;
-        margin-right: 7vw;
-    } */
+    
     .dbr-header h2{
         color: #1f1515;
     }
