@@ -1,7 +1,7 @@
 import React from 'react'
 import './SignIn.css'
-import DashBoardHeader from '../DashBoardHeader/DashBoardHeader'
-import DashboardRoomProfile from '../DashboardRoomProfile/DashboardRoomProfile'
+import DashBoardHeader from '../../DashBoardHeader/DashBoardHeader'
+import DashboardRoomProfile from '../../DashboardRoomProfile/DashboardRoomProfile'
 import { useState } from 'react'
 
 const SignIn = () => {

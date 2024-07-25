@@ -1,7 +1,7 @@
 .assignRoom {
     width: 100%;
     height: 100vh;
-    background: url(../../assets/assign-room.png);
+    background: url(../../../assets/assign-room.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,18 +41,22 @@
 }
 .assignRoom-body-top h1 {
     font-size: 4.5vw;
-    font-weight: normal;
+    font-weight: lighter;
+    text-decoration: underline;
+    font-style: italic;
+    opacity: .6;
 }
 .assignRoom-body-middle {
-    height: 20vh;
+    height: 10vh;
     width: 67%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3vw;
+    gap: 1vw;
 }
 .assignRoom-body-middle p {
     font-size: 1.7vw;
+    margin: auto;
 }
 .assignRoom-body-bottom {
     display: flex;
