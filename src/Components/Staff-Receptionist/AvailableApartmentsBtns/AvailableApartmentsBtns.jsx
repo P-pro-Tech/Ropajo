@@ -1,11 +1,11 @@
 import React from "react";
 import "./AvailableApartmentsBtns.css";
 
-const AvailableApartmentsBtns = ({items, index}) => {
+const AvailableApartmentsBtns = ({items, index, apartment}) => {
   return (
     <button key={index} className="reserved-dashboard-button">
       <div>{items}</div> <br />
-      <span>Supreme Super Executive 1</span>
+      <span>{apartment}</span>
     </button>
   );
 };

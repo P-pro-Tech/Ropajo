@@ -1,22 +1,22 @@
 import './App.css';
 
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
-import Booking from './Components/Booking/Booking';
+import Booking from './Components/Guest/Booking/Booking';
 import LandingPage from './Components/LandingPage/LandingPage';
 import DashboardComponents from './Components/DashboardComponents/DashboardComponents';
 import DashboardRoom from './Components/DashboardRoom/DashboardRoom';
 import Register from './Components/Register/Register';
 import DashboardLaundry from './Components/DashboardLaundry/DashboardLaundry';
 import DashboardAccount from './Components/DashboardAccount/DashboardAccount';
-import SignIn from './Components/SignIn/SignIn';
+import SignIn from './Components/Staff-Receptionist/SignIn/SignIn';
 import GuestDashboardAccount from './Components/GuestDashboardAccount/GuestDashboardAccount';
-import AssignRoom from './Components/AssignRoom/AssignRoom';
-import RegisterGuests from './Components/RegisterGuests/RegisterGuests';
+import AssignRoom from './Components/Staff-Receptionist/AssignRoom/AssignRoom';
+import RegisterGuests from './Components/Staff-Receptionist/RegisterGuests/RegisterGuests';
 import Reservations from './Components/Reservations/Reservations';
 import GuestRoom from './Components/GuestRoom/GuestRoom';
 import GuestDashBoardRoom from './Components/GuestDashBoardRoom/GuestDashBoardRoom';
 import GeneralAccount from './Components/GeneralAccount/GeneralAccount';
-import StaffDashboard from './Components/StaffDashboard/StaffDashboard';
+import StaffDashboard from './Components/Staff-Receptionist/StaffDashboard/StaffDashboard';
 import GuestAccessPage from './Components/GuestAccessPage/GuestAccessPage';
 import ReceptionistGuestPayment from './Components/ReceptionistGuestPayment/ReceptionistGuestPayment';
 

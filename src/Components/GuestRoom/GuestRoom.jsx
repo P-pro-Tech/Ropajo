@@ -44,7 +44,7 @@ const GuestRoomDetails = [
 const GuestRoom = () => {
   return (
     <div className='guestRoom'>
-        <div className='dashboard-room-web'>
+        <div className='Guest-room-web'>
         <div className='dbrw-guest-section'>
           <ReceptioistManageProfile/>
         </div>

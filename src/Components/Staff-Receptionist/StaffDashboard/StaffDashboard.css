@@ -28,11 +28,17 @@
 
 .staff-room-btn-section {
     width: 100%;
-    height: auto;
+    height: 13vh;
+    overflow-y: scroll;
+    
 }
 .hover-gdb-btn {
     background: rgba(64, 47, 47, 1) !important;
 
+}
+.staff-apartment-btn-section-reserved {
+    overflow-y: scroll;
+    height: 13vh;
 }
 .staff-apartments {
     width: 100%;
@@ -41,7 +47,7 @@
 }
 .staff-apartment-btn-section {
     overflow-y: scroll;
-    height: 20vh;
+    height: 13vh;
 }
 .staff-hr {
 

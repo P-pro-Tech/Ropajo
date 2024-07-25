@@ -1,10 +1,10 @@
 import React from 'react'
 import './Booking.css'
 import { Button, Link } from 'react-scroll';
-import book_logo from '../../assets/mob-logo.svg';
-import mob_menu from '../../assets/mob-menu.svg' 
-import DashBoardHeader from '../DashBoardHeader/DashBoardHeader';
-import DashboardRoomProfile from '../DashboardRoomProfile/DashboardRoomProfile';
+import book_logo from '../../../assets/mob-logo.svg';
+import mob_menu from '../../../assets/mob-menu.svg' 
+import DashBoardHeader from '../../DashBoardHeader/DashBoardHeader';
+import DashboardRoomProfile from '../../DashboardRoomProfile/DashboardRoomProfile';
 import { useState } from 'react';
 
 const Booking = () => {
