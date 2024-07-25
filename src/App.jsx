@@ -7,7 +7,7 @@ import DashboardComponents from './Components/DashboardComponents/DashboardCompo
 import DashboardRoom from './Components/DashboardRoom/DashboardRoom';
 import Register from './Components/Register/Register';
 import DashboardLaundry from './Components/DashboardLaundry/DashboardLaundry';
-import GuestAccount from './Components/GuestAccount/GuestAccount';
+import GuestAccount from './Components/Guest/GuestAccount/GuestAccount';
 import SignIn from './Components/Staff-Receptionist/SignIn/SignIn';
 import GuestDashboardAccount from './Components/GuestDashboardAccount/GuestDashboardAccount';
 import AssignRoom from './Components/Staff-Receptionist/AssignRoom/AssignRoom';

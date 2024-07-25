@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import "./GuestAccount.css";
-import GuestDashBoard from "../GuestDashBoard/GuestDashBoard";
+import GuestDashBoard from "../../GuestDashBoard/GuestDashBoard";
 import { Link } from "react-router-dom";
-import DashBoardHeader from "../DashBoardHeader/DashBoardHeader";
-import roll_icon from "../../assets/play-icon.svg";
-import play_icon from "../../assets/play-icon.svg";
+import DashBoardHeader from "../../DashBoardHeader/DashBoardHeader";
+import roll_icon from "../../../assets/play-icon.svg";
+import play_icon from "../../../assets/play-icon.svg";
 
-import Table from "../Table/Table";
+import Table from "../../Table/Table";
 
 const GuestAccount = () => {
   const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
+  const [isActive4, setIsActive4] = useState(false);
 
   const [profileShow, setProfileShow] = useState(false);
   return (
@@ -37,6 +38,7 @@ const GuestAccount = () => {
         </div>
       </div>
 
+
       {/* mobile deign start here */}
       <div className="mobile-dasboardAccount">
         <div className="mobile-dasboardAccount-head">
@@ -48,7 +50,7 @@ const GuestAccount = () => {
         <div className="dropdown-mobile-table">
           <div className="dropdown">
             <div className="dropdown-btn">
-              <div className="dropdown-item-head">
+              <div className="dropdown-item-left">
                 <img
                   src={play_icon}
                   alt=""
@@ -57,34 +59,29 @@ const GuestAccount = () => {
                   }
                   onClick={() => setIsActive1(!isActive1)}
                 />
-                {/* <img src={play_icon} alt="" onClick={(e) =>
-              setIsActive1(!isActive1)} /> */}
-                Room
+               <p>Room:</p>
               </div>
             </div>
             {isActive1 && (
               <div className="dropdown-content">
                 <div className="dropdown-item">
                   <div className="dropdown-item-left">Date:</div>
-                  <div className="dropdown-item-right">13.04.2024</div>
+                  <div className="dropdown-item-right">03.02.2024</div>
                 </div>
 
                 <div className="dropdown-item">
                   <div className="dropdown-item-left">Bill:</div>
-                  <div className="dropdown-item-right">06:47pm</div>
+                  <div className="dropdown-item-right">90,000.00</div>
                 </div>
 
                 <div className="dropdown-item">
                   <div className="dropdown-item-left">Paid:</div>
-                  <div className="dropdown-item-right">
-                    <p>13.04.2024</p>
-                    <p>12:00pm</p>
-                  </div>
+                  <div className="dropdown-item-right">40,000.00</div>
                 </div>
 
                 <div className="dropdown-item">
                   <div className="dropdown-item-left">Balance:</div>
-                  <div className="dropdown-item-right">30,000.00</div>
+                  <div className="dropdown-item-right">50,000.00</div>
                 </div>
               </div>
             )}
@@ -103,33 +100,29 @@ const GuestAccount = () => {
                 />
                 {/* <img src={play_icon} alt="" onClick={(e) =>
           setIsActive2(!isActive2)}/> */}
-                Room No:
+                <p>Laundry:</p>
               </div>
-              <div className="dropdown-item-right">256</div>
             </div>
             {isActive2 && (
               <div className="dropdown-content">
                 <div className="dropdown-item">
                   <div className="dropdown-item-left">Date:</div>
-                  <div className="dropdown-item-right">13.04.2024</div>
+                  <div className="dropdown-item-right">03.02.2024</div>
                 </div>
 
                 <div className="dropdown-item">
-                  <div className="dropdown-item-left">Check-in:</div>
-                  <div className="dropdown-item-right">06:47pm</div>
+                  <div className="dropdown-item-left">Bill</div>
+                  <div className="dropdown-item-right">90,000.00</div>
                 </div>
 
                 <div className="dropdown-item">
-                  <div className="dropdown-item-left">Check-out:</div>
-                  <div className="dropdown-item-right">
-                    <p>13.04.2024</p>
-                    <p>12:00pm</p>
-                  </div>
+                  <div className="dropdown-item-left">Paid:</div>
+                  <div className="dropdown-item-right">40,000.00</div>
                 </div>
 
                 <div className="dropdown-item">
-                  <div className="dropdown-item-left">Amount:</div>
-                  <div className="dropdown-item-right">30,000.00</div>
+                  <div className="dropdown-item-left">Balance:</div>
+                  <div className="dropdown-item-right">50,000.00</div>
                 </div>
               </div>
             )}
@@ -148,38 +141,80 @@ const GuestAccount = () => {
                 />
                 {/* <img src={play_icon} alt="" onClick={(e) =>
           setIsActive3(!isActive3)}/> */}
-                Room No:
+                <p>Restaurant:</p>
               </div>
-              <div className="dropdown-item-right">256</div>
             </div>
             {isActive3 && (
               <div className="dropdown-content">
                 <div className="dropdown-item">
                   <div className="dropdown-item-left">Date:</div>
-                  <div className="dropdown-item-right">13.04.2024</div>
+                  <div className="dropdown-item-right">03.02.2024</div>
                 </div>
 
                 <div className="dropdown-item">
-                  <div className="dropdown-item-left">Check-in:</div>
-                  <div className="dropdown-item-right">06:47pm</div>
+                  <div className="dropdown-item-left">Bill:</div>
+                  <div className="dropdown-item-right">90,000.00</div>
                 </div>
 
                 <div className="dropdown-item">
-                  <div className="dropdown-item-left">Check-out:</div>
-                  <div className="dropdown-item-right">
-                    <p>13.04.2024</p>
-                    <p>12:00pm</p>
-                  </div>
+                  <div className="dropdown-item-left">Paid:</div>
+                  <div className="dropdown-item-right">40,000.00</div>
                 </div>
 
                 <div className="dropdown-item">
-                  <div className="dropdown-item-left">Amount:</div>
-                  <div className="dropdown-item-right">30,000.00</div>
+                  <div className="dropdown-item-left">Balance:</div>
+                  <div className="dropdown-item-right">50,000.00</div>
                 </div>
               </div>
             )}
           </div>
+
+          <div className="dropdown">
+            <div className="dropdown-btn">
+              <div className="dropdown-item-left">
+                <img
+                  src={play_icon}
+                  alt=""
+                  className={
+                    isActive4 ? "dropdown-icon rotate-icon" : "dropdown-icon"
+                  }
+                  onClick={() => setIsActive4(!isActive4)}
+                />
+                <p>Pool:</p>
+              </div>
+            </div>
+            {isActive4 && (
+              <div className="dropdown-content">
+                <div className="dropdown-item">
+                  <div className="dropdown-item-left">Date:</div>
+                  <div className="dropdown-item-right">03.02.2024</div>
+                </div>
+
+                <div className="dropdown-item">
+                  <div className="dropdown-item-left">Bill:</div>
+                  <div className="dropdown-item-right">90,000.00</div>
+                </div>
+
+                <div className="dropdown-item">
+                  <div className="dropdown-item-left">Paid:</div>
+                  <div className="dropdown-item-right">40,000.00</div>
+                </div>
+
+                <div className="dropdown-item">
+                  <div className="dropdown-item-left">Balance:</div>
+                  <div className="dropdown-item-right">50,000.00</div>
+                </div>
+              </div>
+            )}
+          </div>
+
+
+
         </div>
+
+        {/* Bottom Total Below */}
+
+        
       </div>
     </div>
   );
