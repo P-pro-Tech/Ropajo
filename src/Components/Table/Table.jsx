@@ -14,7 +14,7 @@ const Table = () => {
             <span>Balance</span>
           </div>
         </thead>
-        <tbody>
+        <section>
           <div>
             <span>03.02.2023</span>
             <span>Room</span>
@@ -51,6 +51,23 @@ const Table = () => {
             <span>30,000.00</span>
           </div>
           <div>
+            <span>03.02.2023</span>
+            <span>Room</span>
+            <span>30,000.00</span>
+            <span>00.00</span>
+            <span>30,000.00</span>
+          </div>
+          <div>
+            <span>03.02.2023</span>
+            <span>Room</span>
+            <span>30,000.00</span>
+            <span>00.00</span>
+            <span>30,000.00</span>
+          </div>
+        </section>
+
+        <tfoot>
+          <div>
             <span></span>
             <span>
               <h3 className="dashAccount-total">TOTAL</h3>
@@ -69,7 +86,7 @@ const Table = () => {
               <span className="dashAccount-total-amount">216,500.00</span>
             </span>
           </div>
-        </tbody>
+        </tfoot>
       </table>
     </div>
   );
