@@ -1,8 +1,6 @@
 import React from "react";
 import "./ReservationInfo.css";
 import { Link } from "react-router-dom";
-import ReceptionistDashboard from "../ReceptionistDashboard/ReceptionistDashboard";
-import GuestDashBoard from "../../Guest/GuestDashBoard/GuestDashBoard";
 import RIDashboard from "./RIDashboard/RIDashboard";
 
 const ReservationInfo = () => {
