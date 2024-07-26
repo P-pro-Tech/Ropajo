@@ -58,6 +58,14 @@
     font-size: 1.7vw;
     margin: auto;
 }
+.assignRoom-middle-checkbox {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
 .assignRoom-body-bottom {
     display: flex;
     flex-direction: column;

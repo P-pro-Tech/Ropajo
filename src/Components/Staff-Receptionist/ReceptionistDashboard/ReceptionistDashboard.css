@@ -35,6 +35,7 @@
 .ReceptionistDashboard-profile h2 {
     font-size: 1.8vw;
     font-weight: normal;
+    margin-bottom: 1.5vh;
 }
 .ReceptionistDashboard-profile p {
     font-size: 1vw;
@@ -68,6 +69,7 @@
     background: rgba(64, 47, 47, 1) !important;
 
 }
+
 
 
 

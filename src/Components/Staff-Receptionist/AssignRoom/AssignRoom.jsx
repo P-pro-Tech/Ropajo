@@ -11,20 +11,24 @@ return (
         <div className='head'>
             <GuestReservationHeader/>
         </div>
-        <div className='assignRoom-body'>
+        <form className='assignRoom-body'>
             <div className='assignRoom-body-top'>
                 <h3>Assign Room</h3>
                 <h1>Guest ID</h1>
             </div>
             <div className='assignRoom-body-middle'>
                 <p>Supreme Super Executive 1</p>
-                <p >Reservation?</p>
+                <div className='assignRoom-middle-checkbox'>
+                    <label htmlFor=""><input type="checkbox" name="Check in" id="Check in" />Check in</label>
+                    <label htmlFor=""><input type="checkbox" name="Reservation" id="Reservation" />Reservation</label>
+                
+                </div>
                 
             </div>
             <div className='assignRoom-body-bottom'>
-                <button>Register</button>
+                <button type='submit'>Register</button>
             </div>
-        </div>
+        </form>
         </div>
     </div>
 )
