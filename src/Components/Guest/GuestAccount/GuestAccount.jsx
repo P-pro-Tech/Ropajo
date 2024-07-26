@@ -42,8 +42,8 @@ const GuestAccount = () => {
       {/* websection ends here */}
 
       {/* mobile deign start here */}
-      <div className="mobile-dasboardAccount">
-        <div className="mobile-dasboardAccount-head">
+      <div className="mobile-dasboard-Account">
+        <div className="mobile-dasboard-Account-head">
           <DashboardRoomProfile profileShow={profileShow} setProfileShow={setProfileShow}/>
           <DashBoardHeader setProfileShow={setProfileShow}/>
         </div>

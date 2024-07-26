@@ -57,7 +57,7 @@ const ReceptionAccount = () => {
         <div className="head-container">
           <h4>Accounts</h4>
         </div>
-        <div className="dropdown-mobile-table">
+        <div className="ReceptionAccount-mobile-table">
           <div className="dropdown">
             <div className="dropdown-btn">
               <div className="dropdown-item-left">
