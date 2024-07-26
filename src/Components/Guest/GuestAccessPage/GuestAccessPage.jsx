@@ -7,19 +7,22 @@ import DashBoardHeader from "../../DashBoardHeader/DashBoardHeader";
 const GuestAccessPage = () => {
   return (
     <div>
-      <div className="dashboardAccount-web">
-        <div className="dashAccount-guest-section">
+      <div className="GuestAccessPage-web">
+        <div className="GuestAccessPage-guest-section">
           <GuestDashBoard />
         </div>
 
-        <div className="dashAccount-content-section">
-          <div className="dashAccount-content-head">
+        <div className="GuestAccessPage-content-section">
+          <div className="GuestAccessPage-content-head">
             <Link>Back to Homepage</Link>
           </div>
-          <div className="dashAccount-content-body">
+          <div className="GuestAccessPage-mobile-header">
+
+          </div>
+          <div className="GuestAccessPage-content-body">
             <p>{/*Account*/} </p>
             <div>
-              <div className="dashAccount-content-table-section">
+              <div className="GuestAccessPage-content-table-section">
                 {/* table */}
                 <div className="access-card">
                   <div className="access-card-box">
@@ -56,7 +59,7 @@ const GuestAccessPage = () => {
       {/* Desktop screen ends here */}
 
       {/* mobile deign start here */}
-      <div className="mobile-dasboardAccount">
+      {/* <div className="mobile-dasboardAccount">
         <div className="mobile-dasboardAccount-head">
           <DashBoardHeader />
         </div>
@@ -85,7 +88,7 @@ const GuestAccessPage = () => {
           </div>
 
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
