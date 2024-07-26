@@ -108,9 +108,9 @@ const StaffDashboard = () => {
               <Link to="/ManageGuest" className="staff-dashboard-button">
                 Manage Guests
               </Link>
-              <Link to="/Reservations" className="staff-dashboard-button">
+              {/* <Link to="/Reservations" className="staff-dashboard-button">
                 Reservations
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
