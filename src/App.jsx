@@ -14,12 +14,16 @@ import AssignRoom from './Components/Staff-Receptionist/AssignRoom/AssignRoom';
 import RegisterGuests from './Components/Staff-Receptionist/RegisterGuests/RegisterGuests';
 import Reservations from './Components/Reservations/Reservations';
 import GuestRoom from './Components/GuestRoom/GuestRoom';
-import GuestDashBoardRoom from './Components/GuestDashBoardRoom/GuestDashBoardRoom';
+import GuestDashBoardRoom from './Components/Staff-Receptionist/GuestDashBoardRoom/GuestDashBoardRoom';
 import GeneralAccount from './Components/GeneralAccount/GeneralAccount';
 import StaffDashboard from './Components/Staff-Receptionist/StaffDashboard/StaffDashboard';
 import GuestAccessPage from './Components/GuestAccessPage/GuestAccessPage';
 import ReceptionistGuestPayment from './Components/ReceptionistGuestPayment/ReceptionistGuestPayment';
 import UpdateGuestPayment from './Components/Staff-Receptionist/UpdateGuestPayment/UpdateGuestPayment';
+import ReservationInfo from './Components/Staff-Receptionist/ReservationInfo/ReservationInfo';
+import ManageGuest from './Components/Staff-Receptionist/ManageGuest/ManageGuest';
+import ReceptionAccount from './Components/Staff-Receptionist/ReceptionAccount/ReceptionAccount';
+import OnlineBookingList from './Components/Staff-Receptionist/OnlineBookingList/OnlineBookingList';
 
 function App() {
   
@@ -48,6 +52,10 @@ function App() {
             <Route path='/GuestAccessPage' element={<GuestAccessPage/>}/> {/* Define your GuestAccessPage route */}
             <Route path='/ReceptionistGuestPayment' element={<ReceptionistGuestPayment/>}/>
             <Route path='/UpdateGuestPayment' element={<UpdateGuestPayment/>}/>
+            <Route path='/ReservationInfo' element={<ReservationInfo/>}/>
+            <Route path='/ManageGuest' element={<ManageGuest/>}/>
+            <Route path='/ReceptionAccount' element={<ReceptionAccount/>}/>
+            <Route path='/OnlineBookingList' element={<OnlineBookingList/>}/>
           </Routes>
         </div>
       </div>

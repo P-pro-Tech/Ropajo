@@ -43,15 +43,13 @@
 .staff-apartments {
     width: 100%;
     height: auto;
-    padding: 1rem 0;
+    padding: 7vh 0 0 0;
 }
 .staff-apartment-btn-section {
     overflow-y: scroll;
     height: 13vh;
 }
-.staff-hr {
 
-}
 .staff-option-btn-section {
     border-top: 0.2rem solid rgba(64, 47, 47, 1);
     padding: 2rem 2rem;
@@ -59,3 +57,43 @@
     align-items: center;
     justify-content: space-around;
 }
+
+/* button notification */
+
+.Bookings-notification {
+    width: 100%;
+    
+    padding: 4vh 0 0 0;
+}
+.button-StaffDashboard {
+    background-color: rgba(64, 47, 47, 1);
+    border: none;
+    color: #FDF0D5;
+    padding: 1vh 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4vw;
+    border-radius: 0.7vw; /* Make the button circular */
+    position: relative; /* Position the notification */
+  }
+  
+  .button-text {
+    position: relative; /* Position the notification */
+  }
+  
+  .notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(64, 47, 47, 1);
+    color: white;
+    border: 0.1vw solid #FDF0D5;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+  }
+  

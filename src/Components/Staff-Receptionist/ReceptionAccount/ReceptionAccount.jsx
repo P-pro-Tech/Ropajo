@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import "./GuestAccount.css";
+import './ReceptionAccount.css'
 import GuestDashBoard from "../../GuestDashBoard/GuestDashBoard";
 import { Link } from "react-router-dom";
 import DashBoardHeader from "../../DashBoardHeader/DashBoardHeader";
 import roll_icon from "../../../assets/play-icon.svg";
 import play_icon from "../../../assets/play-icon.svg";
-
 import Table from "../../Table/Table";
 import DashboardRoomProfile from "../../DashboardRoomProfile/DashboardRoomProfile";
+import ReceptionistDashboard from "../ReceptionistDashboard/ReceptionistDashboard";
 
-const GuestAccount = () => {
+
+const ReceptionAccount = () => {
   const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
@@ -17,21 +18,24 @@ const GuestAccount = () => {
 
   const [profileShow, setProfileShow] = useState(false);
   return (
-    <div className="GuestAccount">
-       {/* websection starts here */}
-      <div className="GuestAccount-web">
-        <div className="dashAccount-guest-section">
-          <GuestDashBoard />
+    <div className="ReceptionAccount">
+      {/* websection starts here */}
+      <div className="ReceptionAccount-web">
+        <div className="ReceptionAccount-guest-section">
+          <ReceptionistDashboard />
         </div>
 
-        <div className="dashAccount-content-section">
-          <div className="dashAccount-content-head">
+        <div className="ReceptionAccount-content-section">
+          <div className="ReceptionAccount-content-head">
             <Link>Back to Homepage</Link>
           </div>
-          <div className="dashAccount-content-body">
-            <p>Account </p>
+          <div className="ReceptionAccount-content-body">
+            <div className="ReceptionAccount-bar-holder">
+              <p>Account</p>
+              <span>Edit</span>
+            </div>
             <div>
-              <div className="dashAccount-content-table-section">
+              <div className="ReceptionAccount-content-table-section">
                 {/* table */}
                 <Table />
               </div>
@@ -41,15 +45,17 @@ const GuestAccount = () => {
       </div>
       {/* websection ends here */}
 
-
       {/* mobile deign start here */}
       <div className="mobile-dasboardAccount">
         <div className="mobile-dasboardAccount-head">
-          <DashboardRoomProfile profileShow={profileShow} setProfileShow={setProfileShow}/>
-          <DashBoardHeader setProfileShow={setProfileShow}/>
+          <DashboardRoomProfile
+            profileShow={profileShow}
+            setProfileShow={setProfileShow}
+          />
+          <DashBoardHeader setProfileShow={setProfileShow} />
         </div>
         <div className="head-container">
-            <h4>Accounts</h4>
+          <h4>Accounts</h4>
         </div>
         <div className="dropdown-mobile-table">
           <div className="dropdown">
@@ -63,7 +69,7 @@ const GuestAccount = () => {
                   }
                   onClick={() => setIsActive1(!isActive1)}
                 />
-               <p>Room:</p>
+                <p>Room:</p>
               </div>
             </div>
             {isActive1 && (
@@ -103,7 +109,7 @@ const GuestAccount = () => {
                   onClick={() => setIsActive2(!isActive2)}
                 />
                 {/* <img src={play_icon} alt="" onClick={(e) =>
-          setIsActive2(!isActive2)}/> */}
+       setIsActive2(!isActive2)}/> */}
                 <p>Laundry:</p>
               </div>
             </div>
@@ -144,7 +150,7 @@ const GuestAccount = () => {
                   onClick={() => setIsActive3(!isActive3)}
                 />
                 {/* <img src={play_icon} alt="" onClick={(e) =>
-          setIsActive3(!isActive3)}/> */}
+       setIsActive3(!isActive3)}/> */}
                 <p>Restaurant:</p>
               </div>
             </div>
@@ -211,17 +217,12 @@ const GuestAccount = () => {
               </div>
             )}
           </div>
-
-
-
         </div>
 
         {/* Bottom Total Below */}
-
-        
       </div>
     </div>
   );
 };
 
-export default GuestAccount;
+export default ReceptionAccount;

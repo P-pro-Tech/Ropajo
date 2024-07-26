@@ -23,7 +23,7 @@ return (
                 <ul> {/*DashboardRoom*/}
                     <NavLink to="/GuestAccessPage" className={({isActive}) => {
                         return isActive ? 'hover-gdb-btn': '';
-                    }}><li>Guest</li></NavLink>
+                    }}><li>Home</li></NavLink>
                     <NavLink to='/GuestAccount' className={({isActive}) => {
                         return isActive ? 'hover-gdb-btn': '';
                     }}><li>Account</li></NavLink>

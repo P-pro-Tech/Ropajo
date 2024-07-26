@@ -2,7 +2,7 @@ import React from 'react'
 import './GuestRoom.css'
 import GuestDashBoard from '../GuestDashBoard/GuestDashBoard'
 import { Link } from 'react-router-dom'
-import GuestInfoTableRow from '../GuestInfoTableRow/GuestInfoTableRow'
+import GuestInfoTableRow from '../Staff-Receptionist/GuestInfoTableRow/GuestInfoTableRow'
 import ReceptioistManageProfile from '../ReceptioistManageProfile/ReceptioistManageProfile'
 
 const GuestRoomDetails = [

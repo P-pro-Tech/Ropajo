@@ -1,5 +1,5 @@
 import React from "react";
-import ReceptionistDashboard from "../../ReceptionistDashboard/ReceptionistDashboard";
+import ReceptionistDashboard from "../ReceptionistDashboard/ReceptionistDashboard";
 import { Link } from "react-router-dom";
 import "./StaffDashboard.css";
 import AvailableRooms from "../AvailableRooms/AvailableRooms";
@@ -10,46 +10,45 @@ const AvailableRoomsInfo = [305, 112, "004", "007"];
 
 const reservedroomsbtn = [
   {
-    'amount':"N35,000",
-    'apartment':"ROPAJO DELUXE",
-    },
+    amount: "N35,000",
+    apartment: "ROPAJO DELUXE",
+  },
   {
-    'amount':"N45,000",
-    'apartment':"ROPAJO EXECUTIVE",
-    },
-  ]
+    amount: "N45,000",
+    apartment: "ROPAJO EXECUTIVE",
+  },
+];
 
 const AvailableAppartmentInfo = [
   {
-    'amount':"N35,000",
-    'apartment':"ROPAJO DELUXE",
-    },
+    amount: "N35,000",
+    apartment: "ROPAJO DELUXE",
+  },
   {
-    'amount':"N45,000",
-    'apartment':"ROPAJO EXECUTIVE",
-    },
+    amount: "N45,000",
+    apartment: "ROPAJO EXECUTIVE",
+  },
   {
-    'amount':"N48,000",
-    'apartment':"ROPAJO SUPER EXECUTIVE",
-    },
+    amount: "N48,000",
+    apartment: "ROPAJO SUPER EXECUTIVE",
+  },
   {
-    'amount':"N65,000",
-    'apartment':"SEMINI (premium executive)",
-    },
+    amount: "N65,000",
+    apartment: "SEMINI (premium executive)",
+  },
   {
-    'amount':"N65,000",
-    'apartment':"SCORPIO (premium executive)",
-    },
+    amount: "N65,000",
+    apartment: "SCORPIO (premium executive)",
+  },
   {
-    'amount':"N35,000",
-    'apartment':"ROPAJO DELUXE",
-    },
+    amount: "N35,000",
+    apartment: "ROPAJO DELUXE",
+  },
   {
-    'amount':"N35,000",
-    'apartment':"ROPAJO DELUXE",
-    },
-  ];
-
+    amount: "N35,000",
+    apartment: "ROPAJO DELUXE",
+  },
+];
 
 const StaffDashboard = () => {
   return (
@@ -70,11 +69,15 @@ const StaffDashboard = () => {
                 <div className="Staff-content-table-section">
                   <div className="staff-room-btn-section">
                     {AvailableAppartmentInfo.map((items, index) => (
-                      <AvailableRooms items={items.amount} apartment={items.apartment} index={index} />
+                      <AvailableRooms
+                        items={items.amount}
+                        apartment={items.apartment}
+                        index={index}
+                      />
                     ))}
                   </div>
 
-                  <div className="staff-apartments">
+                  {/* <div className="staff-apartments">
                     <p>Available Appartments </p>
                     <div className="staff-apartment-btn-section">
 
@@ -82,16 +85,26 @@ const StaffDashboard = () => {
                           <AvailableApartmentsBtns items={appartmentItems.amount} apartment={appartmentItems.apartment} index={index} />
                         ))}
                       </div>
-                  </div>
-
+                  </div> */}
 
                   <div className="staff-apartments">
                     <p>Reserved Room </p>
                     <div className="staff-apartment-btn-section-reserved">
                       {reservedroomsbtn.map((reservednum, index) => (
-                        <ReservedRoomBtn item={reservednum.amount} apartment={reservednum.apartment} index={index} />
+                        <ReservedRoomBtn
+                          item={reservednum.amount}
+                          apartment={reservednum.apartment}
+                          index={index}
+                        />
                       ))}
                     </div>
+                  </div>
+
+                  <div className="Bookings-notification">
+                    <Link to='' class="button-StaffDashboard">
+                      <span class="button-text">Bookings</span>
+                      <span class="notification">3</span>
+                    </Link>
                   </div>
                 </div>
               </div>
