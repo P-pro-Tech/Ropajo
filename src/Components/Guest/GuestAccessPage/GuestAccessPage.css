@@ -102,6 +102,9 @@
     .GuestAccessPage-content-section {
         width: 100%;
     }
+    .GuestAccessPage-content-head {
+        display: none;
+    }
     .GuestAccessPage-mobile-header {
         display: block;
     }

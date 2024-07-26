@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./GuestAccessPage.css";
 import GuestDashBoard from "../GuestDashBoard/GuestDashBoard";
 import { Link } from "react-router-dom";
 import DashBoardHeader from "../../DashBoardHeader/DashBoardHeader";
+import DashboardRoomProfile from "../../DashboardRoomProfile/DashboardRoomProfile";
 
 const GuestAccessPage = () => {
+  const [profileShow, setProfileShow] = useState(false);
   return (
     <div>
       <div className="GuestAccessPage-web">
@@ -17,7 +19,8 @@ const GuestAccessPage = () => {
             <Link>Back to Homepage</Link>
           </div>
           <div className="GuestAccessPage-mobile-header">
-
+          <DashboardRoomProfile profileShow={profileShow} setProfileShow={setProfileShow}/>
+            <DashBoardHeader setProfileShow={setProfileShow}/>
           </div>
           <div className="GuestAccessPage-content-body">
             <p>{/*Account*/} </p>
