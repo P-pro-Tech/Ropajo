@@ -11,24 +11,7 @@ import '../../Slide.jsx'
 
 
 const NavBar = ({setViewMobileNav}) => {
-
-  // const observer = new IntersectionObserver((entries)=> {
-  //   entries.forEach((entry)=>{
-  //     console.log(entry);
-  //     if (entry.isIntersecting) {
-  //       entry.target.classList.add('show');
-  //     }else {
-  //       entry.target.classList.remove('show');
-  //     }
-  //   });
-  // });
-
-  // const navElement = document.querySelectorAll('.hidden');
-  // navElement.forEach((el) => {
-  //   observer.observe(el);
-  // });
-
-
+      
   return (
     <div className='navBar hidden-up'>
       <nav className="navbar-col">

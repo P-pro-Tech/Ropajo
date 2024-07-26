@@ -76,16 +76,7 @@ const StaffDashboard = () => {
                       />
                     ))}
                   </div>
-
-                  {/* <div className="staff-apartments">
-                    <p>Available Appartments </p>
-                    <div className="staff-apartment-btn-section">
-
-                        {AvailableAppartmentInfo.map((appartmentItems, index) => (
-                          <AvailableApartmentsBtns items={appartmentItems.amount} apartment={appartmentItems.apartment} index={index} />
-                        ))}
-                      </div>
-                  </div> */}
+                  
 
                   <div className="staff-apartments">
                     <p>Reserved Room </p>
@@ -101,7 +92,7 @@ const StaffDashboard = () => {
                   </div>
 
                   <div className="Bookings-notification">
-                    <Link to='' class="button-StaffDashboard">
+                    <Link to='/Booking' class="button-StaffDashboard">
                       <span class="button-text">Bookings</span>
                       <span class="notification">3</span>
                     </Link>
@@ -114,7 +105,7 @@ const StaffDashboard = () => {
               <Link to="/RegisterGuests" className="staff-dashboard-button">
                 Register Guest
               </Link>
-              <Link to="" className="staff-dashboard-button">
+              <Link to="/ManageGuest" className="staff-dashboard-button">
                 Manage Guests
               </Link>
               <Link to="/Reservations" className="staff-dashboard-button">
@@ -124,13 +115,6 @@ const StaffDashboard = () => {
           </div>
         </div>
 
-        {/* mobile deign start here */}
-        {/* <div className='mobile-dasboardAccount'>
-        <div className='mobile-dasboardAccount-head'>
-            <DashBoardHeader/>
-        </div>
-        
-    </div> */}
       </div>
     </>
   );

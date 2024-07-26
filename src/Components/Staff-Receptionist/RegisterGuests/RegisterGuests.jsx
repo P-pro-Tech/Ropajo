@@ -13,8 +13,10 @@ return (
                 <div className='registerGuests-body-content-holder'>
                     <h1>Register Guests</h1>
                     <form action="" className='registerGuests-form'>
+                        
                         <div className='registerGuests-form-holder'>
-                            <input type="text" placeholder='Guest Name:' className='registerGuests-form-100p' />
+                            <input type="text" placeholder='Guest Name:' className='registerGuests-form50p' />
+                            <input type="file" placeholder='Passport:' className='registerGuests-form50p' />
                         </div>
                         <div className='registerGuests-form-holder'>
                             <input type="text" placeholder='Address:' className='registerGuests-form50p' />

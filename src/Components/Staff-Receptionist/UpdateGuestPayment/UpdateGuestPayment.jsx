@@ -1,6 +1,8 @@
 import React from "react";
 import GuestReservationHeader from "../../GuestReservationHeader/GuestReservationHeader";
 import "./UpdateGuestPayment.css";
+import { Link } from "react-router-dom";
+
 
 const UpdateGuestPayment = () => {
   return (
@@ -29,7 +31,9 @@ const UpdateGuestPayment = () => {
 
             <textarea name="" id="" rows={5} cols={50} placeholder="Comments"></textarea>
             <input type="text" placeholder="Amount:" />
-            <button type="submit">Update</button>
+            <button  type="submit">Update</button>
+            
+            
           </form>
         </div>
       </div>

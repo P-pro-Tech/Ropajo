@@ -2,6 +2,7 @@ import React from 'react'
 import './Contact.css'
 import ropa_logo from '../../assets/Layer_1.svg'
 import ropa_text from '../../assets/Layer_2.svg'
+import { Link } from 'react-router-dom'
 
 
 const Contact = () => {
@@ -22,9 +23,10 @@ const Contact = () => {
         <div className="list">
           <ul>
             <li>Home</li>
-            <li>FAQ</li>
-            <li>Privacy POlicy</li>
-            <li>Contact</li>
+            <li ><Link className='red' to='/StaffDashboard'>FAQ</Link></li>
+            <li><Link to='/ReservationInfo' className='red' type="submit">Privacy POlicy</Link></li>
+            <li><Link className='red' to='/UpdateGuestPayment'>Contact</Link></li>
+            
           </ul>
         </div>
         <div className="list">

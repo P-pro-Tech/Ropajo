@@ -37,7 +37,7 @@ const GuestDashBoardRoom = () => {
                   <button>Checkout</button>
                 </div>
               </div>
-              <div>
+              <div className="GuestDashBoardRoom-center-holder">
                 <div className="GuestDashBoardRoom-content-table-section">
                   <main className="GT-container">
                     <div className="GT-table-optioin">
@@ -87,8 +87,27 @@ const GuestDashBoardRoom = () => {
                       )}
                       ;
                     </div>
-                    <GuestTable />
+                    {/* <GuestTable /> */}
+
+                    
                   </main>
+                  <section className="GT-Balance">
+                    <h2>TOTAL</h2>
+                    <div className="GT-Balance-right">
+                      <div className="GT-Balance-square">
+                        <p>Bill</p>
+                        <p className="red">216,500.00</p>
+                      </div>
+                      <div className="GT-Balance-square">
+                        <p >Paid</p>
+                        <p className="green">116,000.00</p>
+                      </div>
+                      <div className="GT-Balance-square">
+                        <p>Balance</p>
+                        <p>100,500.00</p>
+                      </div>
+                    </div>
+                  </section>
                 </div>
               </div>
             </div>

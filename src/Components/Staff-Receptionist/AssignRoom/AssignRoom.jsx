@@ -1,6 +1,7 @@
 import React from 'react'
 import './AssignRoom.css'
 import GuestReservationHeader from '../../GuestReservationHeader/GuestReservationHeader'
+import { Link } from 'react-router-dom'
 
 
 const AssignRoom = () => {
@@ -17,7 +18,8 @@ return (
             </div>
             <div className='assignRoom-body-middle'>
                 <p>Supreme Super Executive 1</p>
-                <p>Reservation?</p>
+                <p >Reservation?</p>
+                
             </div>
             <div className='assignRoom-body-bottom'>
                 <button>Register</button>
