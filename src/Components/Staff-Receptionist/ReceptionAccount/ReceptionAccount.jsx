@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './ReceptionAccount.css'
-import GuestDashBoard from "../../Guest/GuestDashBoard/GuestDashBoard";
 import { Link } from "react-router-dom";
 import DashBoardHeader from "../../DashBoardHeader/DashBoardHeader";
 import roll_icon from "../../../assets/play-icon.svg";
@@ -57,7 +56,7 @@ const ReceptionAccount = () => {
         <div className="head-container">
           <h4>Accounts</h4>
         </div>
-        <div className="dropdown-mobile-table">
+        <div className="ReceptionAccount-mobile-table">
           <div className="dropdown">
             <div className="dropdown-btn">
               <div className="dropdown-item-left">
