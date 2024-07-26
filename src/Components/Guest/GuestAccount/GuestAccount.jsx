@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./GuestAccount.css";
-import GuestDashBoard from "../../GuestDashBoard/GuestDashBoard";
 import { Link } from "react-router-dom";
 import DashBoardHeader from "../../DashBoardHeader/DashBoardHeader";
-import roll_icon from "../../../assets/play-icon.svg";
 import play_icon from "../../../assets/play-icon.svg";
 
 import Table from "../../Table/Table";
 import DashboardRoomProfile from "../../DashboardRoomProfile/DashboardRoomProfile";
+import ReceptionistDashboard from "../../Staff-Receptionist/ReceptionistDashboard/ReceptionistDashboard";
+import GuestDashBoard from "../GuestDashBoard/GuestDashBoard";
 
 const GuestAccount = () => {
   const [isActive1, setIsActive1] = useState(false);
@@ -21,7 +21,7 @@ const GuestAccount = () => {
        {/* websection starts here */}
       <div className="GuestAccount-web">
         <div className="dashAccount-guest-section">
-          <GuestDashBoard />
+          <GuestDashBoard/>
         </div>
 
         <div className="dashAccount-content-section">

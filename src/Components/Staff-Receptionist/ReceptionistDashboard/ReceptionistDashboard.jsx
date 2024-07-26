@@ -11,7 +11,7 @@ const ReceptionistDashboard = () => {
         <div className='ReceptionistDashboard'>
         <div className='ReceptionistDashboard-upper-sec'>
             <div className='ReceptionistDashboard-logo'>
-                <img src={ropa_logo} alt="" />
+               <Link to='/'> <img src={ropa_logo} alt="" /></Link>
             </div>
             <div className='ReceptionistDashboard-profile'>
                 <div className='rdb-profile'><img src={receptionist2_pic} alt="" /></div>

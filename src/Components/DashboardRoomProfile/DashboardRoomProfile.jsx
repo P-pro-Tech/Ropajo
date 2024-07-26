@@ -29,7 +29,7 @@ const DashboardRoomProfile = ({setProfileShow, profileShow}) => {
           <img src={top_icon} alt="" ref={profile} onClick={closeProfile} />   
         </div>
         <div className="dbp-logo">
-          <img src={ropa_logo} alt="" />
+        <img src={ropa_logo} alt="" /> 
         </div>
         <div className='profile-cont'>
           <h4>Peter A.A</h4>

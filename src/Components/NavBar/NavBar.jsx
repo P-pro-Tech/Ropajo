@@ -7,28 +7,12 @@ import ropa_logo from '../../assets/ropajo _hat2.svg'
 import ropa_text from '../../assets/ropajo_text.svg' 
 import mob_menu from '../../assets/mob-menu.svg' 
 import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom'
 import '../../Slide.jsx'
 
 
 const NavBar = ({setViewMobileNav}) => {
-
-  // const observer = new IntersectionObserver((entries)=> {
-  //   entries.forEach((entry)=>{
-  //     console.log(entry);
-  //     if (entry.isIntersecting) {
-  //       entry.target.classList.add('show');
-  //     }else {
-  //       entry.target.classList.remove('show');
-  //     }
-  //   });
-  // });
-
-  // const navElement = document.querySelectorAll('.hidden');
-  // navElement.forEach((el) => {
-  //   observer.observe(el);
-  // });
-
-
+      
   return (
     <div className='navBar hidden-up'>
       <nav className="navbar-col">
@@ -46,7 +30,7 @@ const NavBar = ({setViewMobileNav}) => {
             <img src={ropa_logo} alt="" className='logo '/>
             <img src={ropa_text} alt="" className=' two'/>
           </div>
-          <button className=''>Book Now</button>
+          <NavLink to='/Booking'><button className=''>Book Now</button></NavLink>
         </div>
       </nav>
       <div className='nav-img-container'>

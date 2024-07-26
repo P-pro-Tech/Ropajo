@@ -60,7 +60,10 @@
     margin-bottom: 3vh;
     font-family: georgia;
     font-weight: bolder;
-    font-size: 1.3vw;
+    font-size: 1vw;
+}
+.red {
+    color: red;
 }
 .address {
     display: flex;
@@ -74,13 +77,13 @@
 }
 .contact-details h4 {
     color: #000;
-    font-size: 1.3vw;
+    font-size: 1vw;
     font-family: georgia;
     font-weight: bolder;
 }
 .contact-details p {
     color: #000;
-    font-size: 1.2vw;
+    font-size: 0.8vw;
 }
 
 @media  (max-width: 650px) {
@@ -110,7 +113,7 @@
         font-size: 2vw;
     }
     .list ul li{
-        font-size: 3vw;
+        font-size: 1.2vw;
     }
     .list{
         display: none;

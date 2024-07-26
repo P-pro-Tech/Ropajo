@@ -5,6 +5,7 @@ import "./StaffDashboard.css";
 import AvailableRooms from "../AvailableRooms/AvailableRooms";
 import ReservedRoomBtn from "../ReservedRoomBtn/ReservedRoomBtn";
 import AvailableApartmentsBtns from "../AvailableApartmentsBtns/AvailableApartmentsBtns";
+import {guestRoomCount} from '../OnlineBookingList/OnlineBookingList';
 
 const AvailableRoomsInfo = [305, 112, "004", "007"];
 
@@ -76,16 +77,7 @@ const StaffDashboard = () => {
                       />
                     ))}
                   </div>
-
-                  {/* <div className="staff-apartments">
-                    <p>Available Appartments </p>
-                    <div className="staff-apartment-btn-section">
-
-                        {AvailableAppartmentInfo.map((appartmentItems, index) => (
-                          <AvailableApartmentsBtns items={appartmentItems.amount} apartment={appartmentItems.apartment} index={index} />
-                        ))}
-                      </div>
-                  </div> */}
+                  
 
                   <div className="staff-apartments">
                     <p>Reserved Room </p>
@@ -101,9 +93,9 @@ const StaffDashboard = () => {
                   </div>
 
                   <div className="Bookings-notification">
-                    <Link to='' class="button-StaffDashboard">
+                    <Link to='/OnlineBookingList' class="button-StaffDashboard">
                       <span class="button-text">Bookings</span>
-                      <span class="notification">3</span>
+                      <span class="notification">{guestRoomCount}</span>
                     </Link>
                   </div>
                 </div>
@@ -114,23 +106,16 @@ const StaffDashboard = () => {
               <Link to="/RegisterGuests" className="staff-dashboard-button">
                 Register Guest
               </Link>
-              <Link to="" className="staff-dashboard-button">
+              <Link to="/ManageGuest" className="staff-dashboard-button">
                 Manage Guests
               </Link>
-              <Link to="/Reservations" className="staff-dashboard-button">
+              {/* <Link to="/Reservations" className="staff-dashboard-button">
                 Reservations
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
 
-        {/* mobile deign start here */}
-        {/* <div className='mobile-dasboardAccount'>
-        <div className='mobile-dasboardAccount-head'>
-            <DashBoardHeader/>
-        </div>
-        
-    </div> */}
       </div>
     </>
   );

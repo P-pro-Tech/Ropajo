@@ -1,6 +1,6 @@
 import React from 'react'
 import './DashboardLaundry.css'
-import GuestDashBoard from '../GuestDashBoard/GuestDashBoard'
+import GuestDashBoard from '../Guest/GuestDashBoard/GuestDashBoard'
 import { Link } from 'react-router-dom'
 
 const DashboardLaundry = () => {
