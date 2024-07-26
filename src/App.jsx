@@ -17,7 +17,7 @@ import GuestRoom from './Components/GuestRoom/GuestRoom';
 import GuestDashBoardRoom from './Components/Staff-Receptionist/GuestDashBoardRoom/GuestDashBoardRoom';
 import GeneralAccount from './Components/GeneralAccount/GeneralAccount';
 import StaffDashboard from './Components/Staff-Receptionist/StaffDashboard/StaffDashboard';
-import GuestAccessPage from './Components/GuestAccessPage/GuestAccessPage';
+import GuestAccessPage from './Components/Guest/GuestAccessPage/GuestAccessPage';
 import ReceptionistGuestPayment from './Components/ReceptionistGuestPayment/ReceptionistGuestPayment';
 import UpdateGuestPayment from './Components/Staff-Receptionist/UpdateGuestPayment/UpdateGuestPayment';
 import ReservationInfo from './Components/Staff-Receptionist/ReservationInfo/ReservationInfo';

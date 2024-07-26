@@ -1,6 +1,6 @@
 import React from 'react'
 
-import GuestDashBoard from '../GuestDashBoard/GuestDashBoard'
+import GuestDashBoard from '../Guest/GuestDashBoard/GuestDashBoard'
 import { Link } from 'react-router-dom'
 import DashBoardHeader from '../DashBoardHeader/DashBoardHeader'
 

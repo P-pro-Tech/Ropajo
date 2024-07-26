@@ -2,7 +2,7 @@ import React from "react";
 import "./GuestAccessPage.css";
 import GuestDashBoard from "../GuestDashBoard/GuestDashBoard";
 import { Link } from "react-router-dom";
-import DashBoardHeader from "../DashBoardHeader/DashBoardHeader";
+import DashBoardHeader from "../../DashBoardHeader/DashBoardHeader";
 
 const GuestAccessPage = () => {
   return (

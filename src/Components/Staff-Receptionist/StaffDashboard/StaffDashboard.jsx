@@ -5,6 +5,7 @@ import "./StaffDashboard.css";
 import AvailableRooms from "../AvailableRooms/AvailableRooms";
 import ReservedRoomBtn from "../ReservedRoomBtn/ReservedRoomBtn";
 import AvailableApartmentsBtns from "../AvailableApartmentsBtns/AvailableApartmentsBtns";
+import {guestRoomCount} from '../OnlineBookingList/OnlineBookingList';
 
 const AvailableRoomsInfo = [305, 112, "004", "007"];
 
@@ -92,9 +93,9 @@ const StaffDashboard = () => {
                   </div>
 
                   <div className="Bookings-notification">
-                    <Link to='/Booking' class="button-StaffDashboard">
+                    <Link to='/OnlineBookingList' class="button-StaffDashboard">
                       <span class="button-text">Bookings</span>
-                      <span class="notification">3</span>
+                      <span class="notification">{guestRoomCount}</span>
                     </Link>
                   </div>
                 </div>

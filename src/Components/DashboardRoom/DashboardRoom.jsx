@@ -3,7 +3,7 @@ import './DashboardRoom.css'
 import DashboardRoomProfile from '../DashboardRoomProfile/DashboardRoomProfile';
 import play_icon from '../../assets/play-icon.svg';
 import DashBoardHeader from '../DashBoardHeader/DashBoardHeader';
-import GuestDashBoard from '../GuestDashBoard/GuestDashBoard';
+import GuestDashBoard from '../Guest/GuestDashBoard/GuestDashBoard';
 import { Link } from 'react-router-dom'
 
   

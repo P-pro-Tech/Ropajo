@@ -4,24 +4,28 @@ import ReceptionistDashboard from "../ReceptionistDashboard/ReceptionistDashboar
 import { Link } from "react-router-dom";
 import OnlineBookingListItem from "../OnlineBookingListItem/OnlineBookingListItem";
 
+const GuestRoomDetails = [
+  {
+    name: "Peter Patrick F.",
+    address: "Abuja",
+    phoneNo: "+2345667940",
+  },
+  {
+    name: "Agbo James",
+    address: "14 Hauston Texas",
+    phoneNo: "+2345667940",
+  },
+  {
+    name: "Fanen Torkura JP",
+    address: "S.A",
+    phoneNo: "+2345667940",
+  },
+]
 const OnlineBookingList = () => {
-    const GuestRoomDetails = [
-        {
-          name: "Peter Patrick F.",
-          address: "Abuja",
-          phoneNo: "+2345667940",
-        },
-        {
-          name: "Agbo James",
-          address: "14 Hauston Texas",
-          phoneNo: "+2345667940",
-        },
-        {
-          name: "Fanen Torkura JP",
-          address: "S.A",
-          phoneNo: "+2345667940",
-        },
-    ]
+    
+
+    
+    
   return (
     <>
       <div className="OnlineBookingList">
@@ -76,3 +80,4 @@ const OnlineBookingList = () => {
 };
 
 export default OnlineBookingList;
+export const guestRoomCount = GuestRoomDetails.length;
