@@ -53,16 +53,39 @@ const GuestAccessPage = () => {
         </div>
       </div>
 
+      {/* Desktop screen ends here */}
 
       {/* mobile deign start here */}
-    <div className='mobile-dasboardAccount'>
-        <div className='mobile-dasboardAccount-head'>
-            <DashBoardHeader/>
-            
+      <div className="mobile-dasboardAccount">
+        <div className="mobile-dasboardAccount-head">
+          <DashBoardHeader />
         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et eligendi ullam modi quos ea quia blanditiis est, molestiae officiis eius porro corporis consequatur quae veniam molestias repellat possimus. Porro, nesciunt?</p>
-        
-    </div>
+
+        <div className="dropdown-shadow">
+          <div className="mobile-guestAccount-container">
+            <div className="subText-holder">
+              <div className="subText">
+                <h3>Adojo Peter A.</h3>
+                <p>Unique Number: R1410X</p>
+              </div>
+              <div className="subText">
+                <h3>Adojo Peter A.</h3>
+                <p>Unique Number: R1410X</p>
+              </div>
+              <div className="subText">
+                <h3>Adojo Peter A.</h3>
+                <p>Unique Number: R1410X</p>
+              </div>
+            </div>
+
+            <div>
+              <h3>Emergency</h3>
+              <p>0902213344556</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   );
 };

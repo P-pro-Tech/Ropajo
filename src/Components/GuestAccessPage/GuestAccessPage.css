@@ -37,10 +37,23 @@
     font-size: 0.7rem;
     margin: 0;
 }
+/* Desktop styling end here */
 
+
+/* Mobile styling end here */
 @media (max-width:650px) {
     
     .dashboardAccount-web {
      display: none;
     }
+
+    .mobile-dasboardAccount{
+        background-color: #FDF0D5;
+        height: 100vh;
+    }
+    .dropdown-shadow{
+        background-color: #FFFAEE;
+
+    }
+
 }
