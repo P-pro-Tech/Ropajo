@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './ReceptionAccount.css'
-import GuestDashBoard from "../../Guest/GuestDashBoard/GuestDashBoard";
 import { Link } from "react-router-dom";
 import DashBoardHeader from "../../DashBoardHeader/DashBoardHeader";
 import roll_icon from "../../../assets/play-icon.svg";
