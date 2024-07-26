@@ -66,6 +66,18 @@
     justify-content: space-around;
     
 }
+
+.assignRoom-middle-checkbox label {
+    font-size: 1.3vw;
+}
+.assignRoom-middle-checkbox label input {
+    margin-left: 1vw;
+    font-size: 1.3vw;
+}
+.assignRoom-middle-checkbox label input[type='checkbox']:checked {
+    background-color: red;
+  border-color: red;
+}
 .assignRoom-body-bottom {
     display: flex;
     flex-direction: column;
