@@ -49,7 +49,7 @@ function App() {
             <Route path='/GuestDashBoardRoom' element={<GuestDashBoardRoom/>}/>
             <Route path='/GeneralAccount' element={<GeneralAccount/>}/>
             <Route path='/StaffDashboard' element={<StaffDashboard/>}/>
-            <Route path='/GuestAccessPage' element={<GuestAccessPage/>}/> {/* Define your GuestAccessPage route */}
+            <Route path='/GuestAccessPage' element={<GuestAccessPage/>}/> Define your GuestAccessPage route
             <Route path='/ReceptionistGuestPayment' element={<ReceptionistGuestPayment/>}/>
             <Route path='/UpdateGuestPayment' element={<UpdateGuestPayment/>}/>
             <Route path='/ReservationInfo' element={<ReservationInfo/>}/>
