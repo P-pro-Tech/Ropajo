@@ -1,0 +1,58 @@
+.signIn {
+    background: url(../../assets/register-img.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Optional: Center the image */
+    width: 100%;
+    height: 100vh;
+}
+.signIn-hue {
+    background-color: rgba(31, 21, 21, 0.9);
+    width: inherit;
+    height: inherit;
+}
+
+
+.signIn-body {
+    width: inherit;
+    height: 80vh;
+}
+.signIn-form {
+    margin: auto;
+    width: 60%;
+    height: 50vh;
+}
+.signIn-form h1 {
+    display: block;
+    margin: auto;
+    margin: 4vh 1vw;
+    font-size: 4vw;
+    font-weight: normal;
+    text-align: center;
+}
+.signIn-hide-box {
+    height: 40vh;
+}
+.signIn-form input, .signIn-form button {
+    
+        display: block;
+        margin: auto;
+        width: 90%;
+        height: 6.7vh;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: thin solid #fdf0d5;
+        margin: 4vh 2vw;
+        font-size: 1.3vw;
+}
+.signIn-form input::placeholder {
+    color: #fdf0d5;
+
+}
+
+.signIn-submit {
+    background-color: #fdf0d5 !important;
+    color: #1f1515;
+    border-radius: 1vw;
+}

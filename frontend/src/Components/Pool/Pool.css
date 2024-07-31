@@ -1,0 +1,220 @@
+.pool {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #1f1515;
+}
+.pool-content-left {
+    width: 43.3%;
+    height: inherit;
+    align-items: center;
+    text-align: left;
+    
+}
+.content-left-div {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    gap: 7vh;
+    margin-top: 20vh;
+}
+.pool-content-left h1 {
+    width: 20vw;
+    height: 24vh;
+    font-family: Georgia;
+    font-size: 5vw;
+    font-weight: normal;
+    display: block;
+    margin: auto;
+}
+.pool-bold-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 15vh;
+}
+.pool-content-left h3 {
+    width: 30vw;
+    height: 6vh;
+    font-family: Georgia;
+    font-size: 1.3vw;
+    margin-left: 11vw;
+    color: #fdf0d5;
+}
+.pool-content-left p {
+    width: 23vw;
+    height: 7vh;
+    font-family: Georgia;
+    font-size: 1vw;
+    margin-left: 11vw;
+}
+.content-left-div a {
+    margin: auto;
+    margin-left: 11vw;  
+}
+.pool-content-left button {
+    font-family: Georgia;
+    border: thin solid #fdf0d5;
+    background-color: #1f1515;
+    padding: 1vh 1vw;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+}
+.pool-content-right {
+    width: 56.7%;
+    height: inherit;
+}
+.pool-content-right img {
+    width: 100%;
+    height: inherit;
+}
+@media screen and (min-width: 1000px) or (not (orientation: landscape)) {
+    .pool {
+        height: 80vh;
+    }
+    .content-left-div {
+        height: 48vh;
+        margin-top: 16vh;
+        gap: 3vh;
+    }
+    .pool-content-left h1 {
+        height: 15vh;
+    }
+    .pool-content-left h3 {
+        height: 4vh;
+    }
+    .pool-content-left p {
+        line-height: 1.4;
+    }
+    .pool-bold-text {
+    
+    }
+}
+@media (max-width: 650px) {
+    .pool {
+        flex-direction: column;
+        height: 120vh;
+    }
+    .pool-content-left {
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .content-left-div {
+        margin: 0 auto;
+        justify-content: space-around;
+
+    }
+    .pool-content-left h1 {
+        padding: 0 0 0 0;
+        margin: auto;
+        width: 50%;
+        height: 10vh;
+        font-size: 8.7vw;
+    }
+    .pool-content-left h3 {
+        padding: 0 0 0 0;
+        margin: auto;
+        width: 90%;
+        font-size: 2.9vw;
+        font-weight: normal;
+    }
+    .pool-content-left p {
+        
+        margin: auto;
+        width: 55%;
+        font-size: 2.3vw;
+        color: #fdf0d5;
+    }
+    .content-left-div a {
+        /* background-color: white; */
+        margin: auto auto;
+    }
+    .pool-content-left button {
+        padding: 2vh 4vw;
+        /* margin: 0 auto; */
+        border-radius: 1.6vw;
+        
+        
+        font-size: 3.5vw;
+    }
+    .pool-content-right {
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+@media (max-width: 550px) {
+
+}
+
+@media (max-width: 450px) {
+    .pool {
+        height: 80vh;
+    }
+    .pool-content-right {
+        height: 40vh;
+    }
+    .pool-content-left {
+        height: 40vh;
+    }
+    .pool-content-left h1 {
+        width: 60%;
+        height: 7vh;
+    }
+    .pool-content-left h3 { 
+        height: 4vh;
+        width: 50%;
+        font-size: 3vw;
+    }
+    .pool-content-left p {
+        width: 53%;
+        height: 9vh;
+        font-weight:2.3vw;
+        line-height: 1.8;
+        color: #fdf0d5;
+    }
+    .content-left-div {
+        height: 30vh;
+        gap: 0vh;
+    }
+    .content-left-div a {
+
+    }
+    .content-left-div button {
+        padding: 1.7vh 5vw;
+        border-radius: 2vw;
+        font-size: 4vw;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .pool {
+        height: 60vh;
+    }
+    .pool-content-right {
+        height: 30vh;
+    }
+    .pool-content-left {
+        height: 30vh;
+    }
+    .content-left-div {
+        height: 20vh;
+        gap: 1vh;
+    }
+    .pool-bold-text {
+        height: 10vh;
+    }
+    .pool-bold-text p {
+        line-height: 1.7;
+    }
+    .content-left-div button {
+        padding: 1.5vh 4.2vw;
+        border-radius: 2vw;
+    }
+}

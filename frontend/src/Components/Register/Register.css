@@ -1,0 +1,143 @@
+.register {
+  background: url(../../assets/register-img.jpg); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* Optional: Center the image */
+  width: 100%;
+  height: 100vh;
+}
+
+
+.register-hue {
+    background-color: rgba(31, 21, 21, 0.9);
+    width: inherit;
+    height: inherit;
+}
+
+
+.register-body {
+    width: inherit;
+    height: 80vh;
+}
+.register-form {
+    margin: auto;
+    width: 60%;
+    height: 50vh;
+}
+.register-form h1 {
+    display: block;
+    margin: auto;
+    margin: 4vh 1vw;
+    font-size: 4vw;
+    font-weight: normal;
+    text-align: center;
+}
+.register-form input, .register-form button, .register-form div {
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 6.7vh;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: thin solid #fdf0d5;
+    margin: 4vh 2vw;
+    font-size: 1.3vw;
+}
+.register-form input::placeholder {
+    color: #fdf0d5;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.register-file-label {
+    border: thin solid rgba(253, 240, 213, 1);
+    /* padding: 1vh 2vw; */
+    width: 9vw;
+    height: 5vh;
+    font-size: 1.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    float: right;
+}
+.register-form div span {
+    font-size: 1.3vw;
+
+}
+.register-form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-submit {
+    background-color: #fdf0d5 !important;
+    color: #1f1515;
+    border-radius: 1vw;
+}
+
+@media (max-width: 650px) {
+    .register-form input::placeholder {
+        font-size: 2.3vw;
+    }
+    .register-form {
+        width: 80%;
+    }
+    .register-submit {
+        font-size: 2.3vw;
+    }
+    /* */
+    .register-form button {
+        font-size: 3.5vw;
+    }
+    .register-form h1 {
+        text-align: center;
+        font-size: 9vw;
+    }
+    .register-form div span {
+        font-size: 2.3vw;
+    
+    }
+    .register-file-label {
+        width: 20vw;
+        /* height: 4vh; */
+        font-size: 2.3vw;
+    }
+}
+
+
+
+
+@media (max-width: 450px) {
+
+    .register-form {
+        
+        width: 90%;
+        
+    }
+    .register-form input::placeholder {
+        font-size: 4.3vw;
+    }
+    .register-submit {
+        font-size: 10.3vw;
+    }
+    .register-logo-holder img {
+        width: 25vw;
+    }
+    .register-form h1 {
+        font-size: 8vw;
+    }
+    .register-form div span {
+        font-size: 4.3vw;
+    
+    }
+    .register-file-label {
+        width: 30vw;
+        
+        font-size: 4.3vw;
+    }
+}

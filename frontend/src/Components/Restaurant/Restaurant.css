@@ -1,0 +1,180 @@
+.restaurant{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/Ropa5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* justify-content: space-between; */
+}
+.empty{
+    background: transparent;
+    width: 43.3%;
+    height: inherit;
+}
+.opacity{
+    background: transparent;
+    width: 56.7%;
+    height: inherit;
+    background-color: rgba(31, 21, 21, 0.62);
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+}
+.opacity-content {
+    display: flex;
+    flex-direction: column;
+    height: 0vh;
+    gap: 5vh;
+    margin-top: 30vh;
+}
+.opacity h1{
+    width: 20vw;
+    height: 10vh;
+    font-family: Georgia;
+    font-size: 5vw;
+    font-weight: normal;
+    display: block;
+    margin-left: 11vw;
+}
+.opacity-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 15vh;
+}
+.opacity h3{
+    width: 30vw;
+    height: 6vh;
+    font-family: Georgia;
+    font-size: 1.3vw;
+    margin-left: 11vw;
+    color: #fdf0d5;
+}
+.opacity p{
+    width: 23vw;
+    height: 7vh;
+    font-family: Georgia;
+    font-size: 1vw;
+    margin-left: 11vw;
+}
+.opacity a {
+    margin: auto;
+    margin-left: 11vw;
+}
+.opacity button {
+    font-family: Georgia;
+    border: thin solid #fdf0d5;
+    background-color: transparent;
+    padding: 1vh 1vw;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+    
+} 
+
+@media (max-width: 1000px) {
+    .restaurant {
+        height: 80vh;
+    }
+    .opacity-content {
+        margin-top: 24vh;
+    }
+    
+}
+
+@media (max-width: 650px){
+    .restaurant{
+        height: 50vh;
+    }
+    .opacity{
+        align-items: center;
+        margin: auto;
+        width: 67%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .opacity-content {
+        margin-top: 0vh;
+        gap: 3vh;
+    }
+    .opacity h1{
+        height: 10vh;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 5vh;
+        font-size: 8vw;
+    }
+    .opacity-text {
+        height: 20vh;
+    }
+    .opacity h3{
+        font-size: 3vw;
+        margin: auto;
+        height: 7vh;
+        width: 90%;
+        text-align: center;
+
+    }
+    .opacity p {
+        margin: auto;
+        width: 80%;
+        height: 70px;
+        text-align: center;
+        font-size: 2.4vw;
+        line-height: 1.4;
+        
+    }
+    .opacity-content a {
+        margin: auto;
+    }
+    .opacity button {
+        margin: auto;
+        width: 100%;
+        height: 45px;
+        font-size: 4vw;
+        justify-content: center;
+    }
+
+    .empty{
+        display: none;
+    }
+}
+@media (max-width: 450px) {
+    .restaurant{
+        height: 40vh;
+    }
+    .opacity-content {
+        /* height: 10vh; */
+        gap: 2vh;
+    }
+    .opacity h1{
+
+        height: 60px;
+        width: 90%;
+        margin-top: 5.7vh;
+        font-size: 9vw;
+    }
+    .opacity-text {
+        height: 24vh;
+    }
+    .opacity h3 {
+        font-size: 3.5vw;
+        height: 4vh;
+        font-weight: normal;
+    }
+    .opacity p {
+        width: 87%;
+        height: 9vh;
+        font-size: 2.4vw;
+        line-height: 1.8;
+    }
+    .opacity-content button {
+        padding: 1.7vh 5vw;
+        border-radius: 2vw;
+        font-size: 4vw;
+    }
+}

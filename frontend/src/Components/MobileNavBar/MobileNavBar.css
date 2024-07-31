@@ -1,0 +1,61 @@
+.mobile-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    
+    background-color: rgba(31, 21, 21, 0.92);
+    visibility: hidden;
+}
+
+@media (max-width: 650px) {
+    .mobile-nav-bar {
+        visibility: visible;
+    }-------------------------------------------------------------------------------------
+    .mnb-logo {
+        max-width: 100%;
+        height: 30vh;
+    }
+    .mnb-logo img {
+        width: 30%;
+        margin: auto;
+    }
+    
+    .cont-mob-navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .mnb-arrow-up {
+        padding: 25px;
+        position: relative;
+    }
+    .mnb-arrow-up img {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .mnb-logo {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mnb-nav-list {
+        height: 26.7vh;
+    }
+    .mnb-nav-list ul {
+        /* display: flex;
+        flex-direction: column;
+        margin: auto; */
+        text-align: center;
+    }
+    .mnb-nav-list ul li {
+        padding: 15px 10px;
+        cursor: pointer;
+        /* margin: auto; */
+    }
+    .mobile-nav-bar.hide {
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,168 @@
+.coffee {
+    width: 100%;
+    height: 100vh;
+    background-color: #fdf0d5;
+    display: flex;
+    flex-direction: row;
+}
+.img-area {
+    width: 40%;
+    align-items: center;
+    display: flex;
+}
+.img-pouring-coffee {
+    width: 24.93vw;
+    height: 58.2vh;
+    margin-left: 12.23vw;
+    background: url("../../assets/Ropa6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.img-still-coffee {
+    width: 11vw;
+    height: auto;
+    margin-left: 15.84vw;
+    margin-top: 27vh;
+}
+
+.vector-area {
+    width: 60%;
+    display: flex;
+    height: inherit;
+    padding-left: 2.2vw; 
+}
+.vector-area-inner {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto 0;
+    margin-left: 0;
+}
+.vector-area-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 19vh;
+}
+.vector-area p,.vector-area h3 {
+    color: #000;
+    font-weight: 400;
+    display: block;
+}
+.vector-area h3 {
+    width: 40vw;
+    height: 2vw;
+    font-size: 3.3vw;
+    text-align: left;
+}
+.vector-area p {
+    font-size: 1.3vw;
+    width: 31vw;
+    text-align: left;
+}
+.vector-1 {
+    width: 27.2vw;
+}
+.vector-2 {
+    width: 26vw;
+}
+
+@media screen and (min-width: 1000px) or (not (orientation: landscape)) {
+    .coffee {
+        height: 70vh;
+    }
+    .vector-area-inner {
+        height: 50vh;
+    }
+
+    .img-area {
+        width: 50%;
+    }
+    .img-pouring-coffee{
+        width: 34.93vw;
+        height: 58.2vh;
+        margin-left: 10.23vw;
+
+    }
+    .img-still-coffee {
+        width: 13vw;
+        height: auto;    
+        margin-left: 24.84vw;
+        margin-top: 32vh;
+    }
+    .vector-area-text {
+        height: 13vh;
+    }
+    .vector-area {
+        width: 50%;
+    }
+}
+
+@media (max-width:650px) {
+    .coffee {
+        height: 70vh;
+    }
+    .img-still-coffee {
+        height: auto;
+        width: 16vw;
+        margin-left: 70%;
+        margin-top: 30vh;
+    }
+    
+    .vector-area-inner {
+        height: 34vh;
+        margin-left: 15vw;
+    }
+    .vector-area-text{
+        height: 9vh;
+    }
+}
+@media (max-width: 450px) {
+    .coffee {
+        height: 40vh;
+    }
+    .img-pouring-coffee {
+        height: 29vh;
+        width: 34.93vw;
+    }
+    .img-still-coffee {
+        width: 20vw;
+        margin-left: 20.84vw;
+        margin-top: 11vh;
+    }
+    .vector-area {
+        height: 30vh;
+        margin-top: 10vh;
+    }
+    .vector-1 {
+        font-weight: 900;
+    }
+
+    .vector-area-inner {
+        height: 25vh;
+        
+    }
+    .vector-area-text {
+        height: 6vh;
+    }
+}
+
+@media screen and (orientation: landscape){
+
+}
+
+/* @media screen and (max-width: 1000px) and (orientation: landscape) {
+    
+    .vector-area h3 {
+        color: red;
+    }
+} */
+
+/* @media (max-width: 350px) {
+    .vector-area-inner {
+        height: 70vh;
+    }
+} */

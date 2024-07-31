@@ -1,0 +1,189 @@
+.dashboardAccount {
+    width: 100%;
+    height: 100vh;
+    
+    background-color: rgba(253, 240, 213, 1);
+}
+
+.dashboardAccount-web {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(253, 240, 213, 1);
+}
+.dashAccount-guest-section {
+    width: 25%;
+    height: inherit;
+}
+.dashAccount-content-section {
+    width: 75%;
+    height: inherit;
+    color: rgba(31, 21, 21, 1);
+
+}
+.dashAccount-content-head {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 0.2vh solid #1F1515;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.dashAccount-content-head a {
+    color: rgba(31, 21, 21, 1);
+    margin-right: 7vh;
+    font-size: 1.05vw;
+}
+.dashAccount-content-body {
+    width: 100%;
+    height: 90vh;
+}
+.dashAccount-content-body p {
+    color: rgba(31, 21, 21, 1);
+    font-size: 2vw;
+    height: 8vh;
+    display: flex;
+    align-items: center; 
+    margin-left: 5vw;
+}
+.dashAccount-content-table-section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+}
+.dashAccount-web-table-holder {
+    width: 90%;
+    height: 70vh;
+    background-color: rgba(255, 250, 238, 1);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25) ;
+}
+.dashAccount-web-table {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    
+}
+.dashAccount-web-table div {
+    border-bottom: thin solid #000 !important; 
+    height: 7vh;
+}
+.dashAccount-web-table thead div  {
+    color: #1F1515;
+    
+    font-size: 1.05vw;
+    display: flex;
+    justify-content: space-around;
+}
+.dashAccount-web-table thead div span  {
+    color: #1F1515;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.05vw;
+    width: 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-bottom: 1vh;
+}
+.dashAccount-web-table tbody div {
+    display: flex;
+    justify-content: space-around;
+}
+.dashAccount-web-table tbody div span  {
+    color: #1F1515;
+    text-align: center;
+    
+    font-size: 1.05vw;
+    width: 17%;
+    display: flex;
+    align-items: end;
+    margin-bottom: 1vh;
+}
+.dashAccount-web-table tr td div {
+    color: #1F1515;
+    
+}
+.dashAccount-total {
+    color: #000;
+    float: right;
+    font-size: 1.2vw;
+}
+.dashAccount-total-amount {
+    color: #000;
+    font-size: 1.05vw;
+    font-weight: 600;
+}
+.mobile-dasboardAccount {
+    display: none;
+}
+.bill-red {
+    color: rgba(224, 0, 40, 1) !important; 
+}
+.paid-green {
+    color: rgba(0, 144, 32, 1) !important;
+    
+}
+
+@media (max-width:650px) {
+    .dashboardAccount-web {
+        display: none;
+    }
+    /* .dashAccount-guest-section {
+        display: none;
+    }
+    .dashAccount-content-section {
+        display: none;
+    } */
+    .mobile-dasboardAccount {
+        display: block;
+    }
+    .mobile-dasboardAccount-body {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-dasboardAccount-display-amount {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mobile-dasboardAccount-display-amount span {
+        color: rgba(31, 21, 21, 1);
+        
+    }
+    .mobile-dasboardAccount-display-amount span h3 {
+        color: rgba(31, 21, 21, 1);
+        
+    }
+    .mobile-dasboardAccount-table-container {
+        background: rgba(236, 236, 236, 1);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25) ;
+        width: 90%;
+    }
+    .mobile-dasboardAccount-dropdown-btn-sec {
+        width: 100%;
+        background: rgba(255, 250, 238, 1);
+
+    }
+    .mobile-dasboardAccount-dropdown-btn-sec td {
+        color: #000;
+    }
+    .mobile-dasboardAccount-dropdown-content {
+        width: 100%;
+        background: rgba(236, 236, 236, 1);
+
+    }
+    .mobile-dasboardAccount-dropdown-content div {
+        border: thin solid red !important;
+    }
+    .mobile-dasboardAccount-dropdown-content td {
+        color: rgba(31, 21, 21, 0.6);
+    }
+}
