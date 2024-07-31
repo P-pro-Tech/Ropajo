@@ -8,7 +8,7 @@ return (
     <div className='restaurant'>
         <div className="empty">
         </div>
-        <div className="opacity">
+        <div className="opacity hidden">
             <div className='opacity-content'>
                 <h1>Restaurant</h1>
                 <div className='opacity-text'>

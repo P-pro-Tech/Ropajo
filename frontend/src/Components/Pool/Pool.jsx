@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Pool = () => {
   return (
     <div className='pool'>
-      <div className="pool-content-left">
+      <div className="pool-content-left hidden-left">
         <div className="content-left-div">
             <h1>Pool & Party</h1>
               <div className='pool-bold-text'>

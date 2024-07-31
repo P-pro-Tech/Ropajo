@@ -1,0 +1,22 @@
+
+.ReservedRoomBtn {
+    border: none;
+    padding-right: 1rem;
+    background-color: rgba(64, 47, 47, 1);
+    color: rgba(253, 240, 213, 1);
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+    margin: 0.5rem 0.5rem;
+}
+.ReservedRoomBtn div {
+    font-size: 1.1rem;
+    margin: 0 0.3rem;
+    float: left;
+    
+}
+
+
+.ReservedRoomBtn span {
+    font-size: 0.7rem;
+    margin: 0 0.3rem;
+}

@@ -1,16 +1,20 @@
 import React from 'react'
 import './NavBar.css'
+import '../../index.css'
 // import nav_img from '../../assets/Ropa1.jpeg'
 import mob_logo from '../../assets/mob-logo.svg'
 import ropa_logo from '../../assets/ropajo _hat2.svg'
 import ropa_text from '../../assets/ropajo_text.svg' 
 import mob_menu from '../../assets/mob-menu.svg' 
 import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom'
+import '../../Slide.jsx'
 
 
 const NavBar = ({setViewMobileNav}) => {
+      
   return (
-    <div className='navBar'>
+    <div className='navBar hidden-up'>
       <nav className="navbar-col">
         <img src={mob_logo} alt="" className='mob-logo' />
         <ul>
@@ -26,16 +30,16 @@ const NavBar = ({setViewMobileNav}) => {
             <img src={ropa_logo} alt="" className='logo '/>
             <img src={ropa_text} alt="" className=' two'/>
           </div>
-          <button className=''>Book Now</button>
+          <NavLink to='/Booking'><button className=''>Book Now</button></NavLink>
         </div>
       </nav>
       <div className='nav-img-container'>
       
-        <div className='nav-contact'>
+        {/* <div className='nav-contact'>
           <p>+234 803 320 2272</p>
         <p>ROPAJO@GMAIL.COM</p>
         </div>
-      
+       */}
       </div>
     </div>
   )
