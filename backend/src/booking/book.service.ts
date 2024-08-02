@@ -75,7 +75,5 @@ export class BookingService {
     } catch (error) {
       throw new NotFoundException('Could not find booking');
     }
-
-    return booking;
   }
 }

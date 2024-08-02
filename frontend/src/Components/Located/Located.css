@@ -4,8 +4,8 @@
     background-color: #fdf0d5;
     display: flex;
     flex-direction: row;
-
 }
+
 .loc-text-sec {
     width: 50.7%;
     z-index: 10;
@@ -51,6 +51,8 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+
 
 @media screen and (min-width: 1000px) or (not (orientation: landscape)) {
     .located {

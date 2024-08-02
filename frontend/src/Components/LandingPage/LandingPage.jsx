@@ -1,6 +1,6 @@
 import React from 'react'
-import Coffee from '../Coffee/Coffee';
 
+import Coffee from '../Coffee/Coffee';
 import Located from '../Located/Located';
 import NavBar from '../NavBar/NavBar';
 import Restaurant from '../Restaurant/Restaurant';
@@ -11,14 +11,12 @@ import Contact from '../Contact/Contact';
 import MobileNavBar from '../MobileNavBar/MobileNavBar';
 import { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
-import Booking from '../Booking/Booking';
-
 import GuestId from '../GuestId/GuestId';
 
 const LandingPage = () => {
     const [viewMobileNav, setViewMobileNav] = useState(false);
   return (
-    <div>
+    <div className='landing-page'>
       <NavBar setViewMobileNav={setViewMobileNav}/>
         <GuestId/>
         <Rooms/> 

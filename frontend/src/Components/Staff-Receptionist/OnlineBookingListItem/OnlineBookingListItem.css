@@ -1,0 +1,14 @@
+.OnlineBookingListItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #1F1515;
+    border-bottom: 0.2vh solid #1F1515;
+    height: 7vh;
+    align-items: center;
+}
+.OnlineBookingListItem p {
+    color: #1F1515;
+    font-size: 1.4vw;
+
+}

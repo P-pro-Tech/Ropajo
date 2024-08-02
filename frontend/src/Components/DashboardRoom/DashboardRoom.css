@@ -137,22 +137,7 @@
     .dashboard-room-web {
         display: none;
     }
-    /* .dbr-nav {
-        background-color: #1F1515;
-    }
-    .dbr-logo-holder img {
-        width: 40vw;
-    }
-    .dbr-nav-list ul {
-        display: none;
-    }
-    .dbr-mob-menu {
-        display: block;
-        width: 7vw;
-        height: auto;
-        margin-top: 1.7vh;
-        margin-right: 7vw;
-    } */
+    
     .dbr-header h2{
         color: #1f1515;
     }
@@ -160,8 +145,8 @@
         display: block;
         width: 90%;
         height: 75vh;
-        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25) ;
-        margin: 7vw 3vw 4vw 4vw;
+        /* box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25) ; */
+        /* margin: 7vw 3vw 4vw 4vw; */
         overflow-y: scroll;
     .drp img{
         width: 2vw;

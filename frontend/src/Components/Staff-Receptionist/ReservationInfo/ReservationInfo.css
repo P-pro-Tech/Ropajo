@@ -1,0 +1,37 @@
+.ReservationInfo-section {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 3vh; */
+
+}
+.ReservationInfo-section div {
+    width: 80%;
+    margin-top: 5vh;
+}
+.ReservationInfo-section div h2 {
+    color: #1F1515;
+    font-size: 2.5vw;
+
+}
+.ReservationInfo-section div p {
+    font-size: 2vw;
+}
+
+.ReservationInfo-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.ReservationInfo-buttons button {
+    border: none;
+    background: #1F1515;
+    color: #FDF0D5;
+    border-radius: 1vw;
+    padding: 1vh 1vw;
+    font-size: 1.2vw;
+}

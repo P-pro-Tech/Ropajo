@@ -3,7 +3,7 @@ import './DashboardRoom.css'
 import DashboardRoomProfile from '../DashboardRoomProfile/DashboardRoomProfile';
 import play_icon from '../../assets/play-icon.svg';
 import DashBoardHeader from '../DashBoardHeader/DashBoardHeader';
-import GuestDashBoard from '../GuestDashBoard/GuestDashBoard';
+import GuestDashBoard from '../Guest/GuestDashBoard/GuestDashBoard';
 import { Link } from 'react-router-dom'
 
   
@@ -92,20 +92,25 @@ const DashboardRoom = () => {
             </div>
         </div>
       </div>
+
+      {/* desktop screen ends here */}
+
+      {/* mobile screen starts here */}
           
         <div className='dropdown-mobile-table'>
           <div className='dropdown'>
           <div className="dropdown-btn">
-          <div className="dropdown-item-left">
-          <img
+            <div className="dropdown-item-left">
+              <img
                 src={play_icon}
                 alt=""
                 className={isActive1 ? 'dropdown-icon rotate-icon' : 'dropdown-icon'}
                 onClick={() => setIsActive1(!isActive1)}
               />
-            {/* <img src={play_icon} alt="" onClick={(e) =>
-          setIsActive1(!isActive1)} /> */}
-          Room No:</div>
+                {/* <img src={play_icon} alt="" onClick={(e) =>
+              setIsActive1(!isActive1)} /> */}
+              Room No:
+            </div>
               <div className="dropdown-item-right">256</div>
           </div>
           {isActive1 && (

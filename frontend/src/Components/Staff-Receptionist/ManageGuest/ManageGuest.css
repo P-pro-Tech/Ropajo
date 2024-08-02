@@ -1,0 +1,137 @@
+.ManageGuest {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(253, 240, 213, 1);
+}
+
+.ManageGuest-web {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: rgba(253, 240, 213, 1);
+}
+.ManageGuest-guest-section {
+  width: 25%;
+  height: inherit;
+}
+.ManageGuest-content-section {
+  width: 75%;
+  height: inherit;
+  color: rgba(31, 21, 21, 1);
+}
+.ManageGuest-content-head {
+  width: 100%;
+  height: 10vh;
+  border-bottom: 0.2vh solid #1f1515;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ManageGuest-content-head a {
+  color: rgba(31, 21, 21, 1);
+  margin-right: 7vh;
+  font-size: 1.05vw;
+}
+.ManageGuest-content-body {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ManageGuest-bar-holder {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+.ManageGuest-bar-holder p  {
+    color: #1f1515;
+    margin-left: 5vw;
+    font-size: 2vw;
+}
+.ManageGuest-bar-holder input  {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.2vh solid #1f1515;
+    color: #1f1515;
+    font-size: 1.3vw;
+}
+
+.ManageGuest-content-holder {
+    width: 100%;
+}
+/* .ManageGuest-content-body p {
+    color: rgba(31, 21, 21, 1);
+    font-size: 2vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+  } */
+
+.ManageGuest-table-section {
+  display: flex;
+  width: 100%;
+  height: 80Vh;
+  justify-content: center;
+  align-items: center;
+}
+.ManageGuest-content-table-section {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-dasboardAccount {
+  display: none;
+}
+
+.mg-web-table-holder {
+  width: 90%;
+  height: 70vh;
+  background-color: rgba(255, 250, 238, 1);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+}
+.mg-web-table {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  /* border: thin solid #000; */
+}
+.mg-web-table .tbody {
+  overflow-y: scroll;
+}
+
+.ManageGuest-thead {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  color: #000;
+
+  border-bottom: 0.2vh solid #000;
+}
+
+.ManageGuest-thead p {
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #1f1515;
+  height: 7vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 15%;
+  text-align: left;
+
+  /* web section ends here */
+}
+
+.ManageGuest-scroll {
+  overflow-y: scroll;
+  height: 60vh;
+}
