@@ -1,46 +1,51 @@
-.GuestInfoTableRow {
-    border-bottom: 0.2vh solid #000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 7vh;
-}
-.GuestInfoTableRow:hover{
-    background: rgba(31, 21, 21, 0.2);
+/** @format */
 
+.GuestInfoTableRow {
+  border-bottom: 0.2vh solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 7vh;
 }
-.GuestInfoTableRow p{
-    color: #1F1515;
-    text-align: center;
-    width: 15%;
-    font-size: 1.05vw;
+.GuestInfoTableRow:hover {
+  background: rgba(31, 21, 21, 0.2);
+}
+.copy-btn {
+  margin-left: 10px;
+  border: 0px;
+  cursor: pointer;
+  background-color: none;
+}
+.GuestInfoTableRow p {
+  color: #1f1515;
+  text-align: center;
+  width: 15%;
+  font-size: 1.05vw;
 }
 .GuestInfoTableRow .GuestInfoTableRow-name {
-    text-align: left;
-    
+  text-align: left;
 }
 .GuestInfoTableRow div {
-    color: #1F1515;
-    text-align: center;
-    width: 12%;
-    font-size: 1.05vw;
-    
+  color: #1f1515;
+  text-align: center;
+  width: 12%;
+  font-size: 1.05vw;
 }
 
 .GuestInfoTableRow-id-sec {
-    display: flex;
-    flex-direction: row;
-    justify-content: space;
-    align-items: center;
-    gap: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+  align-items: center;
+  gap: 1vw;
 }
-.GuestInfoTableRow-id-sec p  {
-    width: 50%;
+.GuestInfoTableRow-id-sec p {
+  width: 50%;
 }
 .GuestInfoTableRow-id-sec span img {
-    width: 1.4vw;
+  width: 1.4vw;
 }
 /* .GuestInfoTableRow span{
     display: flex;

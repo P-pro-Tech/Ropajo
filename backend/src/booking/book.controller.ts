@@ -10,10 +10,10 @@ import {
 } from '@nestjs/common';
 import { BookingService } from './book.service';
 
-@Controller('booking')
+@Controller('guest/booking')
 export class BookingController {
-  constructor(private readonly bokingServie: BookingService) {}
-  @Post()
+  constructor(private readonly bokingService: BookingService) {}
+  @Post('book')
   async makeBooking(
     @Body('fullName') fullName: string,
     @Body('email') email: string,
@@ -21,7 +21,7 @@ export class BookingController {
     @Body('identityNumber') idNumber: string,
     @Body('identityImage') idImage: string,
   ) {
-    const save = await this.bokingServie.makeBooking(
+    const save = await this.bokingService.makeBooking(
       fullName,
       email,
       phoneNumber,
@@ -32,12 +32,12 @@ export class BookingController {
   }
   @Get()
   async getBookings() {
-    const bookings = await this.bokingServie.getBookings();
+    const bookings = await this.bokingService.getBookings();
     return bookings;
   }
   @Get(':id')
   async getBooking(@Param(':id') bookingId: string) {
-    const booking = await this.bokingServie.getBooking(bookingId);
+    const booking = await this.bokingService.getBooking(bookingId);
     return booking;
   }
   @Patch(':id')
@@ -49,7 +49,7 @@ export class BookingController {
     @Body('identityNumber') idNumber: string,
     @Body('identityImage') image: string,
   ) {
-    await this.bokingServie.updateBooking(
+    await this.bokingService.updateBooking(
       bookingId,
       fullName,
       email,
@@ -61,7 +61,7 @@ export class BookingController {
   }
   @Delete(':id')
   async deleteBooking(@Param(':id') bookingId: string) {
-    await this.bokingServie.deleteBooking(bookingId);
+    await this.bokingService.deleteBooking(bookingId);
     return null;
   }
 }
