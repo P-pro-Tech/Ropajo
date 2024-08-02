@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import './DashboardRoomProfile.css'
-import { Link } from 'react-scroll'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import top_icon from '../../assets/top_arrow.svg'
 import ropa_logo from '../../assets/mob-logo.svg'
 // import profile_pic from '../../assets/profile_pic.png';
@@ -40,9 +39,9 @@ const DashboardRoomProfile = ({setProfileShow, profileShow}) => {
           {/* <li><Link onClick={handleNavProfile} to="room" smooth={true} offset={0} duration={500}  >Room/Apartment</Link></li>
             <li><Link onClick={handleNavProfile} to="room" smooth={true} offset={0} duration={500} >Laundry</Link></li>
             <li><Link onClick={handleNavProfile} to="pool" smooth={true} offset={0} duration={500} >Pool</Link></li> */}
-            <li><Link onClick={handleNavProfile} to="laundry" smooth={true} offset={-760} duration={500} >Home</Link></li>
-            <li><Link onClick={handleNavProfile} to="gallery" smooth={true} offset={0} duration={500} >Account</Link></li>
-            <li><Link onClick={handleNavProfile} to="gallery" smooth={true} offset={0} duration={500} >Signout</Link></li>
+            <li><Link >Home</Link></li>
+            <li><NavLink  >Account</NavLink></li>
+            <li><Link  >Signout</Link></li>
           </ul>
         </div>
         
