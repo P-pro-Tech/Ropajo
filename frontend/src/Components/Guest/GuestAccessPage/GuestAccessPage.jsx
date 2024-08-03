@@ -1,17 +1,12 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./GuestAccessPage.css";
 import GuestDashBoard from "../GuestDashBoard/GuestDashBoard";
 import { Link } from "react-router-dom";
 import DashBoardHeader from "../../DashBoardHeader/DashBoardHeader";
 import DashboardRoomProfile from "../../DashboardRoomProfile/DashboardRoomProfile";
-import { Store } from "../../../Store";
 
 const GuestAccessPage = () => {
   const [profileShow, setProfileShow] = useState(false);
-  const {
-    state: { userInfo },
-    dispatch,
-  } = useContext(Store);
   return (
     <div>
       <div className="GuestAccessPage-web">
@@ -24,11 +19,8 @@ const GuestAccessPage = () => {
             <Link>Back to Homepage</Link>
           </div>
           <div className="GuestAccessPage-mobile-header">
-            <DashboardRoomProfile
-              profileShow={profileShow}
-              setProfileShow={setProfileShow}
-            />
-            <DashBoardHeader setProfileShow={setProfileShow} />
+          <DashboardRoomProfile profileShow={profileShow} setProfileShow={setProfileShow}/>
+            <DashBoardHeader setProfileShow={setProfileShow}/>
           </div>
           <div className="GuestAccessPage-content-body">
             <p>{/*Account*/} </p>
@@ -37,8 +29,8 @@ const GuestAccessPage = () => {
                 {/* table */}
                 <div className="access-card">
                   <div className="access-card-box">
-                    <h2>{userInfo.fullName}</h2>
-                    <p>Unique Number: {userInfo.userUniqueId}</p>
+                    <h2>Adojo Peter A.A</h2>
+                    <p>Unique Number: R1410X</p>
                   </div>
                   <div className="access-card-box double-box">
                     <div>

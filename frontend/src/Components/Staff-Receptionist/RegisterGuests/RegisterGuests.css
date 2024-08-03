@@ -2,8 +2,7 @@
     width: 100%;
     height: 100vh;
     background-image: url(../../../assets/booking_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
 .registerGuests-hue {
     background-color: rgba(31, 21, 21, 0.9);
@@ -28,7 +27,7 @@
 }
 .registerGuests-body-content-holder h1 {
     font-weight: normal;
-    font-size: 4.5vw;
+    font-size: 3rem;
     margin-top: 3vw;
 }
 .registerGuests-form {
@@ -48,36 +47,27 @@
     background-color: transparent;
     outline: none;
     border: none;
-    font-size: 1.3vw;
+    font-size: 1rem;
 }
 .registerGuests-form-100p[type="text"] {
     border-bottom: thin solid rgba(253, 240, 213, 1);
 }
 .registerGuests-form-100p[type="text"]::placeholder {
     color: rgba(253, 240, 213, 1);
-    font-size: 1.3vw;
+    font-size: 1rem;
 }
-.registerGuests-form-holder label {
+.registerGuests-form50p {
     width: 48%;
-    height: 3vw;
+    height: 2rem;
     background-color: transparent;
     outline: none;
     border: none;
     border-bottom: thin solid rgba(253, 240, 213, 1);
-    font-size: 1.3vw;
-}
-.registerGuests-form50p {
-    width: 60%;
-    height: 5vh;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    /* border-bottom: thin solid rgba(253, 240, 213, 1); */
-    font-size: 1.3vw;
+    font-size: 1rem;
 }
 .registerGuests-form50p::placeholder {
     color: rgba(253, 240, 213, 1);
-    font-size: 1.3vw;
+    font-size: 1rem;
 
 }
 .registerGuests-form25p {
@@ -88,19 +78,19 @@
     border: none;
     color: rgba(31, 21, 21, 1);
     border-radius: 0.5vw;
-    font-size: 1.3vw;
+    font-size: 1rem;
 }
 .registerGuests-form-100p[type="submit"] {
     background: rgba(253, 240, 213, 1);
     color: rgba(31, 21, 21, 1);
-    font-size: 1.4vw;
+    font-size: 1.2rem;
 }
 .registerGuests-file-label {
     border: thin solid rgba(253, 240, 213, 1);
     /* padding: 1vh 2vw; */
     width: 9vw;
     height: 5vh;
-    font-size: 1.4vw;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,13 +102,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 48%;
-    border-bottom: 0.2vh solid rgba(253, 240, 213, 1);
-}
-.registerGuests-passport label {
-    width: 30%;
-    height: 4.5vh;
-    border: 0.2vh solid rgba(253, 240, 213, 1);
 }
 .registerGuests-passport span {
 
@@ -142,7 +125,7 @@
         margin-top: 7vh;
     }
     .registerGuests-form50p {
-        /* width: 100%; */
+        width: 100%;
         
         /* font-size: 3vw; */
     }
@@ -154,32 +137,5 @@
     }
     .registerGuests-form-holder {
         
-    }
-}
-
-@media (max-width: 650px) {
-    .registerGuests-form50p {
-        /* height: 10vh; */
-        /* width: ; */
-    }
-    .registerGuests-form-holder label {
-        width: 100%;
-        
-    }
-    .registerGuests {
-        height: auto;
-    }
-    .registerGuests-hue {
-        height: auto;
-    }
-    .registerGuests-body-content-holder {
-        height: auto;
-    }
-    .registerGuests-form {
-        height: auto;
-    }
-    .registerGuests-form-holder {
-        /* height: 10vh; */
-        padding: 2vh 0;
     }
 }
