@@ -1,154 +1,165 @@
 .ReceptionAccount {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(253, 240, 213, 1);
-  }
-  
-  .ReceptionAccount-web {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    background-color: rgba(253, 240, 213, 1);
-  }
-  .ReceptionAccount-guest-section {
-    width: 25%;
-    height: inherit;
-  }
-  .ReceptionAccount-content-section {
-    width: 75%;
-    height: inherit;
-    color: rgba(31, 21, 21, 1);
-  }
-  .ReceptionAccount-content-head {
-    width: 100%;
-    height: 10vh;
-    border-bottom: 0.2vh solid #1f1515;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .ReceptionAccount-content-head a {
-    color: rgba(31, 21, 21, 1);
-    margin-right: 7vh;
-    font-size: 1.05vw;
-  }
-  .ReceptionAccount-content-body {
-    width: 100%;
-    height: 90vh;
-  }
-  .ReceptionAccount-content-body p {
-    color: rgba(31, 21, 21, 1);
-    font-size: 2vw;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    margin-left: 5vw;
-  }
-  .ReceptionAccount-content-table-section {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .ReceptionAccount-bar-holder {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(253, 240, 213, 1);
 }
-.ReceptionAccount-bar-holder p  {
-    color: #1f1515;
-    margin-left: 5vw;
-    font-size: 2vw;
+
+.ReceptionAccount-web {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: rgba(253, 240, 213, 1);
 }
-.ReceptionAccount-bar-holder span  {
-    background: transparent;
-    color: #1f1515;
-    font-size: 1.3vw;
+.ReceptionAccount-guest-section {
+  width: 25%;
+  height: inherit;
+}
+.ReceptionAccount-content-section {
+  width: 75%;
+  height: inherit;
+  color: rgba(31, 21, 21, 1);
+}
+.ReceptionAccount-content-head {
+  width: 100%;
+  height: 10vh;
+  border-bottom: 0.2vh solid #1f1515;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ReceptionAccount-content-head a {
+  color: rgba(31, 21, 21, 1);
+  margin-right: 7vh;
+  font-size: 1.05vw;
+}
+.ReceptionAccount-content-body {
+  width: 100%;
+  height: 90vh;
+}
+.ReceptionAccount-content-body p {
+  color: rgba(31, 21, 21, 1);
+  font-size: 2vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+}
+.ReceptionAccount-content-table-section {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ReceptionAccount-bar-holder {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  margin: auto;
+}
+.ReceptionAccount-bar-holder div select {
+  margin: 1vh 1vw;
+  font-size: 1.2vw;
+  background-color: transparent;
+  color: #1f1515;
+  border-radius: 1vw;
+  outline: none;
+  padding: 0.5vh 0.5vw;
 
 }
+.ReceptionAccount-bar-holder div select option {
+  background-color: #1f1515;
+  color: #fffaee;
+}
+.ReceptionAccount-bar-holder p {
+  color: #1f1515;
+  /* margin-left: 5vw; */
+  font-size: 2vw;
+}
+.ReceptionAccount-bar-holder span {
+  background: transparent;
+  color: #1f1515;
+  font-size: 1.3vw;
+}
+.mobile-dasboardAccount {
+  display: none;
+}
+/* web section ends here */
+
+/* Mobile Styling here */
+@media (max-width: 650px) {
   .mobile-dasboardAccount {
+    display: block;
+  }
+  .head-container {
+    width: 90%;
+    padding-left: 4.5vw;
+    padding-top: 5vh;
+  }
+  h4 {
+    color: #1f1515;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .ReceptionAccount-web {
     display: none;
   }
-  /* web section ends here */
-  
-  
-  /* Mobile Styling here */
-  @media (max-width: 650px) {
-    .mobile-dasboardAccount {
-      display: block;
-    }
-    .head-container {
-      width: 90%;
-      padding-left: 4.5vw;
-      padding-top: 5vh;
-    }
-    h4 {
-      color: #1f1515;
-      font-size: 20px;
-      font-weight: 100;
-    }
-    .ReceptionAccount-web {
-      display: none;
-    }
-  
-    /* .dbr-header h2 {
-      color: #1f1515;
-    } */
-  
-    .ReceptionAccount-mobile-table {
-      font-weight: 100;
-      display: block;
-      width: 90%;
-      height: 75vh;
-      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
-      margin: 2vw 3vw 4vw 4vw;
-      overflow-y: scroll;
-    }
-    /* .drp img {
-      width: 2vw;
-      height: 2vh;
-    } */
-    .dropdown {
-      height: auto;
-    }
-    .dropdown-btn {
-      background-color: #fffaee;
-      width: 100%;
-      height: auto;
-      display: flex;
-      align-items: flex-start;
-      padding: 3px;
-    }
-    .dropdown-item {
-      background-color: #ececec;
-      width: 100%;
-      height: auto;
-      display: flex;
-      padding: 3px;
-    }
-    .dropdown-item-head {
-      color: #1f1515;
-      text-align: left;
-      display: flex;
-  
-    }
-    .dropdown-item-left {
-      /* width: 50%; */
-      margin-left: 4vw;
-      height: auto;
-      padding: 3px;
-    }
-    .dropdown-item-left p{
-      color: #1f1515;
-      font-weight: 100;
-    }
-    .dropdown-item-right {
-      /* width: 50%; */
-      height: auto;
-      flex-direction: column;
-      padding: 3px;
-    }
+
+  /* .dbr-header h2 {
+    color: #1f1515;
+  } */
+
+  .ReceptionAccount-mobile-table {
+    font-weight: 100;
+    display: block;
+    width: 90%;
+    height: 75vh;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    margin: 2vw 3vw 4vw 4vw;
+    overflow-y: scroll;
   }
-  
+  /* .drp img {
+    width: 2vw;
+    height: 2vh;
+  } */
+  .dropdown {
+    height: auto;
+  }
+  .dropdown-btn {
+    background-color: #fffaee;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    padding: 3px;
+  }
+  .dropdown-item {
+    background-color: #ececec;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 3px;
+  }
+  .dropdown-item-head {
+    color: #1f1515;
+    text-align: left;
+    display: flex;
+  }
+  .dropdown-item-left {
+    /* width: 50%; */
+    margin-left: 4vw;
+    height: auto;
+    padding: 3px;
+  }
+  .dropdown-item-left p {
+    color: #1f1515;
+    font-weight: 100;
+  }
+  .dropdown-item-right {
+    /* width: 50%; */
+    height: auto;
+    flex-direction: column;
+    padding: 3px;
+  }
+}

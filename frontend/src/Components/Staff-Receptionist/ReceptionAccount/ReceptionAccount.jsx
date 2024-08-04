@@ -30,13 +30,95 @@ const ReceptionAccount = () => {
           </div>
           <div className="ReceptionAccount-content-body">
             <div className="ReceptionAccount-bar-holder">
-              <p>Account</p>
               
+                <p>Account</p>
+                <div>
+                <select name="date" id="date">
+                  <option value="date">date</option>
+                  <option value="today">today</option>
+                  <option value="year">year</option>
+                  <option value="month">month</option>
+                </select>
+                <select name="category" id="category">
+                  <option value="category">category</option>
+                  <option value="Restaurant">Restaurant</option>
+                  <option value="Bar">Bar</option>
+                  <option value="pool">pool</option>
+                  <option value="Room"Room>Room</option>
+                  <option value="Laundry">Laundry</option>
+                </select>
+                </div> 
             </div>
             <div>
               <div className="ReceptionAccount-content-table-section">
                 {/* table */}
-                <Table />
+                {/* <Table /> */}
+                <div className="dashAccount-web-table-holder">
+      <table className="dashAccount-web-table">
+        <thead>
+          <div>
+            <span>Date</span>
+            <span>Category</span>
+            <span>Bill</span>
+            <span>Paid</span>
+            <span>Balance</span>
+          </div>
+        </thead>
+        <section>
+          <div>
+            <span>03.02.2023</span>
+            <span>Room</span>
+            <span>90,000.00</span>
+            <span>40,000.00</span>
+            <span>50,000.00</span>
+          </div>
+          <div>
+            <span>03.02.2023</span>
+            <span>Laundry</span>
+            <span>25,200.00</span>
+            <span>15,000.00</span>
+            <span>10,000.00</span>
+          </div>
+          <div>
+            <span>03.02.2023</span>
+            <span>Restaurant</span>
+            <span>9,500.00</span>
+            <span>9,500.00</span>
+            <span>0.00</span>
+          </div>
+          <div>
+            <span>03.02.2023</span>
+            <span>Pool</span>
+            <span>5,000.00</span>
+            <span>15,000.00</span>
+            <span>10,000.00</span>
+          </div>
+          <div>
+            <span>03.02.2023</span>
+            <span>Room</span>
+            <span>30,000.00</span>
+            <span>00.00</span>
+            <span>30,000.00</span>
+          </div>
+          <div>
+            <span>03.02.2023</span>
+            <span>Room</span>
+            <span>30,000.00</span>
+            <span>00.00</span>
+            <span>30,000.00</span>
+          </div>
+          <div>
+            <span>03.02.2023</span>
+            <span>Room</span>
+            <span>30,000.00</span>
+            <span>00.00</span>
+            <span>30,000.00</span>
+          </div>
+        </section>
+
+        {/*  */}
+      </table>
+    </div>
               </div>
             </div>
           </div>

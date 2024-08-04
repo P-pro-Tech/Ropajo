@@ -25,14 +25,16 @@ const ReservationInfo = () => {
                     <div>
                       <h2>Kastina Malu</h2>
                       <p>+99023311876</p>
+                      <p>03.02.2023</p>
                     </div>
                     <div>
                       <h2>207</h2>
                       <p>SUPER SUPREME EXECUTIVE 1</p>
                     </div>
                     <div className="ReservationInfo-buttons">
-                      <button>CHECK IN</button>
-                      <button>DELETE</button>
+                      <Link to='/GuestAccount'><button>CHECK IN</button></Link>
+                      <Link to='/StaffDashboard'><button>DELETE</button></Link>
+                      
                     </div>
                   </section>
                 </div>

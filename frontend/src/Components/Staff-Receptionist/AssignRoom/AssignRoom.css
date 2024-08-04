@@ -39,13 +39,21 @@
     font-weight: normal;
     font-size: 1.7vw;
 }
-.assignRoom-body-top h1 {
+.assignRoom-body-top input {
     font-size: 4.5vw;
     font-weight: lighter;
     text-decoration: underline;
     font-style: italic;
     opacity: .6;
+    background: none;
+    border: none;
+    text-align: center;
+    outline: none;
 }
+/* .assignRoom-body-top input ::placeholder {
+    color: rgba(253, 240, 213, 1);
+    opacity: ;
+} */
 .assignRoom-body-middle {
     height: 10vh;
     width: 67%;
@@ -95,4 +103,18 @@
     background-color: rgba(253, 240, 213, 1);
     font-size: 1.3vw;
 
+}
+.assignRoom-date {
+    margin: auto;
+}
+.assignRoom-date input {
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    color: rgba(253, 240, 213, 1);
+    color-scheme: dark;
+}
+.assignRoom-date input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    /* background-color: red; */
 }

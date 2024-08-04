@@ -31,7 +31,10 @@ return (
                             <input type="text" placeholder='Nationality:' className='registerGuests-form50p' />
                         </div>
                         <div className='registerGuests-form-holder'>
+                            <label >
+
                             <input type="email" placeholder='Email:' className='registerGuests-form50p' />
+                            </label>
                             <input type="number" placeholder='Phone:' className='registerGuests-form50p' />
                         </div>
                         <div className='registerGuests-form-holder'>

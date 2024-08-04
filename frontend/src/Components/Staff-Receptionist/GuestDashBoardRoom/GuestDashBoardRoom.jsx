@@ -32,10 +32,15 @@ const GuestDashBoardRoom = () => {
                   <p>R1410x</p>
                 </div>
                 <div className="GuestDashBoardRoom-recep-detail">
-                  <Link to='/UpdateGuestPayment'><button>Payments</button></Link>
-                  <Link to=''><button>Receipt</button></Link>
-                  <Link to='/StaffDashboard'><button>Checkout</button></Link>
-                  
+                  <Link to="/UpdateGuestPayment">
+                    <button>Payments</button>
+                  </Link>
+                  <Link to="">
+                    <button>Receipt</button>
+                  </Link>
+                  <Link to="/StaffDashboard">
+                    <button>Checkout</button>
+                  </Link>
                 </div>
               </div>
               <div className="GuestDashBoardRoom-center-holder">
@@ -88,9 +93,242 @@ const GuestDashBoardRoom = () => {
                       )}
                       ;
                     </div>
+                    <div className="GT-table-optioin">
+                      <div className="GT-option-Button">
+                        <div>
+                          <img
+                            src={play_btn}
+                            alt=""
+                            onClick={handlePlayButtonClick}
+                          />
+                          <p>Laundry:</p>
+                        </div>
+                      </div>
+                      {isVisible && (
+                        <div className="GT-option-Body">
+                          <section className="GT-table">
+                            <div className="GT-Table-row table-row-header">
+                              <p>Room No.</p>
+                              <p>Date</p>
+                              <p>Check in</p>
+                              <p>Check Out</p>
+                              <p>Amount</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                          </section>
+                        </div>
+                      )}
+                      ;
+                    </div>
+                    <div className="GT-table-optioin">
+                      <div className="GT-option-Button">
+                        <div>
+                          <img
+                            src={play_btn}
+                            alt=""
+                            onClick={handlePlayButtonClick}
+                          />
+                          <p>Restaurant:</p>
+                        </div>
+                      </div>
+                      {isVisible && (
+                        <div className="GT-option-Body">
+                          <section className="GT-table">
+                            <div className="GT-Table-row table-row-header">
+                              <p>Room No.</p>
+                              <p>Date</p>
+                              <p>Check in</p>
+                              <p>Check Out</p>
+                              <p>Amount</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                          </section>
+                        </div>
+                      )}
+                      ;
+                    </div>
+                    <div className="GT-table-optioin">
+                      <div className="GT-option-Button">
+                        <div>
+                          <img
+                            src={play_btn}
+                            alt=""
+                            onClick={handlePlayButtonClick}
+                          />
+                          <p>pool:</p>
+                        </div>
+                      </div>
+                      {isVisible && (
+                        <div className="GT-option-Body">
+                          <section className="GT-table">
+                            <div className="GT-Table-row table-row-header">
+                              <p>Room No.</p>
+                              <p>Date</p>
+                              <p>Check in</p>
+                              <p>Check Out</p>
+                              <p>Amount</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                          </section>
+                        </div>
+                      )}
+                      ;
+                    </div>
+                    <div className="GT-table-optioin">
+                      <div className="GT-option-Button">
+                        <div>
+                          <img
+                            src={play_btn}
+                            alt=""
+                            onClick={handlePlayButtonClick}
+                          />
+                          <p>pool:</p>
+                        </div>
+                      </div>
+                      {isVisible && (
+                        <div className="GT-option-Body">
+                          <section className="GT-table">
+                            <div className="GT-Table-row table-row-header">
+                              <p>Room No.</p>
+                              <p>Date</p>
+                              <p>Check in</p>
+                              <p>Check Out</p>
+                              <p>Amount</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                          </section>
+                        </div>
+                      )}
+                      ;
+                    </div>
+                    <div className="GT-table-optioin">
+                      <div className="GT-option-Button">
+                        <div>
+                          <img
+                            src={play_btn}
+                            alt=""
+                            onClick={handlePlayButtonClick}
+                          />
+                          <p>others:</p>
+                        </div>
+                      </div>
+                      {isVisible && (
+                        <div className="GT-option-Body">
+                          <section className="GT-table">
+                            <div className="GT-Table-row table-row-header">
+                              <p>Room No.</p>
+                              <p>Date</p>
+                              <p>Check in</p>
+                              <p>Check Out</p>
+                              <p>Amount</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                            <div className="GT-Table-row">
+                              <p>256</p>
+                              <p>13.02.2023</p>
+                              <p>06:47pm</p>
+                              <p>14:02:2023</p>
+                              <p>30,000.00</p>
+                            </div>
+                          </section>
+                        </div>
+                      )}
+                      ;
+                    </div>
                     {/* <GuestTable /> */}
-
-                    
                   </main>
                   <section className="GT-Balance">
                     <h2>TOTAL</h2>
@@ -100,7 +338,7 @@ const GuestDashBoardRoom = () => {
                         <p className="red">216,500.00</p>
                       </div>
                       <div className="GT-Balance-square">
-                        <p >Paid</p>
+                        <p>Paid</p>
                         <p className="green">116,000.00</p>
                       </div>
                       <div className="GT-Balance-square">

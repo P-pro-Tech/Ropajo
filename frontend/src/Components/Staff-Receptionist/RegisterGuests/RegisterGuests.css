@@ -88,7 +88,7 @@
 .registerGuests-file-label {
     border: thin solid rgba(253, 240, 213, 1);
     /* padding: 1vh 2vw; */
-    width: 9vw;
+    width: 35%;
     height: 5vh;
     font-size: 1.4rem;
     display: flex;

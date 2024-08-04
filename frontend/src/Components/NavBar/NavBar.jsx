@@ -22,7 +22,7 @@ const NavBar = ({setViewMobileNav}) => {
             <li><Link  to="room" smooth={true} offset={0} duration={500} >Room</Link></li>
             <li><Link  to="pool" smooth={true} offset={0} duration={500} >Pool</Link></li>
             <li><Link  to="laundry" smooth={true} offset={-760} duration={500} >Laundry</Link></li>
-            <li><Link  to="gallery" smooth={true} offset={0} duration={500} >Gallery</Link></li>
+            <li><Link  to="gallery" smooth={true} offset={0} duration={500} >Bar</Link></li>
         </ul>
         <img src={mob_menu} alt="" className='mob-menu' onClick={()=> {setViewMobileNav(true)}}/>
         <div className="logo-container">
