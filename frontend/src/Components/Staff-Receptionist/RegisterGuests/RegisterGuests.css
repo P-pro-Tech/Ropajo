@@ -62,7 +62,7 @@
     background-color: transparent;
     outline: none;
     border: none;
-    border-bottom: thin solid rgba(253, 240, 213, 1);
+    /* border-bottom: thin solid rgba(253, 240, 213, 1); */
     font-size: 1rem;
 }
 .registerGuests-form50p::placeholder {
@@ -108,6 +108,11 @@
 }
 .registerGuests-mobile-head {
     display: none;
+}
+
+.registerGuests-form-holder label {
+    width: 48%;
+    border-bottom: 0.2vh solid rgba(253, 240, 213, 1);
 }
 
 @media (max-width: 650px) {

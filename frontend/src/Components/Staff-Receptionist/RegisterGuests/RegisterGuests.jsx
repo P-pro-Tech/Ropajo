@@ -19,39 +19,63 @@ return (
                     <form action="" className='registerGuests-form'>
                         
                         <div className='registerGuests-form-holder'>
-                            <input type="text" placeholder='Guest Name:' className='registerGuests-form50p'  />
-                            <div className='registerGuests-form50p registerGuests-passport'>
+                        <label htmlFor="">Guest Name:
+                            <input type="text" placeholder='' className='registerGuests-form50p'  />
+                            </label>
+                            
+                            <label className='registerGuests-form50p registerGuests-passport'>
                                 <span>Upload ID Card:</span>
                                 <input type="file" name="" id="registerGuests-passport" placeholder='Upload ID:' hidden />
                                 <label htmlFor="registerGuests-passport" className='registerGuests-file-label'>upload</label>
-                            </div>
-                        </div>
-                        <div className='registerGuests-form-holder'>
-                            <input type="text" placeholder='Address:' className='registerGuests-form50p' />
-                            <input type="text" placeholder='Nationality:' className='registerGuests-form50p' />
-                        </div>
-                        <div className='registerGuests-form-holder'>
-                            <label >
-
-                            <input type="email" placeholder='Email:' className='registerGuests-form50p' />
                             </label>
-                            <input type="number" placeholder='Phone:' className='registerGuests-form50p' />
                         </div>
                         <div className='registerGuests-form-holder'>
-                            <input type="text" placeholder='Occupation:' className='registerGuests-form50p' />
-                            <input type="text" placeholder='Passport No:' className='registerGuests-form50p' />
+                        <label htmlFor="">Address:
+                            <input type="text" placeholder='' className='registerGuests-form50p' />
+                            </label>
+                            <label htmlFor="">Nationality:
+                            <input type="text" placeholder='' className='registerGuests-form50p' />
+                            </label>
                         </div>
                         <div className='registerGuests-form-holder'>
-                            <input type="text" placeholder='Car Reg No.' className='registerGuests-form50p' />
-                            <input type="text" placeholder='Purpose of Travel:' className='registerGuests-form50p' />
+                        <label htmlFor="">Email:
+                            <input type="email" placeholder='' className='registerGuests-form50p' />
+                            </label>
+                            <label htmlFor="">Phone:
+                            <input type="number" placeholder='' className='registerGuests-form50p' />
+                            </label>
                         </div>
                         <div className='registerGuests-form-holder'>
-                            <input type="text" placeholder='Arrival Date:' className='registerGuests-form50p' onFocus={(e)=> e.target.type = 'date'} onBlur={(e) => (e.target.type = "text")} />
-                            <input type="text" placeholder='Departure Date:' className='registerGuests-form50p' onFocus={(e)=> e.target.type = 'date'} onBlur={(e) => (e.target.type = "text")} />
+                            <label htmlFor="">Occupation:
+                            <input type="text" placeholder='' className='registerGuests-form50p' />
+                            </label>
+                            <label htmlFor="">Passport No:
+                            <input type="text" placeholder='' className='registerGuests-form50p' />
+                            </label>
                         </div>
                         <div className='registerGuests-form-holder'>
-                            <input type="text" placeholder='Arrival From:' className='registerGuests-form50p' />
-                            <input type="text" placeholder='Depart To:  ' className='registerGuests-form50p' />
+                        <label htmlFor="">Car Reg No:
+                            <input type="text" placeholder='' className='registerGuests-form50p' />
+                            </label>
+                            <label htmlFor="">Purpose of Travel:
+                            <input type="text" placeholder='' className='registerGuests-form50p' />
+                            </label>
+                        </div>
+                        <div className='registerGuests-form-holder'>
+                            <label htmlFor="">Arrival Date:
+                            <input type="text" placeholder='' className='registerGuests-form50p' onFocus={(e)=> e.target.type = 'date'} onBlur={(e) => (e.target.type = "text")} />
+                            </label>
+                            <label htmlFor="">Departure Date:
+                            <input type="text" placeholder='' className='registerGuests-form50p' onFocus={(e)=> e.target.type = 'date'} onBlur={(e) => (e.target.type = "text")} />
+                            </label>
+                        </div>
+                        <div className='registerGuests-form-holder'>
+                            <label htmlFor="">Arrival From:
+                            <input type="text" placeholder='' className='registerGuests-form50p' />
+                            </label>
+                            <label htmlFor="">Depart To:
+                            <input type="text" placeholder='' className='registerGuests-form50p' />
+                            </label>
                         </div>
                         <div className='registerGuests-form-holder'>
                             {/* <input type="button" value="Room" className='registerGuests-form25p' />
