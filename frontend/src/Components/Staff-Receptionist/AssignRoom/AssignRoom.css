@@ -111,6 +111,8 @@
     outline: none;
     border: none;
     border-width: thin;
+    margin-left: 48%;
+    font-size: 1.3vw;
 }
 .Assign_date[type="date"]::-webkit-calendar-picker-indicator {
     /* color: rgba(0, 0, 0, 0);
