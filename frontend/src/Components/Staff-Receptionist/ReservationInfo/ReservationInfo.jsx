@@ -42,7 +42,7 @@ const ReservationInfo = () => {
                     <p>SUPER SUPREME EXECUTIVE 1</p>
                   </div>
                   <div className="ReservationInfo-buttons">
-                    <Link to='/GuestAccessPage'><button>CHECK IN</button></Link>
+                    <Link to='/GuestDashBoardRoom'><button>CHECK IN</button></Link>
                     <Link to='/StaffDashboard'><button>DELETE</button></Link>
                     
                   </div>
