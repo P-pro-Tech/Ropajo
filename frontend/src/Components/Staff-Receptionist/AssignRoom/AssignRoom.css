@@ -1,120 +1,136 @@
 .assignRoom {
-    width: 100%;
-    height: 100vh;
-    background: url(../../../assets/assign-room.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../../../assets/assign-room.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .assignRoom-hue {
-    width: 100%;
-    height: 100vh;
-    background: rgba(31, 21, 21, 0.9);
+  width: 100%;
+  height: 100vh;
+  background: rgba(31, 21, 21, 0.9);
 }
 .head {
-    height: 10vh;
-    width: 100%;
-    border-bottom: thin solid ;
+  height: 10vh;
+  width: 100%;
+  border-bottom: thin solid;
 }
 .assignRoom-body {
-    width: 50%;
-    margin: auto;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 10vh;
+  width: 50%;
+  margin: auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10vh;
 }
 .assignRoom-body-top {
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3vh;
-    
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
 }
 .assignRoom-body-top h3 {
-    font-weight: normal;
-    font-size: 1.7vw;
+  font-weight: normal;
+  font-size: 1.7vw;
 }
 .assignRoom-body-top input {
-    font-size: 4.5vw;
-    font-weight: lighter;
-    text-decoration: underline;
-    font-style: italic;
-    opacity: .6;
-    background: none;
-    border: none;
-    text-align: center;
-    outline: none;
+  font-size: 4.5vw;
+  width: 40%;
+  text-align: center;
+  font-weight: lighter;
+  font-style: italic;
+  opacity: 0.6;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: thick solid #fdf0d5;
 }
-/* .assignRoom-body-top input ::placeholder {
-    color: rgba(253, 240, 213, 1);
-    opacity: ;
-} */
 .assignRoom-body-middle {
-    height: 10vh;
-    width: 67%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1vw;
+  height: 10vh;
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vw;
 }
 .assignRoom-body-middle p {
-    font-size: 1.7vw;
-    margin: auto;
+  font-size: 1.7vw;
+  margin: auto;
 }
 .assignRoom-middle-checkbox {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .assignRoom-middle-checkbox label {
-    font-size: 1.3vw;
+  font-size: 1.3vw;
 }
 .assignRoom-middle-checkbox label input {
-    margin-left: 1vw;
-    font-size: 1.3vw;
+  margin-left: 1vw;
+  font-size: 1.3vw;
 }
-.assignRoom-middle-checkbox label input[type='checkbox']:checked {
-    background-color: red;
+.assignRoom-middle-checkbox label input[type="checkbox"]:checked {
+  background-color: red;
   border-color: red;
 }
 .assignRoom-body-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: 100%;
 }
-.assignRoom-body-bottom button{
-    width: 80%;
-    height: 6vh;
-    color: rgba(31, 21, 21, 1);
+.assignRoom-body-bottom button {
+  width: 80%;
+  height: 6vh;
+  color: rgba(31, 21, 21, 1);
+  border: none;
+  border-radius: 0.8vw;
+  background-color: rgba(253, 240, 213, 1);
+  font-size: 1.3vw;
+}
+.assign_date {
+    color: #fdf0d5;
+    opacity: 1;
+    display: block;
+    background: url(../../../assets/calendar_icon.svg) no-repeat ;
+    -webkit-appearance: none;
+    background-position: right;
+    outline: none;
     border: none;
-    border-radius: 0.8vw;
-    background-color: rgba(253, 240, 213, 1);
-    font-size: 1.3vw;
+    border-width: thin;
+}
+.Assign_date[type="date"]::-webkit-calendar-picker-indicator {
+    /* color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../../../assets/calendar_icon.svg) no-repeat transparent;
+    width: 20px;
+    height: 20px;
+    border-width: thin; */
+    display: none;
+}
+.assign_date::-webkit-calendar-picker-indicator {
+    /* display: none; */
+    /* -webkit-appearance: none; */
+}
 
-}
-.assignRoom-date {
-    margin: auto;
-}
-.assignRoom-date input {
-    margin: auto;
-    background-color: transparent;
-    border: none;
-    color: rgba(253, 240, 213, 1);
-    color-scheme: dark;
-}
-.assignRoom-date input[type="date"]::-webkit-calendar-picker-indicator {
-    cursor: pointer;
-    /* background-color: red; */
-}
+
+
+/* .assign_date::after {
+  content: url("../../../assets/calendar_icon.svg");
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+} */

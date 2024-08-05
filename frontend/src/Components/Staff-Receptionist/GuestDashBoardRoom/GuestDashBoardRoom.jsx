@@ -38,7 +38,7 @@ const GuestDashBoardRoom = () => {
                   <Link to="">
                     <button>Receipt</button>
                   </Link>
-                  <Link to="/StaffDashboard">
+                  <Link to="/ManageGuest">
                     <button>Checkout</button>
                   </Link>
                 </div>
@@ -93,7 +93,9 @@ const GuestDashBoardRoom = () => {
                       )}
                       ;
                     </div>
-                    <div className="GT-table-optioin">
+
+                    {/* ----------------------------------- */}
+                    <div className="GT-table-option">
                       <div className="GT-option-Button">
                         <div>
                           <img
@@ -102,194 +104,6 @@ const GuestDashBoardRoom = () => {
                             onClick={handlePlayButtonClick}
                           />
                           <p>Laundry:</p>
-                        </div>
-                      </div>
-                      {isVisible && (
-                        <div className="GT-option-Body">
-                          <section className="GT-table">
-                            <div className="GT-Table-row table-row-header">
-                              <p>Room No.</p>
-                              <p>Date</p>
-                              <p>Check in</p>
-                              <p>Check Out</p>
-                              <p>Amount</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                          </section>
-                        </div>
-                      )}
-                      ;
-                    </div>
-                    <div className="GT-table-optioin">
-                      <div className="GT-option-Button">
-                        <div>
-                          <img
-                            src={play_btn}
-                            alt=""
-                            onClick={handlePlayButtonClick}
-                          />
-                          <p>Restaurant:</p>
-                        </div>
-                      </div>
-                      {isVisible && (
-                        <div className="GT-option-Body">
-                          <section className="GT-table">
-                            <div className="GT-Table-row table-row-header">
-                              <p>Room No.</p>
-                              <p>Date</p>
-                              <p>Check in</p>
-                              <p>Check Out</p>
-                              <p>Amount</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                          </section>
-                        </div>
-                      )}
-                      ;
-                    </div>
-                    <div className="GT-table-optioin">
-                      <div className="GT-option-Button">
-                        <div>
-                          <img
-                            src={play_btn}
-                            alt=""
-                            onClick={handlePlayButtonClick}
-                          />
-                          <p>pool:</p>
-                        </div>
-                      </div>
-                      {isVisible && (
-                        <div className="GT-option-Body">
-                          <section className="GT-table">
-                            <div className="GT-Table-row table-row-header">
-                              <p>Room No.</p>
-                              <p>Date</p>
-                              <p>Check in</p>
-                              <p>Check Out</p>
-                              <p>Amount</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                          </section>
-                        </div>
-                      )}
-                      ;
-                    </div>
-                    <div className="GT-table-optioin">
-                      <div className="GT-option-Button">
-                        <div>
-                          <img
-                            src={play_btn}
-                            alt=""
-                            onClick={handlePlayButtonClick}
-                          />
-                          <p>pool:</p>
-                        </div>
-                      </div>
-                      {isVisible && (
-                        <div className="GT-option-Body">
-                          <section className="GT-table">
-                            <div className="GT-Table-row table-row-header">
-                              <p>Room No.</p>
-                              <p>Date</p>
-                              <p>Check in</p>
-                              <p>Check Out</p>
-                              <p>Amount</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                            <div className="GT-Table-row">
-                              <p>256</p>
-                              <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
-                              <p>30,000.00</p>
-                            </div>
-                          </section>
-                        </div>
-                      )}
-                      ;
-                    </div>
-                    <div className="GT-table-optioin">
-                      <div className="GT-option-Button">
-                        <div>
-                          <img
-                            src={play_btn}
-                            alt=""
-                            onClick={handlePlayButtonClick}
-                          />
-                          <p>others:</p>
                         </div>
                       </div>
                       {isVisible && (

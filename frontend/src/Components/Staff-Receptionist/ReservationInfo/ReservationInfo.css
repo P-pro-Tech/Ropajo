@@ -1,3 +1,74 @@
+.ReservationInfo {
+    width: 100%;
+    height: 100vh;
+    
+    background-color: rgba(253, 240, 213, 1);
+  }
+  
+  .ReservationInfo-web {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(253, 240, 213, 1);
+  }
+
+.ReservationInfo-content-body {
+    margin-left: 3rem;
+    width: 90%;
+    height: 75vh;
+}
+.ReservationInfo-content-body p {
+    margin: 0;
+    width: auto;
+}
+.ReservationInfo-guest-section {
+    width: 25%;
+    height: inherit;
+  }
+  .ReservationInfo-content-section {
+    width: 75%;
+    height: inherit;
+    color: rgba(31, 21, 21, 1);
+  }
+  .ReservationInfo-content-head {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 0.2vh solid #1f1515;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .ReservationInfo-content-head a {
+    color: rgba(31, 21, 21, 1);
+    margin-right: 7vh;
+    font-size: 1.05vw;
+  }
+  .ReservationInfo-content-body {
+    width: 80%;
+    height: 90vh;
+  }
+  .ReservationInfo-content-body p {
+    color: rgba(31, 21, 21, 1);
+    font-size: 2vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+  }
+  .ReservationInfo-content-table-section {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ReservationInfo-web-table-holder {
+    width: 90%;
+    height: 70vh;
+    background-color: rgba(255, 250, 238, 1);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25) ;
+}
+
 .ReservationInfo-section {
     width: 100%;
     
@@ -19,6 +90,7 @@
 }
 .ReservationInfo-section div p {
     font-size: 2vw;
+    margin-left: 0;
 }
 
 .ReservationInfo-buttons {
@@ -34,4 +106,59 @@
     border-radius: 1vw;
     padding: 1vh 1vw;
     font-size: 1.2vw;
+}
+.ReservationInfo-mobile-header {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .ReservationInfo-mobile-header {
+        display: flex;
+    }
+    .ReservationInfo-guest-section {
+        display: none;
+    }
+    .ReservationInfo-content-section {
+        width: 100%;
+    }
+    .ReservationInfo-content-head {
+        border-bottom: none;
+        height: 12vh;
+    }
+    .ReservationInfo-content-head a {
+        font-size: 4vw;
+        margin-right: 5vw;
+    }
+    .ReservationInfo-web-table-holder {
+        box-shadow: none;
+        background-color: transparent;
+        margin: auto;
+    }
+    .ReservationInfo-content-body p {
+        display: none;
+    }
+    .ReservationInfo-content-table-section {
+        align-items: flex-start;
+    }
+    .ReservationInfo-content-table-section p {
+        display: flex;
+        width: 100%;
+    }
+    .ReservationInfo-section div h2 {
+        font-size: 7vw;
+    }
+    .ReservationInfo-section div p {
+        font-size: 4vw;
+        margin: 0;
+    }
+    .ReservationInfo-section div button {
+        font-size: 4vw;
+        padding: 2vw 3vw;
+        border-radius: 4vw;
+    }
+    
+    .ReservationInfo-content-body {
+        width: 100%;
+        margin: 0;
+    }
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import './RegisterGuests.css'
 import GuestReservationHeader from '../../GuestReservationHeader/GuestReservationHeader'
 import DashBoardHeader from '../../DashBoardHeader/DashBoardHeader'
+import { Link } from 'react-router-dom'
 
 const RegisterGuests = () => {
 return (
@@ -19,73 +20,82 @@ return (
                     <form action="" className='registerGuests-form'>
                         
                         <div className='registerGuests-form-holder'>
-                        <label htmlFor="">Guest Name:
+                            <label htmlFor="">Guest Name: &nbsp;
                             <input type="text" placeholder='' className='registerGuests-form50p'  />
                             </label>
-                            
-                            <label className='registerGuests-form50p registerGuests-passport'>
+                            <div className='registerGuests-form50p registerGuests-passport'>
+                                
                                 <span>Upload ID Card:</span>
                                 <input type="file" name="" id="registerGuests-passport" placeholder='Upload ID:' hidden />
                                 <label htmlFor="registerGuests-passport" className='registerGuests-file-label'>upload</label>
+                            </div>
+                        </div>
+                        <div className='registerGuests-form-holder'>
+                            <label htmlFor="">Address: &nbsp;
+                            <input type="text" placeholder='' className='registerGuests-form50p' />
+                            </label>
+                            <label htmlFor="">Nationality:  &nbsp;
+                            <input type="text" placeholder='' className='registerGuests-form50p' />
                             </label>
                         </div>
                         <div className='registerGuests-form-holder'>
-                        <label htmlFor="">Address:
-                            <input type="text" placeholder='' className='registerGuests-form50p' />
-                            </label>
-                            <label htmlFor="">Nationality:
-                            <input type="text" placeholder='' className='registerGuests-form50p' />
-                            </label>
-                        </div>
-                        <div className='registerGuests-form-holder'>
-                        <label htmlFor="">Email:
+                            <label htmlFor="">Email: &nbsp;
                             <input type="email" placeholder='' className='registerGuests-form50p' />
                             </label>
-                            <label htmlFor="">Phone:
+                            <label htmlFor="">Phone:  &nbsp;
                             <input type="number" placeholder='' className='registerGuests-form50p' />
                             </label>
                         </div>
+
                         <div className='registerGuests-form-holder'>
-                            <label htmlFor="">Occupation:
+                            <label htmlFor="">Occupation: &nbsp;
                             <input type="text" placeholder='' className='registerGuests-form50p' />
                             </label>
-                            <label htmlFor="">Passport No:
+                            <label htmlFor="">Passport No:  &nbsp;
                             <input type="text" placeholder='' className='registerGuests-form50p' />
                             </label>
                         </div>
+                        
                         <div className='registerGuests-form-holder'>
-                        <label htmlFor="">Car Reg No:
+                            <label htmlFor="">Car Reg No.: &nbsp;
                             <input type="text" placeholder='' className='registerGuests-form50p' />
                             </label>
-                            <label htmlFor="">Purpose of Travel:
+                            <label htmlFor="">Purpose of Travel:  &nbsp;
                             <input type="text" placeholder='' className='registerGuests-form50p' />
                             </label>
                         </div>
+                        
+                        
                         <div className='registerGuests-form-holder'>
-                            <label htmlFor="">Arrival Date:
+                            <label htmlFor="">Arrival Date: &nbsp;
+                            
                             <input type="text" placeholder='' className='registerGuests-form50p' onFocus={(e)=> e.target.type = 'date'} onBlur={(e) => (e.target.type = "text")} />
                             </label>
-                            <label htmlFor="">Departure Date:
+                            <label htmlFor="">Departure Date:  &nbsp;
+                            
                             <input type="text" placeholder='' className='registerGuests-form50p' onFocus={(e)=> e.target.type = 'date'} onBlur={(e) => (e.target.type = "text")} />
                             </label>
                         </div>
+                        
+                        
                         <div className='registerGuests-form-holder'>
-                            <label htmlFor="">Arrival From:
+                            <label htmlFor="">Arrival From: &nbsp;
                             <input type="text" placeholder='' className='registerGuests-form50p' />
                             </label>
-                            <label htmlFor="">Depart To:
+                            <label htmlFor="">Depart To:  &nbsp;
                             <input type="text" placeholder='' className='registerGuests-form50p' />
                             </label>
                         </div>
+                        
                         <div className='registerGuests-form-holder'>
                             {/* <input type="button" value="Room" className='registerGuests-form25p' />
                             <input type="button" value="Pool" className='registerGuests-form25p' />
                             <input type="button" value="Restaurant" className='registerGuests-form25p' />
                             <input type="button" value="Laundry" className='registerGuests-form25p' /> */}
                         </div>
-                        <div className='registerGuests-form-holder'>
+                        <Link to='/ManageGuest'><div className='registerGuests-form-holder'>
                             <input type="submit" value="Register" className='registerGuests-form-100p' />
-                        </div>
+                        </div></Link>
                         
 
 

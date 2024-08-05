@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import './ReceptionAccount.css'
+import "./ReceptionAccount.css";
+import GuestDashBoard from "../../Guest/GuestDashBoard/GuestDashBoard";
 import { Link } from "react-router-dom";
 import DashBoardHeader from "../../DashBoardHeader/DashBoardHeader";
 import roll_icon from "../../../assets/play-icon.svg";
@@ -7,7 +8,7 @@ import play_icon from "../../../assets/play-icon.svg";
 import Table from "../../Table/Table";
 import DashboardRoomProfile from "../../DashboardRoomProfile/DashboardRoomProfile";
 import ReceptionistDashboard from "../ReceptionistDashboard/ReceptionistDashboard";
-
+import ReceptionAccountTableRow from "../ReceptionAccountTableRow/ReceptionAccountTableRow";
 
 const ReceptionAccount = () => {
   const [isActive1, setIsActive1] = useState(false);
@@ -16,6 +17,80 @@ const ReceptionAccount = () => {
   const [isActive4, setIsActive4] = useState(false);
 
   const [profileShow, setProfileShow] = useState(false);
+
+  const receptionAccountTableRow = [
+    {
+      date: "03.02.2023",
+      category: "Room",
+      Bill: "90,000.00",
+      Paid: "40,000.00",
+      Balance: "50,000.00",
+    },
+    {
+      date: "03.02.2023",
+      category: "Laundry",
+      Bill: "90,000.00",
+      Paid: "15,000.00",
+      Balance: "10,000.00",
+    },
+    {
+      date: "03.02.2023",
+      category: "Restaurant",
+      Bill: "90,000.00",
+      Paid: "9,500.00",
+      Balance: "00.00",
+    },
+    {
+      date: "03.02.2023",
+      category: "Pool",
+      Bill: "90,000.00",
+      Paid: "15,000.00",
+      Balance: "10,000.00",
+    },
+    {
+      date: "03.02.2023",
+      category: "Room",
+      Bill: "90,000.00",
+      Paid: "00.00",
+      Balance: "30,000.00",
+    },
+    {
+      date: "03.02.2023",
+      category: "Room",
+      Bill: "90,000.00",
+      Paid: "40,000.00",
+      Balance: "50,000.00",
+    },
+    {
+      date: "03.02.2023",
+      category: "Laundry",
+      Bill: "80,000.00",
+      Paid: "15,000.00",
+      Balance: "10,000.00",
+    },
+    {
+      date: "03.02.2023",
+      category: "Restaurant",
+      Bill: "90,000.00",
+      Paid: "9,500.00",
+      Balance: "00.00",
+    },
+    {
+      date: "03.02.2023",
+      category: "Pool",
+      Bill: "90,000.00",
+      Paid: "15,000.00",
+      Balance: "10,000.00",
+    },
+    {
+      date: "03.02.2023",
+      category: "Room",
+      Bill: "90,000.00",
+      Paid: "00.00",
+      Balance: "30,000.00",
+    },
+  ];
+
   return (
     <div className="ReceptionAccount">
       {/* websection starts here */}
@@ -25,109 +100,75 @@ const ReceptionAccount = () => {
         </div>
 
         <div className="ReceptionAccount-content-section">
+          <div className="ReceptionAccount-mobile-header">
+            <DashboardRoomProfile
+              profileShow={profileShow}
+              setProfileShow={setProfileShow}
+            />
+            <DashBoardHeader setProfileShow={setProfileShow} />
+          </div>
           <div className="ReceptionAccount-content-head">
-            <Link>Back to Homepage</Link>
+            <Link to="/">Back to Homepage</Link>
           </div>
           <div className="ReceptionAccount-content-body">
             <div className="ReceptionAccount-bar-holder">
-              
+              <div>
                 <p>Account</p>
-                <div>
-                <select name="date" id="date">
-                  <option value="date">date</option>
-                  <option value="today">today</option>
-                  <option value="year">year</option>
-                  <option value="month">month</option>
-                </select>
-                <select name="category" id="category">
-                  <option value="category">category</option>
-                  <option value="Restaurant">Restaurant</option>
-                  <option value="Bar">Bar</option>
-                  <option value="pool">pool</option>
-                  <option value="Room"Room>Room</option>
-                  <option value="Laundry">Laundry</option>
-                </select>
-                </div> 
-            </div>
-            <div>
-              <div className="ReceptionAccount-content-table-section">
-                {/* table */}
-                {/* <Table /> */}
-                <div className="dashAccount-web-table-holder">
-      <table className="dashAccount-web-table">
-        <thead>
-          <div>
-            <span>Date</span>
-            <span>Category</span>
-            <span>Bill</span>
-            <span>Paid</span>
-            <span>Balance</span>
-          </div>
-        </thead>
-        <section>
-          <div>
-            <span>03.02.2023</span>
-            <span>Room</span>
-            <span>90,000.00</span>
-            <span>40,000.00</span>
-            <span>50,000.00</span>
-          </div>
-          <div>
-            <span>03.02.2023</span>
-            <span>Laundry</span>
-            <span>25,200.00</span>
-            <span>15,000.00</span>
-            <span>10,000.00</span>
-          </div>
-          <div>
-            <span>03.02.2023</span>
-            <span>Restaurant</span>
-            <span>9,500.00</span>
-            <span>9,500.00</span>
-            <span>0.00</span>
-          </div>
-          <div>
-            <span>03.02.2023</span>
-            <span>Pool</span>
-            <span>5,000.00</span>
-            <span>15,000.00</span>
-            <span>10,000.00</span>
-          </div>
-          <div>
-            <span>03.02.2023</span>
-            <span>Room</span>
-            <span>30,000.00</span>
-            <span>00.00</span>
-            <span>30,000.00</span>
-          </div>
-          <div>
-            <span>03.02.2023</span>
-            <span>Room</span>
-            <span>30,000.00</span>
-            <span>00.00</span>
-            <span>30,000.00</span>
-          </div>
-          <div>
-            <span>03.02.2023</span>
-            <span>Room</span>
-            <span>30,000.00</span>
-            <span>00.00</span>
-            <span>30,000.00</span>
-          </div>
-        </section>
-
-        {/*  */}
-      </table>
-    </div>
               </div>
+              <div>
+                <select name="Date" id="Date">
+                  <option value="Date">Date</option>
+                  <option value="Last Week">Month</option>
+                  <option value="Year">Year</option>
+                </select>
+                <select name="Categoryate" id="Category">
+                  <option value="Category">Category</option>
+                  <option value="Room">Room</option>
+                  <option value="Laundry">Laundry</option>
+                  <option value="Bar">Bar</option>
+                  <option value="Pool">Pool</option>
+                  <option value="Restaurant">Restaurant</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="ReceptionAccount-content-table-section">
+              {/* table */}
+              <div className="ReceptionAccount-web-table-holder">
+                <table className="ReceptionAccount-web-table">
+                  <thead>
+                    <div className="header_div">
+                      <span>Date</span>
+                      <span>Category</span>
+                      <span>Bill</span>
+                      <span>Paid</span>
+                      <span>Balance</span>
+                    </div>
+                  </thead>
+                  <section>
+                    {receptionAccountTableRow.map((content) => (
+                      <ReceptionAccountTableRow
+                        date={content.date}
+                        category={content.category}
+                        bill={content.Bill}
+                        paid={content.Paid}
+                        balance={content.Balance}
+                      />
+                    ))}
+                  </section>
+                </table>
+              </div>
+              {/* <Table /> */}
             </div>
           </div>
         </div>
       </div>
       {/* websection ends here */}
 
+      {/* ---------------------------------------------------------------------------- */}
+
       {/* mobile deign start here */}
-      <div className="mobile-dasboardAccount">
+      {/* <div className="mobile-dasboardAccount">
         <div className="mobile-dasboardAccount-head">
           <DashboardRoomProfile
             profileShow={profileShow}
@@ -188,10 +229,10 @@ const ReceptionAccount = () => {
                     isActive2 ? "dropdown-icon rotate-icon" : "dropdown-icon"
                   }
                   onClick={() => setIsActive2(!isActive2)}
-                />
-                {/* <img src={play_icon} alt="" onClick={(e) =>
+                /> */}
+      {/* <img src={play_icon} alt="" onClick={(e) =>
        setIsActive2(!isActive2)}/> */}
-                <p>Laundry:</p>
+      {/* <p>Laundry:</p>
               </div>
             </div>
             {isActive2 && (
@@ -229,10 +270,10 @@ const ReceptionAccount = () => {
                     isActive3 ? "dropdown-icon rotate-icon" : "dropdown-icon"
                   }
                   onClick={() => setIsActive3(!isActive3)}
-                />
-                {/* <img src={play_icon} alt="" onClick={(e) =>
+                /> */}
+      {/* <img src={play_icon} alt="" onClick={(e) =>
        setIsActive3(!isActive3)}/> */}
-                <p>Restaurant:</p>
+      {/* <p>Restaurant:</p>
               </div>
             </div>
             {isActive3 && (
@@ -298,10 +339,10 @@ const ReceptionAccount = () => {
               </div>
             )}
           </div>
-        </div>
+        </div> */}
 
-        {/* Bottom Total Below */}
-      </div>
+      {/* Bottom Total Below */}
+      {/* </div> */}
     </div>
   );
 };

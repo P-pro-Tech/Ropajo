@@ -13,8 +13,8 @@ const AssignRoom = () => {
         <form className="assignRoom-body">
           <div className="assignRoom-body-top">
             <h3>Assign Room</h3>
+            <input type="text" name="guest_id" id="" placeholder="Guest ID" />
             {/* <h1>Guest ID</h1> */}
-            <input type="text" placeholder="Guest ID"/>
           </div>
           <div className="assignRoom-body-middle">
             <p>Supreme Super Executive 1</p>
@@ -28,8 +28,13 @@ const AssignRoom = () => {
                 Reservation
               </label>
             </div>
-            <div className="assignRoom-date">
-              <input type="date" name="" id="" />
+            <div class="assign-date-container" >
+              <input
+                type="date"
+                name="assign_date"
+                id="assign_date"
+                className="assign_date"
+              />
             </div>
           </div>
           <div className="assignRoom-body-bottom">

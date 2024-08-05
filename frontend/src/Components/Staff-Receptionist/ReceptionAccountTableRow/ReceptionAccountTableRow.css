@@ -1,0 +1,63 @@
+.ReceptionAccountTableRow {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: thin solid #000 !important;
+  height: 7vh;
+}
+/*  */
+.ReceptionAccountTableRow span {
+  color: #1f1515;
+  text-align: center;
+
+  font-size: 1.05vw;
+  width: 17%;
+  display: flex;
+  align-items: end;
+  margin-bottom: 1vh;
+}
+.ReceptionAccountTableRow-mob {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .ReceptionAccountTableRow {
+    display: none;
+  }
+  .ReceptionAccountTableRow-mob {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffaee;
+    margin: 1vh 0 1vh 0;
+    border-radius: 1.5vw;
+  }
+  .ReceptionAccountTableRow-mob p {
+    margin: 0;
+    height: 1.5rem;
+    font-size: .7rem;
+    padding: .9rem;
+  }
+  .ReceptionAccountTableRow-mob-header p:nth-child(1) {
+    margin-left: 7vw;
+  }
+  .ReceptionAccountTableRow-mob-header p:nth-child(2) {
+    margin-right: 7vw;
+  }
+  .ReceptionAccountTableRow-mob-cont p:nth-child(1) {
+    margin-left: 7vw;
+  }
+  .ReceptionAccountTableRow-mob-cont p:nth-child(2) {
+    margin-right: 7vw;
+  }
+  .ReceptionAccountTableRow-mob-header {
+    border-bottom: 0.2vh solid #00000017;
+    display: flex;
+    justify-content: space-between;
+  }
+  .ReceptionAccountTableRow-mod-body {
+    border-top: 0.2vh solid #00000017;
+  }
+  .ReceptionAccountTableRow-mob-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+}

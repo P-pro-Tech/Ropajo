@@ -67,6 +67,7 @@
 .access-card-box p {
     font-size: 0.8rem;
     margin: 0;
+    height: 4vh;
 }
 .access-card-box h2 {
     font-size: 1.4rem;
@@ -80,11 +81,14 @@
     justify-content: space-between;
     align-items: center;
     margin-left: 0;
+    /* padding: 5vh 0 5vh 0; */
+    height: 10vh;
 }
 
 .double-box p {
     font-size: 0.7rem;
     margin: 0;
+    height: 4vh;
     
 }
 .GuestAccessPage-mobile-header {

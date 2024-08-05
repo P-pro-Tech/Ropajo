@@ -24,7 +24,7 @@ const UpdateGuestPayment = () => {
               <option value="Laundry">Laundry</option>
               <option value="Pool">Pool</option>
               <option value="Restaurant">Restaurant</option>
-              <option value="Restaurant">Bar</option>
+              <option value="Bar">Bar</option>
             </select>
           </div>
 
@@ -33,8 +33,7 @@ const UpdateGuestPayment = () => {
             <textarea name="" id="" rows={5} cols={50} placeholder="Comments"></textarea>
             <label>Bill:<input type="text" placeholder="" /></label>
             <label>Paid:<input type="text" placeholder="" /></label>
-            {/* <input type="text" placeholder="Paid:" /> */}
-            <button  type="submit">Update</button>
+            <Link to='/GuestDashBoardRoom'><button  type="submit">Update</button></Link>
             
             
           </form>

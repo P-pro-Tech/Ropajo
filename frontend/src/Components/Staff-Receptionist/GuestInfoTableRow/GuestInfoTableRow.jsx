@@ -4,9 +4,9 @@ import copy from "../../../assets/Copy.svg";
 import { Link } from "react-router-dom";
 const GuestInfoTableRow = ({ index, names, uniqueNo, phone }) => {
   return (
-    <Link to='/GuestDashBoardRoom   '>
+    <Link to=''>
       <div className="GuestInfoTableRow" key={index}>
-        <p className="GuestInfoTableRow-name">{names}</p>
+        <p className="GuestInfoTableRow-name"><Link to='/GuestDashBoardRoom'>{names}</Link></p>
         <div className="GuestInfoTableRow-id-sec">
           <p>{uniqueNo}</p>
           <span>

@@ -8,7 +8,7 @@
     height: 7vh;
 }
 .GuestInfoTableRow:hover{
-    background: rgba(31, 21, 21, 0.2);
+    /* background: rgba(31, 21, 21, 0.2); */
 
 }
 .GuestInfoTableRow p{
@@ -20,6 +20,14 @@
 .GuestInfoTableRow .GuestInfoTableRow-name {
     text-align: left;
     
+}
+.GuestInfoTableRow .GuestInfoTableRow-name a {
+    text-align: left;
+    color: #1F1515;  
+    font-size: 1.05vw;
+}
+.GuestInfoTableRow-name:hover {
+    text-decoration: underline;
 }
 .GuestInfoTableRow div {
     color: #1F1515;

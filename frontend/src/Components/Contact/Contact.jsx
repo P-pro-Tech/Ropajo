@@ -23,7 +23,7 @@ const Contact = () => {
         <div className="list">
           <ul>
             <li>Home</li>
-            <li ><Link className='red' to='/StaffDashboard'>FAQ</Link></li>
+            <li ><Link className='red' to='/SignIn'>FAQ</Link></li>
             <li><Link to='/ReservationInfo' className='red' type="submit">Privacy POlicy</Link></li>
             <li><Link className='red' to='/UpdateGuestPayment'>Contact</Link></li>
             

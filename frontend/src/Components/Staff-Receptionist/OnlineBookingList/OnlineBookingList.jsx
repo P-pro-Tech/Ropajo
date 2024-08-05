@@ -42,7 +42,7 @@ const OnlineBookingList = () => {
             <div className="OnlineBookingList-content-body">
               <div className="OnlineBookingList-bar-holder">
                 <p>Bookings</p>
-                <input type="text" placeholder="Search Guests" />
+                {/* <input type="text" placeholder="Search Guests" /> */}
               </div>
               <div className="OnlineBookingList-content-holder">
                 <div className="OnlineBookingList-table-section">
