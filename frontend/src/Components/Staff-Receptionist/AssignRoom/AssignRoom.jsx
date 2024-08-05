@@ -38,7 +38,7 @@ const AssignRoom = () => {
             </div>
           </div>
           <div className="assignRoom-body-bottom">
-            <button type="submit">Register</button>
+            <Link to='/GuestDashBoardRoom'><button type="submit">Register</button></Link>
           </div>
         </form>
       </div>
