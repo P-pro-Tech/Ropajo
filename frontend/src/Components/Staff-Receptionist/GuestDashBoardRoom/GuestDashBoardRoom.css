@@ -204,6 +204,11 @@
   color: green;
 }
 
+
+.GT-table-optioin {
+  width: 100%;
+  height: fit-content;
+}
 /*  */
 /* .GuestAccount {
     width: 100%;
