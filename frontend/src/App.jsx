@@ -30,6 +30,7 @@ import OnlineBookingList from "./Components/Staff-Receptionist/OnlineBookingList
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StoreProvider } from "./Store";
 import React from "react";
+import CreateStaff from "./Components/Master-Admin/CreateStaff/CreateStaff";
 
 function App() {
   const [queryClient] = React.useState(() => new QueryClient());
@@ -110,6 +111,10 @@ function App() {
                 <Route
                   path='/OnlineBookingList'
                   element={<OnlineBookingList />}
+                />
+                <Route
+                  path='/CreateStaff'
+                  element={<CreateStaff/>}
                 />
               </Routes>
             </QueryClientProvider>
