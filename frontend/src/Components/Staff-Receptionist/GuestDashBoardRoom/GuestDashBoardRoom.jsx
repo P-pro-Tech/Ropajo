@@ -67,29 +67,25 @@ const GuestDashBoardRoom = () => {
                             <div className="GT-Table-row table-row-header">
                               <p>Room No.</p>
                               <p>Date</p>
-                              <p>Check in</p>
-                              <p>Check Out</p>
-                              <p>Amount</p>
+                              <p>Bill</p>
+                              <p>Paid</p>
                             </div>
                             <div className="GT-Table-row">
-                              <p>256</p>
+                              <p>Ropajo Delux</p>
                               <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
+                              <p>60,000.00</p>
                               <p>30,000.00</p>
                             </div>
                             <div className="GT-Table-row">
-                              <p>256</p>
+                              <p>Supreme Executive</p>
                               <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
+                              <p>75,000.00</p>
                               <p>30,000.00</p>
                             </div>
                             <div className="GT-Table-row">
-                              <p>256</p>
+                              <p>Ropajo Delux</p>
                               <p>13.02.2023</p>
-                              <p>06:47pm</p>
-                              <p>14:02:2023</p>
+                              <p>98,000.00</p>
                               <p>30,000.00</p>
                             </div>
                           </section>
