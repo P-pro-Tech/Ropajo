@@ -1,25 +1,12 @@
 /** @format */
 
-import React from "react";
-import "./Register.css";
+import React, { useState } from "react";
 import DashBoardHeader from "../DashBoardHeader/DashBoardHeader";
 import DashboardRoomProfile from "../DashboardRoomProfile/DashboardRoomProfile";
-import { useState } from "react";
-import { useAddStaffMutation } from "../../hooks/staff";
-import { generateUniqueNumbers } from "../../utils/generateId";
+import "./Register.css";
 
 const Register = () => {
   const [profileShow, setProfileShow] = useState(false);
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [idPhoto, SetIdPhoto] = useState("");
-
-  const unique = generateUniqueNumbers(1, 4)[0];
-
-  const staffUniqueId = `{}`;
-
-  const { mutateAsync: addStaff, isPending, error } = useAddStaffMutation();
 
   return (
     <div className='register'>

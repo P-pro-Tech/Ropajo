@@ -13,16 +13,24 @@ export class StaffService {
   async addStaff(
     fullName: string,
     email?: string,
+    address?: string,
     phoneNumber?: string,
+    qualification?: string,
+    position?: string,
     dateOfBirth?: string,
+    photo?: string,
     idPhoto?: string,
     staffUniqueId?: string,
   ) {
     const newStaff = new this.staffModel({
       fullName,
       email,
+      address,
       phoneNumber,
+      qualification,
+      position,
       dateOfBirth,
+      photo,
       idPhoto,
       staffUniqueId,
     });

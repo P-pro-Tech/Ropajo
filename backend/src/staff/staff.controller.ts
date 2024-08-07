@@ -9,16 +9,24 @@ export class StaffController {
   async addGuest(
     @Body('fullName') fullName: string,
     @Body('email') email: string,
+    @Body('address') address: string,
+    @Body('position') position: string,
+    @Body('qualification') qualification: string,
     @Body('phoneNumber') phoneNumber: string,
     @Body('dateOfBirth') dateOfBirth: string,
+    @Body('photo') photo: string,
     @Body('idPhoto') idPhoto: string,
     @Body('staffUniqueId') staffUniqueId: string,
   ) {
     const save = await this.staffService.addStaff(
       fullName,
       email,
+      address,
       phoneNumber,
+      qualification,
+      position,
       dateOfBirth,
+      photo,
       idPhoto,
       staffUniqueId,
     );

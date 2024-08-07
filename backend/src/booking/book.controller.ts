@@ -30,7 +30,7 @@ export class BookingController {
     );
     return { id: save };
   }
-  @Get()
+  @Get('/bookings')
   async getBookings() {
     const bookings = await this.bokingService.getBookings();
     return bookings;

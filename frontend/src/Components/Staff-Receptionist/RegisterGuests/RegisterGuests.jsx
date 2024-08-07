@@ -38,8 +38,6 @@ const RegisterGuests = () => {
 
   const userUniqueId = `R${unique}x`;
 
-  console.log(userUniqueId);
-
   const uploadFile = async (e) => {
     const target = e.target;
     const { files } = target;

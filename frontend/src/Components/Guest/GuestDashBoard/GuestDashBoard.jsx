@@ -21,7 +21,7 @@ const GuestDashBoard = () => {
   }, [navigate, userInfo]);
 
   if (!userInfo) {
-    return null; // or a loading spinner/placeholder
+    return null;
   }
 
   const signoutHandler = () => {

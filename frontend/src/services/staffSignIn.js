@@ -3,11 +3,11 @@
 import apiClient from "../apiClient";
 import { useMutation } from "@tanstack/react-query";
 
-export const useSigninMutation = () => {
+export const useStaffSigninMutation = () => {
   return useMutation({
-    mutationFn: async ({ userUniqueId }) => {
-      const response = await apiClient.post(`auth/login`, {
-        userUniqueId,
+    mutationFn: async ({ staffUniqueId }) => {
+      const response = await apiClient.post(`staff/auth/login`, {
+        staffUniqueId,
       });
       return response.data;
     },

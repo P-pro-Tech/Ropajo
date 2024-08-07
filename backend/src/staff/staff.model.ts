@@ -13,10 +13,22 @@ export class Staff extends mongoose.Document {
   public email?: string;
 
   @prop({ required: false })
+  public address!: string;
+
+  @prop({ required: false })
   public phoneNumber?: string;
 
   @prop({ required: false })
+  public qualification?: string;
+
+  @prop({ required: true })
+  public position?: string;
+
+  @prop({ required: false })
   public dateOfBirth?: string;
+
+  @prop({ required: false })
+  public photo?: string;
 
   @prop({ required: false })
   public idPhoto?: string;
