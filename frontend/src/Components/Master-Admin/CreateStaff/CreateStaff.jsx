@@ -78,10 +78,12 @@ const CreateStaff = () => {
           />
           <DashBoardHeader setProfileShow={setProfileShow} />
         </div>
+
         <div className='CreateStaff-body'>
           <form onSubmit={handleSubmit} className='CreateStaff-form'>
-            <h1>Register</h1>
+            <h1>Create Staff</h1>
             <label htmlFor=''>
+
               Name:
               <input
                 type='text'
@@ -117,18 +119,30 @@ const CreateStaff = () => {
                 placeholder=''
               />
             </label>
-            <label htmlFor=''>
-              D.O.B:
-              <input
-                type='text'
-                onChange={(e) => setDateOfBirth(e.target.value)}
-                id=''
-                placeholder=''
-                onFocus={(e) => (e.target.type = "date")}
-                onBlur={(e) => (e.target.type = "text")}
-              />
-            </label>
-            <label htmlFor=''>
+
+            <section className="seprate" htmlFor="">
+              <label htmlFor="">
+                D.O.B:
+                <input
+                  type="text"
+                  onChange={(e) => setDateOfBirth(e.target.value)}
+                  name=""
+                  id=""
+                  placeholder=""
+                  onFocus={(e) => (e.target.type = "date")}
+                  onBlur={(e) => (e.target.type = "text")}
+                />
+              </label>
+              <label htmlFor="">
+                Gender:
+                <select name="Gender" id="Gender">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </label>
+            </section>
+            <label htmlFor="">
+{/* >>>>>>> Stashed changes */}
               Qualification:
               <input
                 type='text'
@@ -137,15 +151,30 @@ const CreateStaff = () => {
                 placeholder=''
               />
             </label>
-            <label htmlFor=''>
-              Position:
-              <input
-                type='text'
-                onChange={(e) => setPosition(e.target.value)}
-                id=''
-                placeholder=''
-              />
-            </label>
+
+
+            <section htmlFor="" className="seprate">
+              <label htmlFor="">
+                Position:
+                <select name="" id="" onChange={(e) => setPosition(e.target.value)}>
+                  <option value="Manager">Manager</option>
+                  <option value="Bartender">Bartender</option>
+                  <option value="Receptionist">Receptionist</option>
+                  <option value="Waiter">Waiter</option>
+                  <option value="Cashier">Cashier</option>
+                  <option value="House keeper">House keeper</option>
+                  <option value="Security">Security</option>
+                  <option value="Technician">Technician</option>
+                  <option value="Cook">Cook</option>
+                  <option value="Others">Others</option>
+                </select>
+              </label>
+
+              <label htmlFor="">
+                Salary:
+                <input type="text" name="" id="" placeholder="" />
+              </label>
+            </section>
 
             <label className='seprate'>
               Upload Photo:

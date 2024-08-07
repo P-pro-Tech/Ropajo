@@ -31,6 +31,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StoreProvider } from "./Store";
 import React from "react";
 import CreateStaff from "./Components/Master-Admin/CreateStaff/CreateStaff";
+import AdminLogin from "./Components/Master-Admin/AdminLogin/AdminLogin";
+import OpenSales from "./Components/Staff-BartenderAndServers/OpenSales/OpenSales";
 
 function App() {
   const [queryClient] = React.useState(() => new QueryClient());
@@ -115,6 +117,14 @@ function App() {
                 <Route
                   path='/CreateStaff'
                   element={<CreateStaff/>}
+                />
+                <Route
+                  path='/AdminLogin'
+                  element={<AdminLogin/>}
+                />
+                <Route
+                  path='/OpenSales'
+                  element={<OpenSales/>}
                 />
               </Routes>
             </QueryClientProvider>

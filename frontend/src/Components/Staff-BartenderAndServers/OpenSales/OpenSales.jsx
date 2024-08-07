@@ -1,21 +1,21 @@
 import React from "react";
 import GuestReservationHeader from "../../GuestReservationHeader/GuestReservationHeader";
-import "./UpdateGuestPayment.css";
+import "./OpenSales.css";
 import { Link } from "react-router-dom";
 
 
-const UpdateGuestPayment = () => {
+const OpenSales = () => {
   return (
-    <div className="UpdateGuestPayment">
-      <div className="UpdateGuestPayment-hue">
-        <div className="UpdateGuestPayment-head">
+    <div className="OpenSales">
+      <div className="OpenSales-hue">
+        <div className="OpenSales-head">
           <GuestReservationHeader />
         </div>
-        <div className="UpdateGuestPayment-body">
-          <div className="UpdateGuestPayment-header-details">
-            <p className="UpdateGuestPayment-title">Update Payments</p>
-            <h1>Peter Patrick</h1>
-            <p className="UpdateGuestPayment-staff">
+        <div className="OpenSales-body">
+          <div className="OpenSales-header-details">
+            <p className="OpenSales-title">Open Sales</p>
+            <h1></h1>
+            <p className="OpenSales-staff">
               Collected by: Martha Albert
             </p>
             <select name="Category" id="paymentCategory">
@@ -25,17 +25,13 @@ const UpdateGuestPayment = () => {
               <option value="Pool">Pool</option>
               <option value="Restaurant">Restaurant</option>
               <option value="Bar">Bar</option>
-              <option value="Others">Others</option>
             </select>
           </div>
 
-          <form action="" className="UpdateGuestPayment-form">
+          <form action="" className="OpenSales-form">
 
-            <textarea name="" id="" rows={4} cols={50} placeholder="Comments"></textarea>
-            <div>Bill:
-              {/* <input type="text" placeholder="" /> */}
-              <div className="update_bill">53,000.00</div>
-              </div>
+            <textarea name="" id="" rows={5} cols={50} placeholder="Comments"></textarea>
+            <label>Bill:<input type="text" placeholder="" /></label>
             <label>Paid:<input type="text" placeholder="" /></label>
             <Link to='/GuestDashBoardRoom'><button  type="submit">Update</button></Link>
             
@@ -47,4 +43,4 @@ const UpdateGuestPayment = () => {
   );
 };
 
-export default UpdateGuestPayment;
+export default OpenSales;

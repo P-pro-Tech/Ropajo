@@ -22,7 +22,7 @@
 .CreateStaff-form {
     margin: auto;
     width: 60%;
-    height: 50vh;
+    /* height: 50vh; */
 }
 .CreateStaff-form h1 {
     display: block;
@@ -32,7 +32,7 @@
     font-weight: normal;
     text-align: center;
 }
-.CreateStaff-form label, .CreateStaff-form button, .CreateStaff-form div {
+.CreateStaff-form label, .CreateStaff-form button, .CreateStaff-form div,  .CreateStaff-form section {
     display: block;
     margin: auto;
     width: 90%;
@@ -43,6 +43,24 @@
     border-bottom: thin solid #fdf0d5;
     margin: 2.5vh 1vw;
     font-size: 1.3vw;
+}
+
+.CreateStaff-form section {
+    border-bottom: none;
+}
+.CreateStaff-form section label {
+    /* border-width: 100%; */
+    margin: 0;
+    width: 48%;
+}
+.CreateStaff-form section label select {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.CreateStaff-form section label select option {
+    background-color: #1f1515;
+    color: #fdf0d5;
 }
 .CreateStaff-form label {
     display: flex;
