@@ -27,7 +27,7 @@ export class BookingService {
     return result._id as string;
   }
   async getBookings() {
-    const bookings = await this.bookingModel.find().exec();
+    const bookings = await this.bookingModel.find().sort({ index: -1 }).exec();
     return bookings as Booking[];
   }
   async getBooking(bookingId) {

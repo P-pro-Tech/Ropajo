@@ -1,18 +1,18 @@
 /* eslint-disable prettier/prettier */
 
 import { Controller, Post, Body, UnauthorizedException } from '@nestjs/common';
-import { AuthService } from './auth.service';
+import { GuestService } from './guest.service';
 
-@Controller('auth')
-export class AuthController {
-  constructor(private authService: AuthService) {}
+@Controller('guest/auth')
+export class GuestController {
+  constructor(private guestService: GuestService) {}
 
   @Post('login')
   async login(@Body('userUniqueId') userUniqueId: string) {
-    const user = await this.authService.validateUser(userUniqueId);
+    const user = await this.guestService.validateUser(userUniqueId);
     if (!user) {
       throw new UnauthorizedException('Invalid credentials');
     }
-    return this.authService.login(user);
+    return this.guestService.login(user);
   }
 }

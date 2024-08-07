@@ -1,3 +1,5 @@
+/** @format */
+
 .guestDashBoard {
   background: rgba(31, 21, 21, 1);
   width: 100%;
@@ -77,6 +79,15 @@
   width: inherit;
   height: auto;
   border-radius: 50%;
-
   align-items: center;
+}
+.logout-btn {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  margin-top: 20px;
+  font-size: medium;
+  margin: auto;
+  cursor: pointer;
+  border: 0;
 }
