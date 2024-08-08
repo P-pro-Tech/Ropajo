@@ -4,11 +4,12 @@ import React, { useContext, useEffect } from "react";
 import "./ReceptionistDashboard.css";
 import ropa_logo from "../../../assets/mob-logo.svg";
 import receptionist2_pic from "../../../assets/receptionist_2.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Store } from "../../../Store";
 import { NavLink } from "react-router-dom";
 
 const ReceptionistDashboard = () => {
+  const navigate = useNavigate();
   const {
     state: { userInfo },
     dispatch,
@@ -16,7 +17,7 @@ const ReceptionistDashboard = () => {
 
   useEffect(() => {
     if (!userInfo) {
-      window.location.replace("/SignIn");
+      navigate("/SignIn");
     }
   }, [userInfo]);
   const signoutHandler = () => {
@@ -39,7 +40,7 @@ const ReceptionistDashboard = () => {
               <img src={receptionist2_pic} alt='' />
             </div>
             <h2>Receptionist II</h2>
-            <p>{userInfo.fullName.toUpperCase()}</p>
+            <p>{userInfo ? userInfo.fullName.toUpperCase() : ""}</p>
           </div>
         </div>
         <div className='ReceptionistDashboard-lower-sec'>

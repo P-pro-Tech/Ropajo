@@ -12,12 +12,7 @@ import { CgSpinner } from "react-icons/cg";
 import { generateUniqueNumbers } from "../../../utils/generateId";
 
 const RegisterGuests = () => {
-  const {
-    mutateAsync: addGuest,
-    error,
-    isPending,
-    refetch,
-  } = useAddGuestMutation();
+  const { mutateAsync: addGuest, error, isPending } = useAddGuestMutation();
 
   const [fullName, setFullName] = React.useState("");
   const [address, setAddress] = React.useState("");

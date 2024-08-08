@@ -5,6 +5,7 @@ import { BookingModule } from './booking/book.module';
 import { UserModule } from './users/users.module';
 import { GuestModule } from './auth/guest/guest.module';
 import { StaffModule } from './auth/staff/staff.module';
+import { PaymentModule } from './payments/payment.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { StaffModule } from './auth/staff/staff.module';
     UserModule,
     GuestModule,
     StaffModule,
+    PaymentModule,
     MongooseModule.forRoot('mongodb://127.0.0.1:27017/rapajo'),
   ],
 })

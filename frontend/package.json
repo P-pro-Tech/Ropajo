@@ -1,6 +1,7 @@
 {
   "name": "ropajo",
   "version": "0.1.0",
+  "homepage": "./frontend",
   "private": true,
   "dependencies": {
     "@tanstack/react-query": "^5.51.16",
