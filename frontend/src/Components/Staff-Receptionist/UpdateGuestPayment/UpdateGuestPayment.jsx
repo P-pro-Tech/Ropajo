@@ -1,10 +1,25 @@
-import React from "react";
+/** @format */
+
+import React, { useContext } from "react";
 import GuestReservationHeader from "../../GuestReservationHeader/GuestReservationHeader";
 import "./UpdateGuestPayment.css";
-import { Link } from "react-router-dom";
-
+import { Link, useLocation } from "react-router-dom";
+import { useGetGuestDetailsQuery } from "../../../hooks/guest";
+import { useGetPaymentDetailQuery } from "../../../hooks/payment";
+import { Store } from "../../../Store";
 
 const UpdateGuestPayment = () => {
+  const location = useLocation();
+
+  const { state: userInfo } = useContext(Store);
+
+  const queryParams = new URLSearchParams(location.search);
+
+  const userUniqueId = queryParams.get("userUniqueId");
+
+  const { data } = useGetGuestDetailsQuery(userUniqueId);
+
+  const { data: paymentData } = useGetPaymentDetailQuery(userUniqueId);
   return (
     <div className="UpdateGuestPayment">
       <div className="UpdateGuestPayment-hue">
@@ -30,16 +45,25 @@ const UpdateGuestPayment = () => {
           </div>
 
           <form action="" className="UpdateGuestPayment-form">
-
-            <textarea name="" id="" rows={4} cols={50} placeholder="Comments"></textarea>
-            <div>Bill:
+            <textarea
+              name=""
+              id=""
+              rows={4}
+              cols={50}
+              placeholder="Comments"
+            ></textarea>
+            <div>
+              Bill:
               {/* <input type="text" placeholder="" /> */}
               <div className="update_bill">53,000.00</div>
-              </div>
-            <label>Paid:<input type="text" placeholder="" /></label>
-            <Link to='/GuestDashBoardRoom'><button  type="submit">Update</button></Link>
-            
-            
+            </div>
+            <label>
+              Paid:
+              <input type="text" placeholder="" />
+            </label>
+            <Link to="/GuestDashBoardRoom">
+              <button type="submit">Update</button>
+            </Link>
           </form>
         </div>
       </div>

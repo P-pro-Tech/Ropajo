@@ -3,41 +3,32 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Payment } from './payment.model';
-import { Staff } from '../staff/staff.model';
-import { User } from '../users/users.model';
 
 @Injectable()
 export class PaymentService {
   constructor(
-    @InjectModel('Booking') private readonly paymentModel: Model<Payment>,
-    @InjectModel('Booking') private readonly staffModel: Model<Staff>,
-    @InjectModel('Booking') private readonly userModel: Model<User>,
+    @InjectModel('Payment') private readonly paymentModel: Model<Payment>,
   ) {}
+
   async makePayment(
     amount: string,
-    collectedBy: string,
-    category: string,
-    collectedFrom: string,
+    collectedBy?: string,
+    category?: string,
     bill?: string,
     paid?: string,
+    type?: string,
+    collectedFrom?: string,
+    room?: string,
   ) {
-    const collector = [];
-    const paidby = [];
-    const staff = await this.staffModel.findOne({ staffUniqueId: collectedBy });
-    if (staff) {
-      collector.push(staff);
-    }
-    const guest = await this.userModel.findOne({ userUniqueId: collectedFrom });
-    if (guest) {
-      paidby.push(guest);
-    }
     const newPayment = await new this.paymentModel({
-      amount: amount,
-      collectedBy: collector,
-      category: category,
-      bill: bill,
-      paid: paid,
-      collectedFrom: paidby,
+      amount,
+      collectedBy,
+      category,
+      bill,
+      paid,
+      type,
+      collectedFrom,
+      room,
     });
     const result = await newPayment.save();
     return result._id as string;
@@ -45,6 +36,18 @@ export class PaymentService {
   async getPayments() {
     const payments = await this.paymentModel.find().exec();
     return payments as Payment[];
+  }
+
+  async getPayment(collectedFrom) {
+    const payment = await this.paymentModel.find({ collectedFrom }).exec();
+    return payment as Payment[];
+  }
+  async updatePayment(collectedFrom: string, paid: string) {
+    const payment = await this.paymentModel.findOne({ collectedFrom });
+    if (paid) {
+      payment.paid = paid;
+    }
+    payment.save();
   }
 
   private async findPayment(id: string): Promise<Payment> {
@@ -55,5 +58,6 @@ export class PaymentService {
     } catch (error) {
       throw new NotFoundException('Could not find payment');
     }
+    return payment;
   }
 }

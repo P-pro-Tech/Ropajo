@@ -58,6 +58,8 @@ const StaffDashboard = () => {
   // fetch all bookings
   const { data: bookings, isPending } = useGetBookingsQuery();
 
+  const data = [];
+
   return (
     <>
       <div className='dashboardAccount'>
@@ -75,13 +77,15 @@ const StaffDashboard = () => {
               <div>
                 <div className='Staff-content-table-section'>
                   <div className='staff-room-btn-section'>
-                    {AvailableAppartmentInfo.map((items, index) => (
-                      <AvailableRooms
-                        items={items.amount}
-                        apartment={items.apartment}
-                        index={index}
-                      />
-                    ))}
+                    {AvailableAppartmentInfo.map(
+                      ({ amount, apartment, data }, index) => (
+                        <AvailableRooms
+                          amount={amount}
+                          room={apartment}
+                          index={index}
+                        />
+                      )
+                    )}
                   </div>
 
                   <div className='staff-apartments'>

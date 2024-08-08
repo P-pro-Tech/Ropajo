@@ -1,35 +1,34 @@
 /* eslint-disable prettier/prettier */
-import {
-  getModelForClass,
-  modelOptions,
-  prop,
-  Ref,
-} from '@typegoose/typegoose';
+import { getModelForClass, modelOptions, prop } from '@typegoose/typegoose';
 import mongoose from 'mongoose';
-import { Staff } from 'src/staff/staff.model';
-import { User } from 'src/users/users.model';
 
 @modelOptions({ schemaOptions: { timestamps: true } })
 export class Payment extends mongoose.Document {
   public _id?: string;
 
-  @prop({ required: true })
-  public amount!: string;
+  @prop({ required: false })
+  public amount?: string;
 
-  @prop({ required: true, ref: Staff })
-  public collectedBy!: Ref<Staff>;
+  @prop({ required: false })
+  public collectedBy?: string;
 
-  @prop({ required: true })
-  public category!: string;
+  @prop({ required: false, default: '' })
+  public category?: string;
 
   @prop({ required: false })
   public bill?: string;
 
-  @prop({ required: true })
+  @prop({ required: false, default: '0' })
   public paid?: string;
 
-  @prop({ required: true, ref: User })
-  public collectedFrom!: Ref<User>;
+  @prop({ required: false })
+  public type?: string;
+
+  @prop({ required: false })
+  public collectedFrom?: string;
+
+  @prop({ required: false })
+  public room?: string;
 }
 
 export const PaymentModel = getModelForClass(Payment);

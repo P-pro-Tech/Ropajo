@@ -55,9 +55,9 @@ export class UserController {
     const guests = await this.userService.getGuests();
     return guests;
   }
-  @Get(':id')
-  async getGuest(@Param(':id') guestId: string) {
-    const guest = await this.userService.getGuest(guestId);
+  @Get(':userUniqueId')
+  async getGuest(@Param('userUniqueId') userUniqueId: string) {
+    const guest = await this.userService.getGuest(userUniqueId);
     return guest;
   }
   @Patch(':id')

@@ -22,3 +22,13 @@ export const useGetGuestsQuery = () => {
     },
   });
 };
+
+export const useGetGuestDetailsQuery = (userUniqueId) => {
+  return useQuery({
+    queryKey: ["guest", userUniqueId],
+    queryFn: async () => {
+      const response = await apiClient.get(`guest/${userUniqueId}`);
+      return response.data;
+    },
+  });
+};

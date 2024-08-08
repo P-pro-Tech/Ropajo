@@ -48,8 +48,8 @@ export class UserService {
     const guests = await this.userModel.find().exec();
     return guests as User[];
   }
-  async getGuest(guestId) {
-    const guest = await this.findGuest(guestId);
+  async getGuest(userUniqueId) {
+    const guest = await this.userModel.findOne({ userUniqueId });
     return guest as User;
   }
   async updateGuest(
@@ -105,5 +105,6 @@ export class UserService {
     } catch (error) {
       throw new NotFoundException('Could not find guest');
     }
+    return guest;
   }
 }
