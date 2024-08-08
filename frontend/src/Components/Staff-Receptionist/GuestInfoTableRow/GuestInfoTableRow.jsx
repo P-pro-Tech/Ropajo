@@ -3,7 +3,7 @@
 import React from "react";
 import "./GuestInfoTableRow.css";
 import copy from "../../../assets/Copy.svg";
-import { Link } from "react-router-dom";
+
 const GuestInfoTableRow = ({ index, names, uniqueNo, phone }) => {
   const [copySuccess, setCopySuccess] = React.useState("");
   const handleCopyClick = async () => {

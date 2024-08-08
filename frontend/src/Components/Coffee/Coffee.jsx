@@ -1,6 +1,5 @@
 import React from 'react'
 import './Coffee.css';
-import pouring_coffee from '../../assets/Ropa6.png'
 import still_coffee from '../../assets/Ropa7.png'
 import upper_vector from '../../assets/Vector 1.svg'
 import lower_vector from '../../assets/Vector 2.svg'

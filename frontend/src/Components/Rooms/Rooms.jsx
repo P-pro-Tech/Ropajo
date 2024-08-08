@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import './Rooms.css'
 import Ropa3 from '../../assets/Ropa3.jpeg'
 import { Link } from 'react-router-dom'

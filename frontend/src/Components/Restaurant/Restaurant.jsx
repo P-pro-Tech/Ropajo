@@ -1,6 +1,6 @@
 import React from 'react'
 import './Restaurant.css'
-import Ropa5 from '../../assets/Ropa5.png'
+
 import { Link } from 'react-router-dom'
 
 const Restaurant = () => {

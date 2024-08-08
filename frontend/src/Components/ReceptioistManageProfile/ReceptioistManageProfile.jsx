@@ -2,7 +2,7 @@ import React from 'react'
 import './ReceptioistManageProfile.css'
 import ropa_logo from '../../assets/mob-logo.svg'
 import receptioist_pic from '../../assets/receptionist_1.jpg'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 const ReceptioistManageProfile = () => {

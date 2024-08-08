@@ -1,6 +1,5 @@
 import React from 'react'
 import './GuestRoom.css'
-import GuestDashBoard from '../Guest/GuestDashBoard/GuestDashBoard'
 import { Link } from 'react-router-dom'
 import GuestInfoTableRow from '../Staff-Receptionist/GuestInfoTableRow/GuestInfoTableRow'
 import ReceptioistManageProfile from '../ReceptioistManageProfile/ReceptioistManageProfile'

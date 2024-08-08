@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import DashboardRoomProfile from '../DashboardRoomProfile/DashboardRoomProfile';
 import DashboardRoom from '../DashboardRoom/DashboardRoom';
-import DashBoardHeader from '../DashBoardHeader/DashBoardHeader';
+
 
 const DashboardComponents = () => {
 

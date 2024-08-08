@@ -6,11 +6,8 @@ import { Link } from "react-router-dom";
 import "./StaffDashboard.css";
 import AvailableRooms from "../AvailableRooms/AvailableRooms";
 import ReservedRoomBtn from "../ReservedRoomBtn/ReservedRoomBtn";
-import AvailableApartmentsBtns from "../AvailableApartmentsBtns/AvailableApartmentsBtns";
-import { guestRoomCount } from "../OnlineBookingList/OnlineBookingList";
 import { useGetBookingsQuery } from "../../../hooks/book";
 
-const AvailableRoomsInfo = [305, 112, "004", "007"];
 
 const reservedroomsbtn = [
   {

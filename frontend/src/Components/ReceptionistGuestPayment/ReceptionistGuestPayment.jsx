@@ -1,8 +1,7 @@
 import React from 'react'
-import ropa_logo from '../../assets/mob-logo.svg'
-import receptioist_pic from '../../assets/receptionist_1.jpg'
-import { Link, NavLink } from 'react-router-dom'
-import Table from '../Table/Table'
+
+import { Link } from 'react-router-dom'
+
 import ReceptioistManageProfile from '../ReceptioistManageProfile/ReceptioistManageProfile'
 import PaymentTable from '../PaymentTable/PaymentTable'
 
@@ -32,13 +31,7 @@ const ReceptionistGuestPayment = () => {
         </div>
     </div>
 
-    {/* mobile deign start here */}
-    {/* <div className='mobile-dasboardAccount'>
-        <div className='mobile-dasboardAccount-head'>
-            <DashBoardHeader/>
-        </div>
-        
-    </div> */}
+    
 </div>  
   )
 }

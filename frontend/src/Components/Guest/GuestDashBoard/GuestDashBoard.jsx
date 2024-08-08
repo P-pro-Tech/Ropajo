@@ -3,8 +3,7 @@
 import React, { useContext, useEffect } from "react";
 import "./GuestDashBoard.css";
 import ropa_logo from "../../../assets/mob-logo.svg";
-import profile_pic from "../../../assets/profile_pic.png";
-import { Link, NavLink, useNavigate, useRoutes } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Store } from "../../../Store";
 
 const GuestDashBoard = () => {

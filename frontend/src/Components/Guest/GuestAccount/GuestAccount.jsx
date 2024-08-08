@@ -6,7 +6,6 @@ import play_icon from "../../../assets/play-icon.svg";
 
 import Table from "../../Table/Table";
 import DashboardRoomProfile from "../../DashboardRoomProfile/DashboardRoomProfile";
-import ReceptionistDashboard from "../../Staff-Receptionist/ReceptionistDashboard/ReceptionistDashboard";
 import GuestDashBoard from "../GuestDashBoard/GuestDashBoard";
 
 const GuestAccount = () => {

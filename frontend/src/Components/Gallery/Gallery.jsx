@@ -1,9 +1,5 @@
 import React from 'react'
 import './Gallery.css';
-import Ropa5 from '../../assets/Ropa5.png'
-import Ropa9 from '../../assets/Ropa9.png'
-import Ropa10 from '../../assets/Ropa10.png'
-import Ropa11 from '../../assets/Ropa11.png'
 
 const Gallery = () => {
   return (

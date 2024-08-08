@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
 import './DashboardRoomProfile.css'
 import { Link } from 'react-scroll'
-import { NavLink } from 'react-router-dom'
 import top_icon from '../../assets/top_arrow.svg'
 import ropa_logo from '../../assets/mob-logo.svg'
 // import profile_pic from '../../assets/profile_pic.png';
